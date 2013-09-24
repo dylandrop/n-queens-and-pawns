@@ -23,10 +23,10 @@ public class Main
     static struct Input
     {
         val size         : int;                     // Size of the board along one side (board is a square)
-        val pawns        : ArrayList[Point{rank==2}];  // Array of pawns.  The array can be of zero length
+        val pawns        : ArrayList[Tile];  // Array of pawns.  The array can be of zero length
         val solutions    : int;                     // Expected/correct number of solutions
 
-        def this(size: int, pawns: ArrayList[Point{rank==2}], solutions: int)
+        def this(size: int, pawns: ArrayList[Tile], solutions: int)
         {
             this.size          = size;
             this.pawns         = pawns;
@@ -70,10 +70,10 @@ public class Main
 
             val size = Int.parse(v(1).trim());          //get the dimension of the matrix
             val solutions = Int.parse(v(2).trim());     //get the expected number of solutions
-            val pawns = new ArrayList[Point{rank==2}]();
+            val pawns = new ArrayList[Tile]();
             for ( i in CONF_PAWN_OFFSET..(v.size-1) ){     //parse pawns which are every element after the first three
                 val coords = v(i).split(",");
-                val point = Point.make( Int.parse(coords(0).trim()) , Int.parse(coords(1).trim()) ); 
+                val point = Tile( Int.parse(coords(0).trim()) , Int.parse(coords(1).trim()), 3 ); 
                 pawns.add(point);
             }
             val input = Input(size, pawns, solutions);  //construct the input object

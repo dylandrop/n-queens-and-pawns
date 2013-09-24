@@ -6,7 +6,7 @@ import x10.io.FileNotFoundException;
 import x10.array.Array;
 
 public class Board {
-	var board:int[];
+	val board:Array[Int]{self.rank==2};
 	val size:Int;
 	val pawns:Rail[Tile];
 	val queens:Rail[Tile];
@@ -15,7 +15,7 @@ public class Board {
 	public def this(size:Int, pawns:Rail[Tile],queens:Rail[Tile]) {
 		this.size = size; this.pawns = pawns; this.queens = queens;
 		val max = size - 1;
-		this.board = new int[ [0:max, 0:max] ];
+		this.board = new int[0:max, 0:max];
 		for (count in pawns) {
 			val pawn = pawns(count);
 			place(pawn);
