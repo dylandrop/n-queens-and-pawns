@@ -3,10 +3,10 @@ import x10.io.File;
 import x10.util.ArrayList;
 import x10.lang.Exception;
 import x10.io.FileNotFoundException;
-import x10.array.Array;
+import x10.array.*;
 
 public class Board {
-	val board:Array[Int]{self.rank==2};
+	val board:Array_2[Int];
 	val size:Int;
 	val pawns:Rail[Tile];
 	val queens:Rail[Tile];
@@ -15,20 +15,17 @@ public class Board {
 	public def this(size:Int, pawns:Rail[Tile],queens:Rail[Tile]) {
 		this.size = size; this.pawns = pawns; this.queens = queens;
 		val max = size - 1;
-		this.board = new int[0:max, 0:max];
-		for (count in pawns) {
-			val pawn = pawns(count);
+		this.board = new Array_2[Int](max, max);
+		for (pawn in pawns) {
 			place(pawn);
 		}
-		for (count in queens) {
-			val queen = queens(count);
+		for (queen in queens) {
 			place(queen);
 		}
 	}
 	
 	private def validHoriz() {
-		for(i in queens) {
-			val queen = queens(i);
+		for(queen in queens) {
 			var xPos:Int = queen.x;
 			while(xPos < board.size && board(xPos, queen.y) != PAWN) {
 				if(board(xPos, queen.y) == QUEEN) {
@@ -48,8 +45,7 @@ public class Board {
 	}
 	
 	private def validVert() {
-		for(i in queens) {
-			val queen = queens(i);
+		for(queen in queens) {
 			var yPos:Int = queen.y;
 			while(yPos < board.size && board(queen.x, yPos) != PAWN) {
 				if(board(yPos, queen.y) == QUEEN) {
@@ -69,8 +65,7 @@ public class Board {
 	}
 	
 	private def validDiag() {
-		for(i in queens) {
-			val queen = queens(i);
+		for(queen in queens) {
 			var yPos:Int = queen.y;
 			var xPos:Int = queen.x;
 			while(xPos<size && yPos<size && board(xPos,yPos) != PAWN) {
