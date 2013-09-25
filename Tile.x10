@@ -1,3 +1,4 @@
+//add a comment for testing
 public struct Tile {
 	val x:Int;
 	val y:Int;
