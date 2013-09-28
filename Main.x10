@@ -2,7 +2,7 @@ import x10.util.Timer;
 import x10.io.File;
 import x10.util.ArrayList;
 import x10.lang.Exception;
-import x10.io.FileNotFoundException;
+import x10.io.FileNotFoundException; //test
 import x10.array.Array;
 /**
  * Class with the main method.
@@ -50,7 +50,7 @@ public class Main
         var F:File;
         try{
 			val filename = args(0);
-            F  = new File(filename); //open the file containing board configurations
+            F  = new File(filename); //blah open the file containing board configurations
         }
         catch(FileNotFoundException){
             Console.ERR.println(args(0) + " is not a valid file");
@@ -77,14 +77,21 @@ public class Main
                 pawns.add(point);
             }
             val input = Input(size, pawns, solutions);  //construct the input object
-            if ( Int.parse( v(0) ) == 0 ){
-                Console.OUT.print("Test case: "+input.toString()+".....");
-                run_one_test(input);
-            }else{
-                Console.OUT.println("Benchmark case: "+input.toString());
-                val time = take_median(input);   //take median prints out the results
-            }
+            //if ( Int.parse( v(0) ) == 0 ){
+            //    Console.OUT.print("Test case: "+input.toString()+".....");
+           //     run_one_test(input);
+            comboTester(input);
+            //}else{
+              //  Console.OUT.println("Benchmark case: "+input.toString());
+               // val time = take_median(input);   //take median prints out the results
+            //}
         }
+    }
+    
+    static def comboTester(input: Input){
+    	var solver:Solver = new Solver();
+    	val numberOfCombinations = solver.solve(input.size, input.pawns);
+    	Console.OUT.println("The number of generated combinations is "+numberOfCombinations);
     }
 
 
@@ -92,7 +99,7 @@ public class Main
      * Helper function that runs once a benchmark test, validate the
      * answer, return the times spent.
      */
-    static def run_one_test(input: Input) : long
+    /**static def run_one_test(input: Input) : long
     {
     	val start     = Timer.milliTime();
         var solver:Solver = new Solver();
@@ -114,11 +121,11 @@ public class Main
 	
         return time_in_millis;      // Return the median speedup
     }
-
+*/
     /**
      * Helper function that runs three times a benchmark test and return the median
      */
-    static def take_median(input: Input) : double
+    /**static def take_median(input: Input) : double
     {
         val times = new Rail[long](3);             // Run three times ... we'll take the median value
 
@@ -137,7 +144,7 @@ public class Main
 		
         return med;      // Return the median speedup
     }
-
+*/
 
     /**
      * Return the median of three values.

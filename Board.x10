@@ -14,7 +14,7 @@ public class Board {
 	
 	public def this(size:Int, pawns:Rail[Tile],queens:Rail[Tile]) {
 		this.size = size; this.pawns = pawns; this.queens = queens;
-		val max = size - 1;
+		val max = size; //YOU HAD IT AT max = size-1, dunno why, crashes when board size is 1
 		this.board = new Array_2[Int](max, max);
 		for (pawn in pawns) {
 			place(pawn);
@@ -110,7 +110,7 @@ public class Board {
 	private def place(someTile:Tile) {
 		val occupation = board(someTile.x, someTile.y);
 		if (occupation == 2 || occupation == 3) {
-			throw new Exception("Can't do that!");
+			throw new Exception("Placing on a wrong place!");
 		}
 		board(someTile.x, someTile.y) = someTile.tileType;
 	}
