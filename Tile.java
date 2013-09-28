@@ -90,8 +90,8 @@ this.tileType = tileType;
 final public java.lang.String
                                                                                                 typeName(
                                                                                                 ){try {return x10.rtt.Types.typeName(this);}
-        catch (java.lang.Throwable exc$5184) {
-        throw x10.runtime.impl.java.ThrowableUtils.ensureX10Exception(exc$5184);
+        catch (java.lang.Throwable exc$5276) {
+        throw x10.runtime.impl.java.ThrowableUtils.ensureX10Exception(exc$5276);
         }
         }
         
@@ -103,46 +103,46 @@ final public java.lang.String
                                                                                                 ){
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.String t5118 =
+final java.lang.String t5210 =
               "struct Tile: x=";
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5119 =
+final int t5211 =
               this.
                 x;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.String t5120 =
-              ((t5118) + ((x10.core.Int.$box(t5119))));
+final java.lang.String t5212 =
+              ((t5210) + ((x10.core.Int.$box(t5211))));
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.String t5121 =
-              ((t5120) + (" y="));
+final java.lang.String t5213 =
+              ((t5212) + (" y="));
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5122 =
+final int t5214 =
               this.
                 y;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.String t5123 =
-              ((t5121) + ((x10.core.Int.$box(t5122))));
+final java.lang.String t5215 =
+              ((t5213) + ((x10.core.Int.$box(t5214))));
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.String t5124 =
-              ((t5123) + (" tileType="));
+final java.lang.String t5216 =
+              ((t5215) + (" tileType="));
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5125 =
+final int t5217 =
               this.
                 tileType;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.String t5126 =
-              ((t5124) + ((x10.core.Int.$box(t5125))));
+final java.lang.String t5218 =
+              ((t5216) + ((x10.core.Int.$box(t5217))));
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-return t5126;
+return t5218;
         }
         
         
@@ -156,83 +156,83 @@ int result =
               1;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5127 =
+final int t5219 =
               result;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5129 =
-              ((8191) * (((int)(t5127))));
+final int t5221 =
+              ((8191) * (((int)(t5219))));
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5128 =
+final int t5220 =
               this.
                 x;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5130 =
-              x10.rtt.Types.hashCode(t5128);
+final int t5222 =
+              x10.rtt.Types.hashCode(t5220);
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5131 =
-              ((t5129) + (((int)(t5130))));
+final int t5223 =
+              ((t5221) + (((int)(t5222))));
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-result = t5131;
+result = t5223;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5132 =
+final int t5224 =
               result;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5134 =
-              ((8191) * (((int)(t5132))));
+final int t5226 =
+              ((8191) * (((int)(t5224))));
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5133 =
+final int t5225 =
               this.
                 y;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5135 =
-              x10.rtt.Types.hashCode(t5133);
+final int t5227 =
+              x10.rtt.Types.hashCode(t5225);
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5136 =
-              ((t5134) + (((int)(t5135))));
+final int t5228 =
+              ((t5226) + (((int)(t5227))));
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-result = t5136;
+result = t5228;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5137 =
+final int t5229 =
               result;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5139 =
-              ((8191) * (((int)(t5137))));
+final int t5231 =
+              ((8191) * (((int)(t5229))));
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5138 =
+final int t5230 =
               this.
                 tileType;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5140 =
-              x10.rtt.Types.hashCode(t5138);
+final int t5232 =
+              x10.rtt.Types.hashCode(t5230);
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5141 =
-              ((t5139) + (((int)(t5140))));
+final int t5233 =
+              ((t5231) + (((int)(t5232))));
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-result = t5141;
+result = t5233;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5142 =
+final int t5234 =
               result;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-return t5142;
+return t5234;
         }
         
         
@@ -242,38 +242,38 @@ final public boolean
                                                                                                 java.lang.Object other){
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.Object t5143 =
+final java.lang.Object t5235 =
               other;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t5144 =
-              Tile.$RTT.isInstance(t5143);
+final boolean t5236 =
+              Tile.$RTT.isInstance(t5235);
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t5145 =
-              !(t5144);
+final boolean t5237 =
+              !(t5236);
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-if (t5145) {
+if (t5237) {
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
 return false;
             }
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.Object t5146 =
+final java.lang.Object t5238 =
               other;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t5147 =
-              ((Tile)x10.rtt.Types.asStruct(Tile.$RTT,t5146));
+final Tile t5239 =
+              ((Tile)x10.rtt.Types.asStruct(Tile.$RTT,t5238));
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t5148 =
-              this.equals$O(((Tile)(t5147)));
+final boolean t5240 =
+              this.equals$O(((Tile)(t5239)));
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-return t5148;
+return t5240;
         }
         
         
@@ -283,78 +283,78 @@ final public boolean
                                                                                                 Tile other){
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5150 =
+final int t5242 =
               this.
                 x;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t5149 =
+final Tile t5241 =
               other;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5151 =
-              t5149.
+final int t5243 =
+              t5241.
                 x;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-boolean t5155 =
-              ((int) t5150) ==
-            ((int) t5151);
+boolean t5247 =
+              ((int) t5242) ==
+            ((int) t5243);
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-if (t5155) {
+if (t5247) {
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5153 =
+final int t5245 =
                   this.
                     y;
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t5152 =
+final Tile t5244 =
                   other;
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5154 =
-                  t5152.
+final int t5246 =
+                  t5244.
                     y;
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-t5155 = ((int) t5153) ==
-                ((int) t5154);
+t5247 = ((int) t5245) ==
+                ((int) t5246);
             }
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-boolean t5159 =
-              t5155;
+boolean t5251 =
+              t5247;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-if (t5159) {
+if (t5251) {
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5157 =
+final int t5249 =
                   this.
                     tileType;
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t5156 =
+final Tile t5248 =
                   other;
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5158 =
-                  t5156.
+final int t5250 =
+                  t5248.
                     tileType;
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-t5159 = ((int) t5157) ==
-                ((int) t5158);
+t5251 = ((int) t5249) ==
+                ((int) t5250);
             }
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t5160 =
-              t5159;
+final boolean t5252 =
+              t5251;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-return t5160;
+return t5252;
         }
         
         
@@ -364,38 +364,38 @@ final public boolean
                                                                                                 java.lang.Object other){
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.Object t5161 =
+final java.lang.Object t5253 =
               other;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t5162 =
-              Tile.$RTT.isInstance(t5161);
+final boolean t5254 =
+              Tile.$RTT.isInstance(t5253);
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t5163 =
-              !(t5162);
+final boolean t5255 =
+              !(t5254);
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-if (t5163) {
+if (t5255) {
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
 return false;
             }
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.Object t5164 =
+final java.lang.Object t5256 =
               other;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t5165 =
-              ((Tile)x10.rtt.Types.asStruct(Tile.$RTT,t5164));
+final Tile t5257 =
+              ((Tile)x10.rtt.Types.asStruct(Tile.$RTT,t5256));
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t5166 =
-              this._struct_equals$O(((Tile)(t5165)));
+final boolean t5258 =
+              this._struct_equals$O(((Tile)(t5257)));
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-return t5166;
+return t5258;
         }
         
         
@@ -405,78 +405,78 @@ final public boolean
                                                                                                 Tile other){
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5168 =
+final int t5260 =
               this.
                 x;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t5167 =
+final Tile t5259 =
               other;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5169 =
-              t5167.
+final int t5261 =
+              t5259.
                 x;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-boolean t5173 =
-              ((int) t5168) ==
-            ((int) t5169);
+boolean t5265 =
+              ((int) t5260) ==
+            ((int) t5261);
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-if (t5173) {
+if (t5265) {
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5171 =
+final int t5263 =
                   this.
                     y;
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t5170 =
+final Tile t5262 =
                   other;
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5172 =
-                  t5170.
+final int t5264 =
+                  t5262.
                     y;
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-t5173 = ((int) t5171) ==
-                ((int) t5172);
+t5265 = ((int) t5263) ==
+                ((int) t5264);
             }
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-boolean t5177 =
-              t5173;
+boolean t5269 =
+              t5265;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-if (t5177) {
+if (t5269) {
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5175 =
+final int t5267 =
                   this.
                     tileType;
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t5174 =
+final Tile t5266 =
                   other;
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final int t5176 =
-                  t5174.
+final int t5268 =
+                  t5266.
                     tileType;
                 
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-t5177 = ((int) t5175) ==
-                ((int) t5176);
+t5269 = ((int) t5267) ==
+                ((int) t5268);
             }
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t5178 =
-              t5177;
+final boolean t5270 =
+              t5269;
             
 //#line 2 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Tile.x10"
-return t5178;
+return t5270;
         }
         
         
