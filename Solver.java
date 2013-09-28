@@ -42,370 +42,353 @@ public long
                                                                                                    final x10.util.ArrayList pawns){
             
 //#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4547 =
-              ((long)(((int)(1))));
-            
-//#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 final x10.core.Rail ps =
-              new x10.core.Rail<Tile>(Tile.$RTT, t4547);
+              new x10.core.Rail<Tile>(Tile.$RTT);
             
 //#line 29 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4548 =
+final long t4605 =
               ((long)(((int)(4))));
             
 //#line 29 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 final x10.core.Rail qs =
-              new x10.core.Rail<Tile>(Tile.$RTT, t4548);
+              new x10.core.Rail<Tile>(Tile.$RTT, t4605);
             
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4549 =
+final long t4606 =
               ((long)(((int)(0))));
             
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4550 =
-              new Tile((java.lang.System[]) null).Tile$$init$S(((int)(0)),
-                                                               ((int)(2)),
-                                                               ((int)(3)));
-            
-//#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-((Tile[])ps.value)[(int)t4549] = t4550;
-            
-//#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4551 =
-              ((long)(((int)(0))));
-            
-//#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4552 =
+final Tile t4607 =
               new Tile((java.lang.System[]) null).Tile$$init$S(((int)(0)),
                                                                ((int)(1)),
                                                                ((int)(2)));
             
-//#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-((Tile[])qs.value)[(int)t4551] = t4552;
+//#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+((Tile[])qs.value)[(int)t4606] = t4607;
             
-//#line 32 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4553 =
+//#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4608 =
               ((long)(((int)(1))));
             
-//#line 32 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4554 =
-              new Tile((java.lang.System[]) null).Tile$$init$S(((int)(0)),
+//#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4609 =
+              new Tile((java.lang.System[]) null).Tile$$init$S(((int)(1)),
                                                                ((int)(3)),
                                                                ((int)(2)));
             
-//#line 32 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-((Tile[])qs.value)[(int)t4553] = t4554;
+//#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+((Tile[])qs.value)[(int)t4608] = t4609;
             
-//#line 33 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4555 =
+//#line 32 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4610 =
               ((long)(((int)(2))));
             
-//#line 33 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4556 =
+//#line 32 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4611 =
               new Tile((java.lang.System[]) null).Tile$$init$S(((int)(2)),
                                                                ((int)(0)),
                                                                ((int)(2)));
             
-//#line 33 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-((Tile[])qs.value)[(int)t4555] = t4556;
+//#line 32 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+((Tile[])qs.value)[(int)t4610] = t4611;
             
-//#line 34 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4557 =
+//#line 33 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4612 =
               ((long)(((int)(3))));
             
-//#line 34 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4558 =
+//#line 33 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4613 =
               new Tile((java.lang.System[]) null).Tile$$init$S(((int)(3)),
                                                                ((int)(2)),
                                                                ((int)(2)));
             
-//#line 34 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-((Tile[])qs.value)[(int)t4557] = t4558;
+//#line 33 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+((Tile[])qs.value)[(int)t4612] = t4613;
             
-//#line 35 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 34 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 final Board board =
               new Board((java.lang.System[]) null).Board$$init$S(((int)(4)),
                                                                  ((x10.core.Rail)(ps)),
                                                                  ((x10.core.Rail)(qs)), (Board.__1$1Tile$2__2$1Tile$2) null);
             
-//#line 36 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 35 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 board.print();
             
-//#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.io.Printer t4559 =
+//#line 36 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final x10.io.Printer t4614 =
               ((x10.io.Printer)(x10.io.Console.get$OUT()));
             
-//#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4560 =
+//#line 36 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4615 =
               board.valid$O();
             
-//#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-t4559.println(x10.core.Boolean.$box(t4560));
+//#line 36 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+t4614.println(x10.core.Boolean.$box(t4615));
             
-//#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4561 =
+//#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4616 =
               ((long)(((int)(42))));
             
-//#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-return t4561;
+//#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+return t4616;
         }
         
         
-//#line 40 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 39 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 public x10.util.ArrayList
                                                                                                    generateBoards__1$1Tile$2(
                                                                                                    final int size,
                                                                                                    final x10.util.ArrayList pawns){
             
-//#line 41 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 40 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 final x10.util.ArrayList t =
               ((x10.util.ArrayList)(new x10.util.ArrayList<x10.util.ArrayList<Solver.Node>>((java.lang.System[]) null, x10.rtt.ParameterizedType.make(x10.util.ArrayList.$RTT, Solver.Node.$RTT)).x10$util$ArrayList$$init$S()));
             
-//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-int x4787 =
+//#line 41 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+int x4861 =
               0;
             
-//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 41 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 for (;
                                                                                                           true;
                                                                                                           ) {
                 
-//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4788 =
-                  x4787;
+//#line 41 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4862 =
+                  x4861;
                 
-//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4789 =
-                  ((t4788) < (((int)(size))));
+//#line 41 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4863 =
+                  ((t4862) < (((int)(size))));
                 
-//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (!(t4789)) {
+//#line 41 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (!(t4863)) {
                     
-//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 41 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 break;
                 }
                 
-//#line 43 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-int y4767 =
+//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+int y4841 =
                   0;
                 
-//#line 43 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 for (;
                                                                                                               true;
                                                                                                               ) {
                     
-//#line 43 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4768 =
-                      y4767;
+//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4842 =
+                      y4841;
                     
-//#line 43 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4769 =
-                      ((t4768) < (((int)(size))));
+//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4843 =
+                      ((t4842) < (((int)(size))));
                     
-//#line 43 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (!(t4769)) {
+//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (!(t4843)) {
                         
-//#line 43 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 break;
                     }
                     
-//#line 44 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.util.ArrayList t4758 =
+//#line 43 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final x10.util.ArrayList t4832 =
                       ((x10.util.ArrayList)(new x10.util.ArrayList<Tile>((java.lang.System[]) null, Tile.$RTT).x10$util$ArrayList$$init$S()));
                     
-//#line 44 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4759 =
-                      x4787;
+//#line 43 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4833 =
+                      x4861;
                     
-//#line 44 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4760 =
-                      y4767;
+//#line 43 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4834 =
+                      y4841;
                     
-//#line 44 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4761 =
+//#line 43 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4835 =
                       this.safe__0$1Tile$2__1$1Tile$2$O(((x10.util.ArrayList)(pawns)),
-                                                        ((x10.util.ArrayList)(t4758)),
-                                                        (int)(t4759),
-                                                        (int)(t4760));
+                                                        ((x10.util.ArrayList)(t4832)),
+                                                        (int)(t4833),
+                                                        (int)(t4834));
                     
+//#line 43 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4835) {
+                        
 //#line 44 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4761) {
+final int t4836 =
+                          x4861;
                         
-//#line 45 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4762 =
-                          x4787;
+//#line 44 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4837 =
+                          y4841;
                         
-//#line 45 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4763 =
-                          y4767;
-                        
-//#line 45 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.util.ArrayList t4764 =
+//#line 44 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final x10.util.ArrayList t4838 =
                           this.genSubLayer__1$1Tile$2((int)(size),
                                                       ((x10.util.ArrayList)(pawns)),
-                                                      (int)(t4762),
-                                                      (int)(t4763));
+                                                      (int)(t4836),
+                                                      (int)(t4837));
                         
-//#line 45 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-((x10.util.ArrayList<x10.util.ArrayList<Solver.Node>>)t).add__0x10$util$ArrayList$$T$O(((x10.util.ArrayList)(t4764)));
+//#line 44 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+((x10.util.ArrayList<x10.util.ArrayList<Solver.Node>>)t).add__0x10$util$ArrayList$$T$O(((x10.util.ArrayList)(t4838)));
                     }
                     
-//#line 43 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4765 =
-                      y4767;
+//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4839 =
+                      y4841;
                     
-//#line 43 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4766 =
-                      ((t4765) + (((int)(1))));
+//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4840 =
+                      ((t4839) + (((int)(1))));
                     
-//#line 43 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-y4767 = t4766;
+//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+y4841 = t4840;
                 }
                 
-//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4770 =
-                  x4787;
+//#line 41 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4844 =
+                  x4861;
                 
-//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4771 =
-                  ((t4770) + (((int)(1))));
+//#line 41 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4845 =
+                  ((t4844) + (((int)(1))));
                 
-//#line 42 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-x4787 = t4771;
+//#line 41 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+x4861 = t4845;
             }
             
-//#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.io.Printer t4579 =
+//#line 47 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final x10.io.Printer t4634 =
               ((x10.io.Printer)(x10.io.Console.get$OUT()));
             
-//#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-t4579.println(((java.lang.Object)("finishes adding")));
+//#line 47 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+t4634.println(((java.lang.Object)("finishes adding")));
             
-//#line 49 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 final x10.util.ArrayList out =
               ((x10.util.ArrayList)(new x10.util.ArrayList<Solver.Node>((java.lang.System[]) null, Solver.Node.$RTT).x10$util$ArrayList$$init$S()));
             
-//#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-int i4790 =
+//#line 49 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+int i4864 =
               0;
             
-//#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 49 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 for (;
                                                                                                           true;
                                                                                                           ) {
                 
-//#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4791 =
-                  i4790;
+//#line 49 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4865 =
+                  i4864;
                 
-//#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4792 =
-                  ((long)(((int)(t4791))));
+//#line 49 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4866 =
+                  ((long)(((int)(t4865))));
                 
-//#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4793 =
+//#line 49 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4867 =
                   ((x10.util.ArrayList<x10.util.ArrayList<Solver.Node>>)t).size$O();
                 
-//#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4794 =
-                  ((t4792) < (((long)(t4793))));
+//#line 49 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4868 =
+                  ((t4866) < (((long)(t4867))));
                 
-//#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (!(t4794)) {
+//#line 49 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (!(t4868)) {
                     
-//#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 49 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 break;
                 }
                 
-//#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4782 =
-                  i4790;
+//#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4856 =
+                  i4864;
+                
+//#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4857 =
+                  ((long)(((int)(t4856))));
+                
+//#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final x10.util.ArrayList tempAL4858 =
+                  ((x10.util.ArrayList<x10.util.ArrayList<Solver.Node>>)t).get$G((long)(t4857));
                 
 //#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4783 =
-                  ((long)(((int)(t4782))));
-                
-//#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.util.ArrayList tempAL4784 =
-                  ((x10.util.ArrayList<x10.util.ArrayList<Solver.Node>>)t).get$G((long)(t4783));
-                
-//#line 52 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-int j4777 =
+int j4851 =
                   0;
                 
-//#line 52 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 for (;
                                                                                                               true;
                                                                                                               ) {
                     
-//#line 52 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4778 =
-                      j4777;
+//#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4852 =
+                      j4851;
                     
-//#line 52 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4779 =
-                      ((long)(((int)(t4778))));
+//#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4853 =
+                      ((long)(((int)(t4852))));
                     
-//#line 52 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4780 =
-                      ((x10.util.ArrayList<Solver.Node>)tempAL4784).size$O();
+//#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4854 =
+                      ((x10.util.ArrayList<Solver.Node>)tempAL4858).size$O();
                     
-//#line 52 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4781 =
-                      ((t4779) < (((long)(t4780))));
+//#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4855 =
+                      ((t4853) < (((long)(t4854))));
                     
-//#line 52 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (!(t4781)) {
+//#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (!(t4855)) {
                         
-//#line 52 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 break;
                     }
                     
-//#line 53 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4772 =
-                      j4777;
-                    
-//#line 53 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4773 =
-                      ((long)(((int)(t4772))));
-                    
-//#line 53 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Solver.Node t4774 =
-                      ((x10.util.ArrayList<Solver.Node>)tempAL4784).get$G((long)(t4773));
-                    
-//#line 53 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-((x10.util.ArrayList<Solver.Node>)out).add__0x10$util$ArrayList$$T$O(((Solver.Node)(t4774)));
+//#line 52 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4846 =
+                      j4851;
                     
 //#line 52 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4775 =
-                      j4777;
+final long t4847 =
+                      ((long)(((int)(t4846))));
                     
 //#line 52 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4776 =
-                      ((t4775) + (((int)(1))));
+final Solver.Node t4848 =
+                      ((x10.util.ArrayList<Solver.Node>)tempAL4858).get$G((long)(t4847));
                     
 //#line 52 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-j4777 = t4776;
+((x10.util.ArrayList<Solver.Node>)out).add__0x10$util$ArrayList$$T$O(((Solver.Node)(t4848)));
+                    
+//#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4849 =
+                      j4851;
+                    
+//#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4850 =
+                      ((t4849) + (((int)(1))));
+                    
+//#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+j4851 = t4850;
                 }
                 
-//#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4785 =
-                  i4790;
+//#line 49 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4859 =
+                  i4864;
                 
-//#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4786 =
-                  ((t4785) + (((int)(1))));
+//#line 49 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4860 =
+                  ((t4859) + (((int)(1))));
                 
-//#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-i4790 = t4786;
+//#line 49 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+i4864 = t4860;
             }
             
-//#line 56 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 55 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 return out;
         }
         
         
-//#line 59 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 58 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 public x10.util.ArrayList
                                                                                                    genSubLayer__1$1Tile$2(
                                                                                                    final int size,
@@ -413,41 +396,41 @@ public x10.util.ArrayList
                                                                                                    final int xInit,
                                                                                                    final int yInit){
             
-//#line 60 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 59 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 final x10.util.ArrayList out =
               ((x10.util.ArrayList)(new x10.util.ArrayList<Solver.Node>((java.lang.System[]) null, Solver.Node.$RTT).x10$util$ArrayList$$init$S()));
             
-//#line 61 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 60 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 final x10.util.ArrayList qRail =
               ((x10.util.ArrayList)(new x10.util.ArrayList<Tile>((java.lang.System[]) null, Tile.$RTT).x10$util$ArrayList$$init$S()));
             
-//#line 62 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4599 =
+//#line 61 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4654 =
               ((long)(((int)(0))));
             
-//#line 62 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4600 =
+//#line 61 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4655 =
               new Tile((java.lang.System[]) null).Tile$$init$S(((int)(xInit)),
                                                                ((int)(yInit)),
                                                                ((int)(2)));
             
-//#line 62 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-((x10.util.ArrayList<Tile>)qRail).$set__1x10$util$ArrayList$$T$G((long)(t4599),
-                                                                                                                                                                      ((Tile)(t4600)));
+//#line 61 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+((x10.util.ArrayList<Tile>)qRail).$set__1x10$util$ArrayList$$T$G((long)(t4654),
+                                                                                                                                                                      ((Tile)(t4655)));
             
-//#line 64 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 63 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 this.recGen__0$1Solver$Node$2__1$1Tile$2__3$1Tile$2(((x10.util.ArrayList)(out)),
                                                                                                                                                          ((x10.util.ArrayList)(pawns)),
                                                                                                                                                          (int)(size),
                                                                                                                                                          ((x10.util.ArrayList)(qRail)),
                                                                                                                                                          (int)(1));
             
-//#line 67 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 66 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 return out;
         }
         
         
-//#line 70 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 69 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 public void
                                                                                                    recGen__0$1Solver$Node$2__1$1Tile$2__3$1Tile$2(
                                                                                                    final x10.util.ArrayList nodes,
@@ -456,195 +439,195 @@ public void
                                                                                                    final x10.util.ArrayList qRail,
                                                                                                    final int occupied){
             
-//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4606 =
+//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4661 =
               ((int) size) ==
             ((int) occupied);
             
-//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4606) {
+//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4661) {
                 
-//#line 73 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4601 =
+//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final x10.core.Rail t4656 =
                   ((x10.core.Rail<Tile>)
                     ((x10.util.ArrayList<Tile>)pawns).toRail());
                 
-//#line 73 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4602 =
+//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final x10.core.Rail t4657 =
                   ((x10.core.Rail<Tile>)
                     ((x10.util.ArrayList<Tile>)qRail).toRail());
                 
-//#line 73 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 final Solver.Node n =
                   ((Solver.Node)(new Solver.Node((java.lang.System[]) null).Solver$Node$$init$S(this,
-                                                                                                t4601,
-                                                                                                t4602,
+                                                                                                t4656,
+                                                                                                t4657,
                                                                                                 ((int)(size)), (Solver.Node.__1$1Tile$2__2$1Tile$2) null)));
                 
-//#line 75 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4603 =
+//#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final x10.core.Rail t4658 =
                   ((x10.core.Rail<Tile>)
                     ((x10.util.ArrayList<Tile>)pawns).toRail());
                 
-//#line 75 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4604 =
+//#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final x10.core.Rail t4659 =
                   ((x10.core.Rail<Tile>)
                     ((x10.util.ArrayList<Tile>)qRail).toRail());
                 
-//#line 75 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Solver.Node t4605 =
+//#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Solver.Node t4660 =
                   ((Solver.Node)(new Solver.Node((java.lang.System[]) null).Solver$Node$$init$S(this,
-                                                                                                t4603,
-                                                                                                t4604,
+                                                                                                t4658,
+                                                                                                t4659,
                                                                                                 ((int)(size)), (Solver.Node.__1$1Tile$2__2$1Tile$2) null)));
                 
-//#line 75 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-((x10.util.ArrayList<Solver.Node>)nodes).add__0x10$util$ArrayList$$T$O(((Solver.Node)(t4605)));
+//#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+((x10.util.ArrayList<Solver.Node>)nodes).add__0x10$util$ArrayList$$T$O(((Solver.Node)(t4660)));
                 
-//#line 76 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 75 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 return;
             }
             
-//#line 78 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 77 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 x10.util.ArrayList qTemp =
               ((x10.util.ArrayList<Tile>)
                 ((x10.util.ArrayList<Tile>)qRail).clone());
             
-//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-int x4812 =
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+int x4886 =
               0;
             
-//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 for (;
                                                                                                           true;
                                                                                                           ) {
                 
-//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4813 =
-                  x4812;
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4887 =
+                  x4886;
                 
-//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4814 =
-                  ((t4813) < (((int)(size))));
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4888 =
+                  ((t4887) < (((int)(size))));
                 
-//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (!(t4814)) {
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (!(t4888)) {
                     
-//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 break;
                 }
                 
-//#line 82 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-int y4807 =
+//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+int y4881 =
                   0;
                 
-//#line 82 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 for (;
                                                                                                               true;
                                                                                                               ) {
                     
-//#line 82 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4808 =
-                      y4807;
+//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4882 =
+                      y4881;
                     
-//#line 82 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4809 =
-                      ((t4808) < (((int)(size))));
+//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4883 =
+                      ((t4882) < (((int)(size))));
                     
-//#line 82 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (!(t4809)) {
+//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (!(t4883)) {
                         
-//#line 82 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 break;
                     }
                     
-//#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4795 =
-                      x4812;
+//#line 82 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4869 =
+                      x4886;
                     
-//#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4796 =
-                      y4807;
+//#line 82 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4870 =
+                      y4881;
                     
-//#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4797 =
+//#line 82 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4871 =
                       this.safe__0$1Tile$2__1$1Tile$2$O(((x10.util.ArrayList)(pawns)),
                                                         ((x10.util.ArrayList)(qRail)),
-                                                        (int)(t4795),
-                                                        (int)(t4796));
+                                                        (int)(t4869),
+                                                        (int)(t4870));
                     
-//#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4797) {
+//#line 82 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4871) {
                         
-//#line 84 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.util.ArrayList t4798 =
+//#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final x10.util.ArrayList t4872 =
                           qTemp;
                         
-//#line 84 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4799 =
+//#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4873 =
                           ((long)(((int)(occupied))));
                         
-//#line 84 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4800 =
-                          x4812;
+//#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4874 =
+                          x4886;
                         
-//#line 84 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4801 =
-                          y4807;
+//#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4875 =
+                          y4881;
                         
-//#line 84 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4802 =
-                          new Tile((java.lang.System[]) null).Tile$$init$S(t4800,
-                                                                           t4801,
+//#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4876 =
+                          new Tile((java.lang.System[]) null).Tile$$init$S(t4874,
+                                                                           t4875,
                                                                            ((int)(2)));
                         
-//#line 84 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-((x10.util.ArrayList<Tile>)t4798).$set__1x10$util$ArrayList$$T$G((long)(t4799),
-                                                                                                                                                                                  ((Tile)(t4802)));
+//#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+((x10.util.ArrayList<Tile>)t4872).$set__1x10$util$ArrayList$$T$G((long)(t4873),
+                                                                                                                                                                                  ((Tile)(t4876)));
                         
-//#line 85 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.util.ArrayList t4803 =
+//#line 84 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final x10.util.ArrayList t4877 =
                           qTemp;
                         
-//#line 85 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4804 =
+//#line 84 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4878 =
                           ((occupied) + (((int)(1))));
                         
-//#line 85 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 84 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 this.recGen__0$1Solver$Node$2__1$1Tile$2__3$1Tile$2(((x10.util.ArrayList)(nodes)),
                                                                                                                                                                      ((x10.util.ArrayList)(pawns)),
                                                                                                                                                                      (int)(size),
-                                                                                                                                                                     ((x10.util.ArrayList)(t4803)),
-                                                                                                                                                                     (int)(t4804));
+                                                                                                                                                                     ((x10.util.ArrayList)(t4877)),
+                                                                                                                                                                     (int)(t4878));
                     }
                     
-//#line 82 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4805 =
-                      y4807;
+//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4879 =
+                      y4881;
                     
-//#line 82 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4806 =
-                      ((t4805) + (((int)(1))));
+//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4880 =
+                      ((t4879) + (((int)(1))));
                     
-//#line 82 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-y4807 = t4806;
+//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+y4881 = t4880;
                 }
                 
-//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4810 =
-                  x4812;
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4884 =
+                  x4886;
                 
-//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4811 =
-                  ((t4810) + (((int)(1))));
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4885 =
+                  ((t4884) + (((int)(1))));
                 
-//#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-x4812 = t4811;
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+x4886 = t4885;
             }
         }
         
         
-//#line 93 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 92 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 public boolean
                                                                                                    safe__0$1Tile$2__1$1Tile$2$O(
                                                                                                    final x10.util.ArrayList pawns,
@@ -652,736 +635,869 @@ public boolean
                                                                                                    final int x,
                                                                                                    final int y){
             
-//#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 93 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 boolean out =
               true;
             
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-int i4931 =
+//#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+int i5005 =
               0;
             
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 for (;
                                                                                                           true;
                                                                                                           ) {
                 
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4932 =
-                  i4931;
+//#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5006 =
+                  i5005;
                 
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4933 =
-                  ((long)(((int)(t4932))));
+//#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t5007 =
+                  ((long)(((int)(t5006))));
                 
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4934 =
+//#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t5008 =
                   ((x10.util.ArrayList<Tile>)pawns).size$O();
                 
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4935 =
-                  ((t4933) < (((long)(t4934))));
+//#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t5009 =
+                  ((t5007) < (((long)(t5008))));
                 
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (!(t4935)) {
+//#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (!(t5009)) {
                     
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 break;
                 }
                 
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4815 =
-                  i4931;
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4889 =
+                  i5005;
                 
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4816 =
-                  ((long)(((int)(t4815))));
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4890 =
+                  ((long)(((int)(t4889))));
                 
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4817 =
-                  ((x10.util.ArrayList<Tile>)pawns).$apply$G((long)(t4816));
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4891 =
+                  ((x10.util.ArrayList<Tile>)pawns).$apply$G((long)(t4890));
                 
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4818 =
-                  t4817.
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4892 =
+                  t4891.
                     x;
                 
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4819 =
-                  ((int) t4818) ==
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+boolean t4893 =
+                  ((int) t4892) ==
                 ((int) x);
                 
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4819) {
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4893) {
                     
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4820 =
-                      i4931;
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4894 =
+                      i5005;
                     
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4821 =
-                      ((long)(((int)(t4820))));
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4895 =
+                      ((long)(((int)(t4894))));
                     
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4822 =
-                      ((x10.util.ArrayList<Tile>)pawns).$apply$G((long)(t4821));
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4896 =
+                      ((x10.util.ArrayList<Tile>)pawns).$apply$G((long)(t4895));
                     
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4823 =
-                      t4822.
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4897 =
+                      t4896.
                         y;
                     
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-t4819 = ((int) t4823) ==
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+t4893 = ((int) t4897) ==
                     ((int) y);
                 }
                 
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4824 =
-                  t4819;
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4898 =
+                  t4893;
                 
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4824) {
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4898) {
                     
-//#line 97 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 out = false;
                 }
                 
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4825 =
-                  i4931;
+//#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4899 =
+                  i5005;
                 
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4826 =
-                  ((t4825) + (((int)(1))));
+//#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4900 =
+                  ((t4899) + (((int)(1))));
                 
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-i4931 = t4826;
+//#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+i5005 = t4900;
             }
             
-//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-int i4936 =
+//#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+int i5010 =
               0;
             
-//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 for (;
-                                                                                                           true;
-                                                                                                           ) {
+                                                                                                          true;
+                                                                                                          ) {
                 
-//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4937 =
-                  i4936;
+//#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5011 =
+                  i5010;
                 
-//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4938 =
-                  ((long)(((int)(t4937))));
+//#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t5012 =
+                  ((long)(((int)(t5011))));
                 
-//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4939 =
+//#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t5013 =
                   ((x10.util.ArrayList<Tile>)qRail).size$O();
                 
-//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4940 =
-                  ((t4938) < (((long)(t4939))));
+//#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t5014 =
+                  ((t5012) < (((long)(t5013))));
                 
-//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (!(t4940)) {
+//#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (!(t5014)) {
                     
-//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 break;
                 }
                 
-//#line 101 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4827 =
-                  i4936;
+//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4901 =
+                  i5010;
                 
-//#line 101 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4828 =
-                  ((long)(((int)(t4827))));
+//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4902 =
+                  ((long)(((int)(t4901))));
                 
-//#line 101 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4829 =
-                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4828));
+//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4903 =
+                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4902));
                 
-//#line 101 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4830 =
-                  t4829.
+//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4904 =
+                  t4903.
                     x;
                 
-//#line 101 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4831 =
-                  ((int) t4830) ==
+//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+boolean t4905 =
+                  ((int) t4904) ==
                 ((int) x);
                 
-//#line 101 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4831) {
+//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4905) {
                     
-//#line 101 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4832 =
-                      i4936;
+//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4906 =
+                      i5010;
                     
-//#line 101 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4833 =
-                      ((long)(((int)(t4832))));
+//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4907 =
+                      ((long)(((int)(t4906))));
                     
-//#line 101 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4834 =
-                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4833));
+//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4908 =
+                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4907));
                     
-//#line 101 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4835 =
-                      t4834.
-                        y;
-                    
-//#line 101 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-t4831 = ((int) t4835) ==
-                    ((int) y);
-                }
-                
-//#line 101 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4836 =
-                  t4831;
-                
-//#line 101 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4836) {
-                    
-//#line 102 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-return false;
-                }
-                
-//#line 105 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4837 =
-                  i4936;
-                
-//#line 105 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4838 =
-                  ((long)(((int)(t4837))));
-                
-//#line 105 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4839 =
-                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4838));
-                
-//#line 105 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4840 =
-                  t4839.
-                    x;
-                
-//#line 105 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4841 =
-                  ((int) t4840) ==
-                ((int) x);
-                
-//#line 105 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4841) {
-                    
-//#line 105 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4842 =
-                      i4936;
-                    
-//#line 105 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4843 =
-                      ((long)(((int)(t4842))));
-                    
-//#line 105 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4844 =
-                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4843));
-                    
-//#line 105 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4845 =
-                      t4844.
-                        y;
-                    
-//#line 105 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4846 =
-                      ((y) - (((int)(1))));
-                    
-//#line 105 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-t4841 = ((int) t4845) ==
-                    ((int) t4846);
-                }
-                
-//#line 105 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4847 =
-                  t4841;
-                
-//#line 105 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4847) {
-                    
-//#line 106 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-return false;
-                }
-                
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4848 =
-                  i4936;
-                
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4849 =
-                  ((long)(((int)(t4848))));
-                
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4850 =
-                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4849));
-                
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4851 =
-                  t4850.
-                    x;
-                
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4852 =
-                  ((int) t4851) ==
-                ((int) x);
-                
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4852) {
-                    
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4853 =
-                      i4936;
-                    
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4854 =
-                      ((long)(((int)(t4853))));
-                    
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4855 =
-                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4854));
-                    
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4856 =
-                      t4855.
-                        y;
-                    
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4857 =
-                      ((y) + (((int)(1))));
-                    
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-t4852 = ((int) t4856) ==
-                    ((int) t4857);
-                }
-                
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4858 =
-                  t4852;
-                
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4858) {
-                    
-//#line 109 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-return false;
-                }
-                
-//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4859 =
-                  i4936;
-                
-//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4860 =
-                  ((long)(((int)(t4859))));
-                
-//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4861 =
-                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4860));
-                
-//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4862 =
-                  t4861.
-                    x;
-                
-//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4863 =
-                  ((x) - (((int)(1))));
-                
-//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4864 =
-                  ((int) t4862) ==
-                ((int) t4863);
-                
-//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4864) {
-                    
-//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4865 =
-                      i4936;
-                    
-//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4866 =
-                      ((long)(((int)(t4865))));
-                    
-//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4867 =
-                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4866));
-                    
-//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4868 =
-                      t4867.
-                        y;
-                    
-//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-t4864 = ((int) t4868) ==
-                    ((int) y);
-                }
-                
-//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4869 =
-                  t4864;
-                
-//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4869) {
-                    
-//#line 112 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-return false;
-                }
-                
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4870 =
-                  i4936;
-                
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4871 =
-                  ((long)(((int)(t4870))));
-                
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4872 =
-                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4871));
-                
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4873 =
-                  t4872.
-                    x;
-                
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4874 =
-                  ((x) + (((int)(1))));
-                
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4875 =
-                  ((int) t4873) ==
-                ((int) t4874);
-                
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4875) {
-                    
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4876 =
-                      i4936;
-                    
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4877 =
-                      ((long)(((int)(t4876))));
-                    
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4878 =
-                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4877));
-                    
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4879 =
-                      t4878.
-                        y;
-                    
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-t4875 = ((int) t4879) ==
-                    ((int) y);
-                }
-                
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4880 =
-                  t4875;
-                
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4880) {
-                    
-//#line 115 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-return false;
-                }
-                
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4881 =
-                  i4936;
-                
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4882 =
-                  ((long)(((int)(t4881))));
-                
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4883 =
-                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4882));
-                
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4884 =
-                  t4883.
-                    x;
-                
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4885 =
-                  ((x) + (((int)(1))));
-                
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4886 =
-                  ((int) t4884) ==
-                ((int) t4885);
-                
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4886) {
-                    
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4887 =
-                      i4936;
-                    
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4888 =
-                      ((long)(((int)(t4887))));
-                    
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4889 =
-                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4888));
-                    
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4890 =
-                      t4889.
-                        y;
-                    
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4891 =
-                      ((y) + (((int)(1))));
-                    
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-t4886 = ((int) t4890) ==
-                    ((int) t4891);
-                }
-                
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4892 =
-                  t4886;
-                
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4892) {
-                    
-//#line 118 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-return false;
-                }
-                
-//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4893 =
-                  i4936;
-                
-//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4894 =
-                  ((long)(((int)(t4893))));
-                
-//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4895 =
-                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4894));
-                
-//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4896 =
-                  t4895.
-                    x;
-                
-//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4897 =
-                  ((x) - (((int)(1))));
-                
-//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4898 =
-                  ((int) t4896) ==
-                ((int) t4897);
-                
-//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4898) {
-                    
-//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4899 =
-                      i4936;
-                    
-//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4900 =
-                      ((long)(((int)(t4899))));
-                    
-//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4901 =
-                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4900));
-                    
-//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4902 =
-                      t4901.
-                        y;
-                    
-//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4903 =
-                      ((y) + (((int)(1))));
-                    
-//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-t4898 = ((int) t4902) ==
-                    ((int) t4903);
-                }
-                
-//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4904 =
-                  t4898;
-                
-//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4904) {
-                    
-//#line 121 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-return false;
-                }
-                
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4905 =
-                  i4936;
-                
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4906 =
-                  ((long)(((int)(t4905))));
-                
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4907 =
-                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4906));
-                
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4908 =
-                  t4907.
-                    x;
-                
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 final int t4909 =
-                  ((x) + (((int)(1))));
+                      t4908.
+                        y;
+                    
+//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+t4905 = ((int) t4909) ==
+                    ((int) y);
+                }
                 
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4910 =
-                  ((int) t4908) ==
-                ((int) t4909);
+//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4910 =
+                  t4905;
                 
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 if (t4910) {
                     
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4911 =
-                      i4936;
-                    
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4912 =
-                      ((long)(((int)(t4911))));
-                    
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4913 =
-                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4912));
-                    
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4914 =
-                      t4913.
-                        y;
-                    
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4915 =
-                      ((y) - (((int)(1))));
-                    
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-t4910 = ((int) t4914) ==
-                    ((int) t4915);
-                }
-                
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4916 =
-                  t4910;
-                
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4916) {
-                    
-//#line 124 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 101 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 return false;
                 }
                 
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4917 =
-                  i4936;
+//#line 104 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4911 =
+                  i5010;
                 
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4918 =
-                  ((long)(((int)(t4917))));
+//#line 104 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4912 =
+                  ((long)(((int)(t4911))));
                 
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4919 =
-                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4918));
+//#line 104 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4913 =
+                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4912));
                 
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4920 =
-                  t4919.
+//#line 104 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4914 =
+                  t4913.
                     x;
                 
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4921 =
-                  ((x) - (((int)(1))));
+//#line 104 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+boolean t4915 =
+                  ((int) t4914) ==
+                ((int) x);
                 
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4922 =
-                  ((int) t4920) ==
-                ((int) t4921);
-                
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4922) {
+//#line 104 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4915) {
                     
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4923 =
-                      i4936;
+//#line 104 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4916 =
+                      i5010;
                     
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4924 =
-                      ((long)(((int)(t4923))));
+//#line 104 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4917 =
+                      ((long)(((int)(t4916))));
                     
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4925 =
-                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4924));
+//#line 104 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4918 =
+                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4917));
                     
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4926 =
-                      t4925.
+//#line 104 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4919 =
+                      t4918.
                         y;
                     
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4927 =
+//#line 104 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4920 =
                       ((y) - (((int)(1))));
                     
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-t4922 = ((int) t4926) ==
-                    ((int) t4927);
+//#line 104 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+t4915 = ((int) t4919) ==
+                    ((int) t4920);
                 }
                 
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4928 =
-                  t4922;
+//#line 104 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4921 =
+                  t4915;
                 
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4928) {
+//#line 104 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4921) {
                     
-//#line 127 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 105 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 return false;
                 }
                 
-//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4929 =
-                  i4936;
+//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4922 =
+                  i5010;
                 
-//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4923 =
+                  ((long)(((int)(t4922))));
+                
+//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4924 =
+                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4923));
+                
+//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4925 =
+                  t4924.
+                    x;
+                
+//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+boolean t4926 =
+                  ((int) t4925) ==
+                ((int) x);
+                
+//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4926) {
+                    
+//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4927 =
+                      i5010;
+                    
+//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4928 =
+                      ((long)(((int)(t4927))));
+                    
+//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4929 =
+                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4928));
+                    
+//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 final int t4930 =
-                  ((t4929) + (((int)(1))));
+                      t4929.
+                        y;
+                    
+//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4931 =
+                      ((y) + (((int)(1))));
+                    
+//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+t4926 = ((int) t4930) ==
+                    ((int) t4931);
+                }
                 
-//#line 100 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-i4936 = t4930;
+//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4932 =
+                  t4926;
+                
+//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4932) {
+                    
+//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+return false;
+                }
+                
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4933 =
+                  i5010;
+                
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4934 =
+                  ((long)(((int)(t4933))));
+                
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4935 =
+                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4934));
+                
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4936 =
+                  t4935.
+                    x;
+                
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4937 =
+                  ((x) - (((int)(1))));
+                
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+boolean t4938 =
+                  ((int) t4936) ==
+                ((int) t4937);
+                
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4938) {
+                    
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4939 =
+                      i5010;
+                    
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4940 =
+                      ((long)(((int)(t4939))));
+                    
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4941 =
+                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4940));
+                    
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4942 =
+                      t4941.
+                        y;
+                    
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+t4938 = ((int) t4942) ==
+                    ((int) y);
+                }
+                
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4943 =
+                  t4938;
+                
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4943) {
+                    
+//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+return false;
+                }
+                
+//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4944 =
+                  i5010;
+                
+//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4945 =
+                  ((long)(((int)(t4944))));
+                
+//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4946 =
+                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4945));
+                
+//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4947 =
+                  t4946.
+                    x;
+                
+//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4948 =
+                  ((x) + (((int)(1))));
+                
+//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+boolean t4949 =
+                  ((int) t4947) ==
+                ((int) t4948);
+                
+//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4949) {
+                    
+//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4950 =
+                      i5010;
+                    
+//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4951 =
+                      ((long)(((int)(t4950))));
+                    
+//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4952 =
+                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4951));
+                    
+//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4953 =
+                      t4952.
+                        y;
+                    
+//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+t4949 = ((int) t4953) ==
+                    ((int) y);
+                }
+                
+//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4954 =
+                  t4949;
+                
+//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4954) {
+                    
+//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+return false;
+                }
+                
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4955 =
+                  i5010;
+                
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4956 =
+                  ((long)(((int)(t4955))));
+                
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4957 =
+                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4956));
+                
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4958 =
+                  t4957.
+                    x;
+                
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4959 =
+                  ((x) + (((int)(1))));
+                
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+boolean t4960 =
+                  ((int) t4958) ==
+                ((int) t4959);
+                
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4960) {
+                    
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4961 =
+                      i5010;
+                    
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4962 =
+                      ((long)(((int)(t4961))));
+                    
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4963 =
+                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4962));
+                    
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4964 =
+                      t4963.
+                        y;
+                    
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4965 =
+                      ((y) + (((int)(1))));
+                    
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+t4960 = ((int) t4964) ==
+                    ((int) t4965);
+                }
+                
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4966 =
+                  t4960;
+                
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4966) {
+                    
+//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+return false;
+                }
+                
+//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4967 =
+                  i5010;
+                
+//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4968 =
+                  ((long)(((int)(t4967))));
+                
+//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4969 =
+                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4968));
+                
+//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4970 =
+                  t4969.
+                    x;
+                
+//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4971 =
+                  ((x) - (((int)(1))));
+                
+//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+boolean t4972 =
+                  ((int) t4970) ==
+                ((int) t4971);
+                
+//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4972) {
+                    
+//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4973 =
+                      i5010;
+                    
+//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4974 =
+                      ((long)(((int)(t4973))));
+                    
+//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4975 =
+                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4974));
+                    
+//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4976 =
+                      t4975.
+                        y;
+                    
+//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4977 =
+                      ((y) + (((int)(1))));
+                    
+//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+t4972 = ((int) t4976) ==
+                    ((int) t4977);
+                }
+                
+//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4978 =
+                  t4972;
+                
+//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4978) {
+                    
+//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+return false;
+                }
+                
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4979 =
+                  i5010;
+                
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4980 =
+                  ((long)(((int)(t4979))));
+                
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4981 =
+                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4980));
+                
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4982 =
+                  t4981.
+                    x;
+                
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4983 =
+                  ((x) + (((int)(1))));
+                
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+boolean t4984 =
+                  ((int) t4982) ==
+                ((int) t4983);
+                
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4984) {
+                    
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4985 =
+                      i5010;
+                    
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4986 =
+                      ((long)(((int)(t4985))));
+                    
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4987 =
+                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4986));
+                    
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4988 =
+                      t4987.
+                        y;
+                    
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4989 =
+                      ((y) - (((int)(1))));
+                    
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+t4984 = ((int) t4988) ==
+                    ((int) t4989);
+                }
+                
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4990 =
+                  t4984;
+                
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4990) {
+                    
+//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+return false;
+                }
+                
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4991 =
+                  i5010;
+                
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4992 =
+                  ((long)(((int)(t4991))));
+                
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4993 =
+                  ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4992));
+                
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4994 =
+                  t4993.
+                    x;
+                
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4995 =
+                  ((x) - (((int)(1))));
+                
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+boolean t4996 =
+                  ((int) t4994) ==
+                ((int) t4995);
+                
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4996) {
+                    
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t4997 =
+                      i5010;
+                    
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4998 =
+                      ((long)(((int)(t4997))));
+                    
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t4999 =
+                      ((x10.util.ArrayList<Tile>)qRail).$apply$G((long)(t4998));
+                    
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5000 =
+                      t4999.
+                        y;
+                    
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5001 =
+                      ((y) - (((int)(1))));
+                    
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+t4996 = ((int) t5000) ==
+                    ((int) t5001);
+                }
+                
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t5002 =
+                  t4996;
+                
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t5002) {
+                    
+//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+return false;
+                }
+                
+//#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5003 =
+                  i5010;
+                
+//#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5004 =
+                  ((t5003) + (((int)(1))));
+                
+//#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+i5010 = t5004;
             }
             
-//#line 131 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4753 =
+//#line 130 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4808 =
               out;
             
-//#line 131 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-return t4753;
+//#line 130 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+return t4808;
         }
         
         
+//#line 133 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+public x10.core.Rail
+                                                                                                    queensForBoard(
+                                                                                                    final int ofSize){
+            
+//#line 134 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4811 =
+              ((int) ofSize) ==
+            ((int) 0);
+            
+//#line 134 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (t4811) {
+                
 //#line 135 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4809 =
+                  ((long)(((int)(0))));
+                
+//#line 135 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final x10.core.Rail t4810 =
+                  ((x10.core.Rail)(new x10.core.Rail<Tile>(Tile.$RTT, t4809)));
+                
+//#line 135 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+return t4810;
+            }
+            
+//#line 137 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t4812 =
+              ((long)(((int)(ofSize))));
+            
+//#line 137 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final x10.core.Rail queens =
+              new x10.core.Rail<Tile>(Tile.$RTT, t4812);
+            
+//#line 138 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+int i5029 =
+              1;
+            {
+                
+//#line 138 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile[] queens$value5032 =
+                  ((Tile[])queens.value);
+                
+//#line 138 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+for (;
+                                                                                                               true;
+                                                                                                               ) {
+                    
+//#line 138 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5030 =
+                      i5029;
+                    
+//#line 138 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t5031 =
+                      ((t5030) <= (((int)(ofSize))));
+                    
+//#line 138 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+if (!(t5031)) {
+                        
+//#line 138 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+break;
+                    }
+                    
+//#line 139 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5015 =
+                      i5029;
+                    
+//#line 139 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5016 =
+                      ((t5015) - (((int)(1))));
+                    
+//#line 139 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+int x5017 =
+                      ((t5016) % (((int)(ofSize))));
+                    
+//#line 140 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5018 =
+                      i5029;
+                    
+//#line 140 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5019 =
+                      ((t5018) - (((int)(1))));
+                    
+//#line 140 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+int y5020 =
+                      ((t5019) / (((int)(ofSize))));
+                    
+//#line 141 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5021 =
+                      i5029;
+                    
+//#line 141 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5022 =
+                      ((t5021) - (((int)(1))));
+                    
+//#line 141 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final long t5023 =
+                      ((long)(((int)(t5022))));
+                    
+//#line 141 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5024 =
+                      x5017;
+                    
+//#line 141 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5025 =
+                      y5020;
+                    
+//#line 141 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Tile t5026 =
+                      new Tile((java.lang.System[]) null).Tile$$init$S(t5024,
+                                                                       t5025,
+                                                                       ((int)(2)));
+                    
+//#line 141 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+queens$value5032[(int)t5023]=t5026;
+                    
+//#line 138 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5027 =
+                      i5029;
+                    
+//#line 138 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final int t5028 =
+                      ((t5027) + (((int)(1))));
+                    
+//#line 138 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+i5029 = t5028;
+                }
+            }
+            
+//#line 143 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+return queens;
+        }
+        
+        
+//#line 147 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 @x10.runtime.impl.java.X10Generated public static class Node extends x10.core.Ref implements x10.serialization.X10JavaSerializable
                                                                                                   {
             private static final long serialVersionUID = 1L;
@@ -1432,11 +1548,11 @@ return t4753;
 //#line 13 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 public Solver out$;
                 
-//#line 136 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 148 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 public Board board;
                 
                 
-//#line 137 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 149 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 // creation method for java code (1-phase java constructor)
                 public Node(final Solver out$,
                             final x10.core.Rail<Tile> pawns,
@@ -1453,73 +1569,73 @@ public Board board;
 //#line 13 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 this.out$ = out$;
                                                                                                                      
-//#line 137 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 149 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 ;
                                                                                                                      
-//#line 137 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 149 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 
                                                                                                                      
-//#line 135 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 147 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 this.__fieldInitializers_Solver_Node();
                                                                                                                      
-//#line 138 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Board t4754 =
+//#line 150 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Board t4828 =
                                                                                                                        ((Board)(new Board((java.lang.System[]) null).Board$$init$S(((int)(size)),
                                                                                                                                                                                    ((x10.core.Rail)(pawns)),
                                                                                                                                                                                    ((x10.core.Rail)(queens)), (Board.__1$1Tile$2__2$1Tile$2) null)));
                                                                                                                      
-//#line 138 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-this.board = ((Board)(t4754));
+//#line 150 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+this.board = ((Board)(t4828));
                                                                                                                  }
                                                                                                                  return this;
                                                                                                                  }
                 
                 
                 
-//#line 141 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 153 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 final public boolean
                                                                                                             check$O(
                                                                                                             ){
                     
-//#line 142 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Board t4755 =
+//#line 154 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Board t4829 =
                       ((Board)(board));
                     
-//#line 142 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4756 =
-                      t4755.valid$O();
+//#line 154 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final boolean t4830 =
+                      t4829.valid$O();
                     
-//#line 142 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-return t4756;
+//#line 154 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+return t4830;
                 }
                 
                 
-//#line 135 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 147 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 final public Solver.Node
                                                                                                             Solver$Node$$this$Solver$Node(
                                                                                                             ){
                     
-//#line 135 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 147 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 return Solver.Node.this;
                 }
                 
                 
-//#line 135 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 147 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 final public Solver
                                                                                                             Solver$Node$$this$Solver(
                                                                                                             ){
                     
-//#line 135 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-final Solver t4757 =
+//#line 147 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+final Solver t4831 =
                       this.
                         out$;
                     
-//#line 135 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
-return t4757;
+//#line 147 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+return t4831;
                 }
                 
                 
-//#line 135 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
+//#line 147 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Solver.x10"
 final public void
                                                                                                             __fieldInitializers_Solver_Node(
                                                                                                             ){

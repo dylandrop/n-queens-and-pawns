@@ -109,11 +109,10 @@ public class Board {
 	public def print(){
 		for (y in 0..(size-1)) {
 			for (x in 0..(size-1)) {
-				Console.OUT.print("|" + board(x, y));
+				Console.OUT.print("-" + board(x, y));
 			}
-			Console.OUT.print("|\n");
+			Console.OUT.println("-");
 		}
-		Console.OUT.print("\n");
 	}
 	
 	
