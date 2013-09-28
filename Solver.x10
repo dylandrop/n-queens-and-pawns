@@ -130,6 +130,19 @@ public class Solver
     	return out;
     }
     
+    public def queensForBoard(ofSize:Int) {
+    	if(ofSize == 0) {
+    		return new Rail[Tile](0);
+    	}
+    	queens:Rail[Tile] = new Rail[Tile](ofSize);
+        for(var i:Int = 1; i <= ofSize; i++) {
+        	var x:Int = (i-1)%ofSize;
+        	var y:Int = (i-1)/ofSize;
+        	queens(i-1) = new Tile(x,y,2);
+        }
+        return queens;
+    }
+    
     
     private class Node {
     	val board:Board;

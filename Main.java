@@ -133,33 +133,33 @@ final public java.lang.String
                                                                                                          ){
                     
 //#line 39 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4210 =
+final int t4216 =
                       this.
                         size;
                     
 //#line 39 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4212 =
-                      (((x10.core.Int.$box(t4210))) + ("-Queens with "));
+final java.lang.String t4218 =
+                      (((x10.core.Int.$box(t4216))) + ("-Queens with "));
                     
 //#line 39 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList t4211 =
+final x10.util.ArrayList t4217 =
                       ((x10.util.ArrayList)(this.
                                               pawns));
                     
 //#line 39 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long t4213 =
-                      ((x10.util.ArrayList<Tile>)t4211).size$O();
+final long t4219 =
+                      ((x10.util.ArrayList<Tile>)t4217).size$O();
                     
 //#line 39 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4214 =
-                      ((t4212) + ((x10.core.Long.$box(t4213))));
+final java.lang.String t4220 =
+                      ((t4218) + ((x10.core.Long.$box(t4219))));
                     
 //#line 39 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4215 =
-                      ((t4214) + (" pawns"));
+final java.lang.String t4221 =
+                      ((t4220) + (" pawns"));
                     
 //#line 39 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-return t4215;
+return t4221;
                 }
                 
                 
@@ -167,8 +167,8 @@ return t4215;
 final public java.lang.String
                                                                                                          typeName(
                                                                                                          ){try {return x10.rtt.Types.typeName(this);}
-                catch (java.lang.Throwable exc$5174) {
-                throw x10.runtime.impl.java.ThrowableUtils.ensureX10Exception(exc$5174);
+                catch (java.lang.Throwable exc$5183) {
+                throw x10.runtime.impl.java.ThrowableUtils.ensureX10Exception(exc$5183);
                 }
                 }
                 
@@ -184,83 +184,83 @@ int result =
                       1;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4216 =
+final int t4222 =
                       result;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4218 =
-                      ((8191) * (((int)(t4216))));
+final int t4224 =
+                      ((8191) * (((int)(t4222))));
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4217 =
+final int t4223 =
                       this.
                         size;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4219 =
-                      x10.rtt.Types.hashCode(t4217);
+final int t4225 =
+                      x10.rtt.Types.hashCode(t4223);
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4220 =
-                      ((t4218) + (((int)(t4219))));
+final int t4226 =
+                      ((t4224) + (((int)(t4225))));
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-result = t4220;
+result = t4226;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4221 =
+final int t4227 =
                       result;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4223 =
-                      ((8191) * (((int)(t4221))));
+final int t4229 =
+                      ((8191) * (((int)(t4227))));
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList t4222 =
+final x10.util.ArrayList t4228 =
                       ((x10.util.ArrayList)(this.
                                               pawns));
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4224 =
-                      x10.rtt.Types.hashCode(((java.lang.Object)(t4222)));
+final int t4230 =
+                      x10.rtt.Types.hashCode(((java.lang.Object)(t4228)));
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4225 =
-                      ((t4223) + (((int)(t4224))));
+final int t4231 =
+                      ((t4229) + (((int)(t4230))));
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-result = t4225;
+result = t4231;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4226 =
+final int t4232 =
                       result;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4228 =
-                      ((8191) * (((int)(t4226))));
+final int t4234 =
+                      ((8191) * (((int)(t4232))));
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4227 =
+final int t4233 =
                       this.
                         solutions;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4229 =
-                      x10.rtt.Types.hashCode(t4227);
+final int t4235 =
+                      x10.rtt.Types.hashCode(t4233);
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4230 =
-                      ((t4228) + (((int)(t4229))));
+final int t4236 =
+                      ((t4234) + (((int)(t4235))));
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-result = t4230;
+result = t4236;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4231 =
+final int t4237 =
                       result;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-return t4231;
+return t4237;
                 }
                 
                 
@@ -270,38 +270,38 @@ final public boolean
                                                                                                          java.lang.Object other){
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.Object t4232 =
+final java.lang.Object t4238 =
                       other;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4233 =
-                      Main.Input.$RTT.isInstance(t4232);
+final boolean t4239 =
+                      Main.Input.$RTT.isInstance(t4238);
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4234 =
-                      !(t4233);
+final boolean t4240 =
+                      !(t4239);
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-if (t4234) {
+if (t4240) {
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
 return false;
                     }
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.Object t4235 =
+final java.lang.Object t4241 =
                       other;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t4236 =
-                      ((Main.Input)x10.rtt.Types.asStruct(Main.Input.$RTT,t4235));
+final Main.Input t4242 =
+                      ((Main.Input)x10.rtt.Types.asStruct(Main.Input.$RTT,t4241));
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4237 =
-                      this.equals$O(((Main.Input)(t4236)));
+final boolean t4243 =
+                      this.equals$O(((Main.Input)(t4242)));
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-return t4237;
+return t4243;
                 }
                 
                 
@@ -311,115 +311,74 @@ final public boolean
                                                                                                          Main.Input other){
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4239 =
+final int t4245 =
                       this.
                         size;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t4238 =
+final Main.Input t4244 =
                       other;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4240 =
-                      t4238.
+final int t4246 =
+                      t4244.
                         size;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-boolean t4244 =
-                      ((int) t4239) ==
-                    ((int) t4240);
+boolean t4250 =
+                      ((int) t4245) ==
+                    ((int) t4246);
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-if (t4244) {
+if (t4250) {
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList t4242 =
+final x10.util.ArrayList t4248 =
                           ((x10.util.ArrayList)(this.
                                                   pawns));
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t4241 =
+final Main.Input t4247 =
                           other;
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList t4243 =
-                          ((x10.util.ArrayList)(t4241.
+final x10.util.ArrayList t4249 =
+                          ((x10.util.ArrayList)(t4247.
                                                   pawns));
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-t4244 = x10.rtt.Equality.equalsequals((t4242),(t4243));
+t4250 = x10.rtt.Equality.equalsequals((t4248),(t4249));
                     }
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-boolean t4248 =
-                      t4244;
+boolean t4254 =
+                      t4250;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-if (t4248) {
+if (t4254) {
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4246 =
+final int t4252 =
                           this.
                             solutions;
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t4245 =
+final Main.Input t4251 =
                           other;
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4247 =
-                          t4245.
+final int t4253 =
+                          t4251.
                             solutions;
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-t4248 = ((int) t4246) ==
-                        ((int) t4247);
+t4254 = ((int) t4252) ==
+                        ((int) t4253);
                     }
-                    
-//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4249 =
-                      t4248;
-                    
-//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-return t4249;
-                }
-                
-                
-//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final public boolean
-                                                                                                         _struct_equals$O(
-                                                                                                         java.lang.Object other){
-                    
-//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.Object t4250 =
-                      other;
-                    
-//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4251 =
-                      Main.Input.$RTT.isInstance(t4250);
-                    
-//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4252 =
-                      !(t4251);
-                    
-//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-if (t4252) {
-                        
-//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-return false;
-                    }
-                    
-//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.Object t4253 =
-                      other;
-                    
-//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t4254 =
-                      ((Main.Input)x10.rtt.Types.asStruct(Main.Input.$RTT,t4253));
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
 final boolean t4255 =
-                      this._struct_equals$O(((Main.Input)(t4254)));
+                      t4254;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
 return t4255;
@@ -429,80 +388,121 @@ return t4255;
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
 final public boolean
                                                                                                          _struct_equals$O(
+                                                                                                         java.lang.Object other){
+                    
+//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
+final java.lang.Object t4256 =
+                      other;
+                    
+//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
+final boolean t4257 =
+                      Main.Input.$RTT.isInstance(t4256);
+                    
+//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
+final boolean t4258 =
+                      !(t4257);
+                    
+//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
+if (t4258) {
+                        
+//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
+return false;
+                    }
+                    
+//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
+final java.lang.Object t4259 =
+                      other;
+                    
+//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
+final Main.Input t4260 =
+                      ((Main.Input)x10.rtt.Types.asStruct(Main.Input.$RTT,t4259));
+                    
+//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
+final boolean t4261 =
+                      this._struct_equals$O(((Main.Input)(t4260)));
+                    
+//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
+return t4261;
+                }
+                
+                
+//#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
+final public boolean
+                                                                                                         _struct_equals$O(
                                                                                                          Main.Input other){
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4257 =
+final int t4263 =
                       this.
                         size;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t4256 =
+final Main.Input t4262 =
                       other;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4258 =
-                      t4256.
+final int t4264 =
+                      t4262.
                         size;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-boolean t4262 =
-                      ((int) t4257) ==
-                    ((int) t4258);
+boolean t4268 =
+                      ((int) t4263) ==
+                    ((int) t4264);
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-if (t4262) {
+if (t4268) {
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList t4260 =
+final x10.util.ArrayList t4266 =
                           ((x10.util.ArrayList)(this.
                                                   pawns));
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t4259 =
+final Main.Input t4265 =
                           other;
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList t4261 =
-                          ((x10.util.ArrayList)(t4259.
+final x10.util.ArrayList t4267 =
+                          ((x10.util.ArrayList)(t4265.
                                                   pawns));
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-t4262 = x10.rtt.Equality.equalsequals((t4260),(t4261));
+t4268 = x10.rtt.Equality.equalsequals((t4266),(t4267));
                     }
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-boolean t4266 =
-                      t4262;
+boolean t4272 =
+                      t4268;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-if (t4266) {
+if (t4272) {
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4264 =
+final int t4270 =
                           this.
                             solutions;
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t4263 =
+final Main.Input t4269 =
                           other;
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4265 =
-                          t4263.
+final int t4271 =
+                          t4269.
                             solutions;
                         
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-t4266 = ((int) t4264) ==
-                        ((int) t4265);
+t4272 = ((int) t4270) ==
+                        ((int) t4271);
                     }
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4267 =
-                      t4266;
+final boolean t4273 =
+                      t4272;
                     
 //#line 24 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-return t4267;
+return t4273;
                 }
                 
                 
@@ -561,72 +561,72 @@ x10.io.File F =
 try {{
                 
 //#line 52 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long t4268 =
+final long t4274 =
                   ((long)(((int)(0))));
                 
 //#line 52 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
 final java.lang.String filename =
-                  ((java.lang.String[])args.value)[(int)t4268];
+                  ((java.lang.String[])args.value)[(int)t4274];
                 
 //#line 53 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.File t4269 =
+final x10.io.File t4275 =
                   ((x10.io.File)(new x10.io.File((java.lang.System[]) null).x10$io$File$$init$S(((java.lang.String)(filename)))));
                 
 //#line 53 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-F = t4269;
+F = t4275;
             }}catch (final x10.io.FileNotFoundException id$3) {
                 
 //#line 56 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.Printer t4272 =
+final x10.io.Printer t4278 =
                   ((x10.io.Printer)(x10.io.Console.get$ERR()));
                 
 //#line 56 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long t4270 =
+final long t4276 =
                   ((long)(((int)(0))));
                 
 //#line 56 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4271 =
-                  ((java.lang.String[])args.value)[(int)t4270];
+final java.lang.String t4277 =
+                  ((java.lang.String[])args.value)[(int)t4276];
                 
 //#line 56 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4273 =
-                  ((t4271) + (" is not a valid file"));
+final java.lang.String t4279 =
+                  ((t4277) + (" is not a valid file"));
                 
 //#line 56 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-t4272.println(((java.lang.Object)(t4273)));
+t4278.println(((java.lang.Object)(t4279)));
                 
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long t4274 =
+final long t4280 =
                   ((long)(((int)(0))));
                 
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4275 =
-                  ((java.lang.String[])args.value)[(int)t4274];
+final java.lang.String t4281 =
+                  ((java.lang.String[])args.value)[(int)t4280];
                 
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4276 =
-                  ((t4275) + (" is not a valid file"));
+final java.lang.String t4282 =
+                  ((t4281) + (" is not a valid file"));
                 
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.IllegalArgumentException t4277 =
-                  ((java.lang.IllegalArgumentException)(new java.lang.IllegalArgumentException(t4276)));
+final java.lang.IllegalArgumentException t4283 =
+                  ((java.lang.IllegalArgumentException)(new java.lang.IllegalArgumentException(t4282)));
                 
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-throw t4277;
+throw t4283;
             }
             
 //#line 59 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.File t4342 =
+final x10.io.File t4348 =
               F;
             
 //#line 59 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.ReaderIterator t4343 =
-              t4342.lines();
+final x10.io.ReaderIterator t4349 =
+              t4348.lines();
             
 //#line 59 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.lang.Iterator line4344 =
+final x10.lang.Iterator line4350 =
               ((x10.lang.Iterator<java.lang.String>)
-                ((x10.io.ReaderIterator<java.lang.String>)t4343).iterator());
+                ((x10.io.ReaderIterator<java.lang.String>)t4349).iterator());
             
 //#line 59 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
 for (;
@@ -634,107 +634,107 @@ for (;
                                                                                                         ) {
                 
 //#line 59 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4345 =
-                  ((x10.lang.Iterator<java.lang.String>)line4344).hasNext$O();
+final boolean t4351 =
+                  ((x10.lang.Iterator<java.lang.String>)line4350).hasNext$O();
                 
 //#line 59 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-if (!(t4345)) {
+if (!(t4351)) {
                     
 //#line 59 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
 break;
                 }
                 
 //#line 59 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-L4346: {
+L4352: {
 //#line 59 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String line4347 =
-                  ((java.lang.String)(((x10.lang.Iterator<java.lang.String>)line4344).next$G()));
+final java.lang.String line4353 =
+                  ((java.lang.String)(((x10.lang.Iterator<java.lang.String>)line4350).next$G()));
 //#line 61 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4348 =
-                  (line4347).length();
+final int t4354 =
+                  (line4353).length();
 //#line 61 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4349 =
-                  ((int) t4348) ==
+final boolean t4355 =
+                  ((int) t4354) ==
                 ((int) 0);
 //#line 61 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-if (t4349) {
+if (t4355) {
                     
 //#line 62 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-break L4346;
+break L4352;
                 }
 //#line 64 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final char t4350 =
-                  (line4347).charAt(((int)(0)));
+final char t4356 =
+                  (line4353).charAt(((int)(0)));
 //#line 64 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4351 =
-                  ((char) t4350) ==
+final boolean t4357 =
+                  ((char) t4356) ==
                 ((char) '/');
 //#line 64 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-if (t4351) {
+if (t4357) {
                     
 //#line 65 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.Printer t4352 =
+final x10.io.Printer t4358 =
                       ((x10.io.Printer)(x10.io.Console.get$OUT()));
                     
 //#line 65 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-t4352.println(((java.lang.Object)(line4347)));
+t4358.println(((java.lang.Object)(line4353)));
                     
 //#line 66 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-break L4346;
+break L4352;
                 }
 //#line 69 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.core.Rail v4353 =
-                  x10.lang.StringHelper.split(";", line4347);
+final x10.core.Rail v4359 =
+                  x10.lang.StringHelper.split(";", line4353);
 //#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long t4354 =
+final long t4360 =
                   ((long)(((int)(1))));
 //#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4355 =
-                  ((java.lang.String[])v4353.value)[(int)t4354];
+final java.lang.String t4361 =
+                  ((java.lang.String[])v4359.value)[(int)t4360];
 //#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4356 =
-                  (t4355).trim();
+final java.lang.String t4362 =
+                  (t4361).trim();
 //#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int size4357 =
-                  java.lang.Integer.parseInt(t4356);
+final int size4363 =
+                  java.lang.Integer.parseInt(t4362);
 //#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long t4358 =
+final long t4364 =
                   ((long)(((int)(2))));
 //#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4359 =
-                  ((java.lang.String[])v4353.value)[(int)t4358];
+final java.lang.String t4365 =
+                  ((java.lang.String[])v4359.value)[(int)t4364];
 //#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4360 =
-                  (t4359).trim();
+final java.lang.String t4366 =
+                  (t4365).trim();
 //#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int solutions4361 =
-                  java.lang.Integer.parseInt(t4360);
+final int solutions4367 =
+                  java.lang.Integer.parseInt(t4366);
 //#line 73 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList pawns4362 =
+final x10.util.ArrayList pawns4368 =
                   ((x10.util.ArrayList)(new x10.util.ArrayList<Tile>((java.lang.System[]) null, Tile.$RTT).x10$util$ArrayList$$init$S()));
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4337 =
+final int t4343 =
                   Main.CONF_PAWN_OFFSET;
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long i4193min4338 =
-                  ((long)(((int)(t4337))));
+final long i4199min4344 =
+                  ((long)(((int)(t4343))));
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long t4339 =
-                  ((x10.core.Rail<java.lang.String>)v4353).
+final long t4345 =
+                  ((x10.core.Rail<java.lang.String>)v4359).
                     size;
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long t4340 =
+final long t4346 =
                   ((long)(((int)(1))));
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long i4193max4341 =
-                  ((t4339) - (((long)(t4340))));
+final long i4199max4347 =
+                  ((t4345) - (((long)(t4346))));
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-long i4334 =
-                  i4193min4338;{
+long i4340 =
+                  i4199min4344;{
                     
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String[] v4353$value4364 =
-                      ((java.lang.String[])v4353.value);
+final java.lang.String[] v4359$value4370 =
+                      ((java.lang.String[])v4359.value);
                     
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
 for (;
@@ -742,92 +742,92 @@ for (;
                                                                                                                 ) {
                         
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long t4335 =
-                          i4334;
+final long t4341 =
+                          i4340;
                         
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4336 =
-                          ((t4335) <= (((long)(i4193max4341))));
+final boolean t4342 =
+                          ((t4341) <= (((long)(i4199max4347))));
                         
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-if (!(t4336)) {
+if (!(t4342)) {
                             
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
 break;
                         }
                         
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long i4331 =
-                          i4334;
+final long i4337 =
+                          i4340;
                         
 //#line 75 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4320 =
-                          ((java.lang.String)v4353$value4364[(int)i4331]);
+final java.lang.String t4326 =
+                          ((java.lang.String)v4359$value4370[(int)i4337]);
                         
 //#line 75 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.core.Rail coords4321 =
-                          x10.lang.StringHelper.split(",", t4320);
+final x10.core.Rail coords4327 =
+                          x10.lang.StringHelper.split(",", t4326);
                         
 //#line 76 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long t4322 =
+final long t4328 =
                           ((long)(((int)(0))));
                         
 //#line 76 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4323 =
-                          ((java.lang.String[])coords4321.value)[(int)t4322];
+final java.lang.String t4329 =
+                          ((java.lang.String[])coords4327.value)[(int)t4328];
                         
 //#line 76 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4324 =
-                          (t4323).trim();
+final java.lang.String t4330 =
+                          (t4329).trim();
                         
 //#line 76 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4325 =
-                          java.lang.Integer.parseInt(t4324);
+final int t4331 =
+                          java.lang.Integer.parseInt(t4330);
                         
 //#line 76 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long t4326 =
+final long t4332 =
                           ((long)(((int)(1))));
                         
 //#line 76 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4327 =
-                          ((java.lang.String[])coords4321.value)[(int)t4326];
+final java.lang.String t4333 =
+                          ((java.lang.String[])coords4327.value)[(int)t4332];
                         
 //#line 76 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4328 =
-                          (t4327).trim();
+final java.lang.String t4334 =
+                          (t4333).trim();
                         
 //#line 76 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4329 =
-                          java.lang.Integer.parseInt(t4328);
+final int t4335 =
+                          java.lang.Integer.parseInt(t4334);
                         
 //#line 76 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final Tile point4330 =
-                          new Tile((java.lang.System[]) null).Tile$$init$S(t4325,
-                                                                           t4329,
+final Tile point4336 =
+                          new Tile((java.lang.System[]) null).Tile$$init$S(t4331,
+                                                                           t4335,
                                                                            ((int)(3)));
                         
 //#line 77 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-((x10.util.ArrayList<Tile>)pawns4362).add__0x10$util$ArrayList$$T$O(((Tile)(point4330)));
+((x10.util.ArrayList<Tile>)pawns4368).add__0x10$util$ArrayList$$T$O(((Tile)(point4336)));
                         
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long t4332 =
-                          i4334;
+final long t4338 =
+                          i4340;
                         
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final long t4333 =
-                          ((t4332) + (((long)(1L))));
+final long t4339 =
+                          ((t4338) + (((long)(1L))));
                         
 //#line 74 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-i4334 = t4333;
+i4340 = t4339;
                     }
                 }
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input input4363 =
-                  new Main.Input((java.lang.System[]) null).Main$Input$$init$S(((int)(size4357)),
-                                                                               ((x10.util.ArrayList<Tile>)(pawns4362)),
-                                                                               ((int)(solutions4361)), (Main.Input.__1$1Tile$2) null);
+final Main.Input input4369 =
+                  new Main.Input((java.lang.System[]) null).Main$Input$$init$S(((int)(size4363)),
+                                                                               ((x10.util.ArrayList<Tile>)(pawns4368)),
+                                                                               ((int)(solutions4367)), (Main.Input.__1$1Tile$2) null);
 //#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-Main.comboTester(((Main.Input)(input4363)));}
+Main.comboTester(((Main.Input)(input4369)));}
             }
         }
         
@@ -842,34 +842,34 @@ Solver solver =
               new Solver((java.lang.System[]) null).Solver$$init$S();
             
 //#line 93 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final Solver t4310 =
+final Solver t4316 =
               solver;
             
 //#line 93 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final int t4311 =
+final int t4317 =
               input.
                 size;
             
 //#line 93 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList t4312 =
+final x10.util.ArrayList t4318 =
               ((x10.util.ArrayList)(input.
                                       pawns));
             
 //#line 93 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
 final long numberOfCombinations =
-              t4310.solve__1$1Tile$2$O((int)(t4311),
-                                       ((x10.util.ArrayList)(t4312)));
+              t4316.solve__1$1Tile$2$O((int)(t4317),
+                                       ((x10.util.ArrayList)(t4318)));
             
 //#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.Printer t4313 =
+final x10.io.Printer t4319 =
               ((x10.io.Printer)(x10.io.Console.get$OUT()));
             
 //#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4314 =
+final java.lang.String t4320 =
               (("The number of generated combinations is ") + ((x10.core.Long.$box(numberOfCombinations))));
             
 //#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-t4313.println(((java.lang.Object)(t4314)));
+t4319.println(((java.lang.Object)(t4320)));
         }
         
         
@@ -881,29 +881,29 @@ public static long
                                                                                                   final long v3){
             
 //#line 154 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4319 =
+final boolean t4325 =
               ((v1) > (((long)(v2))));
             
 //#line 154 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-if (t4319) {
+if (t4325) {
                 
 //#line 156 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4316 =
+final boolean t4322 =
                   ((v3) > (((long)(v1))));
                 
 //#line 156 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-if (t4316) {
+if (t4322) {
                     
 //#line 157 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
 return v1;
                 } else {
                     
 //#line 158 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4315 =
+final boolean t4321 =
                       ((v3) > (((long)(v2))));
                     
 //#line 158 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-if (t4315) {
+if (t4321) {
                         
 //#line 159 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
 return v3;
@@ -916,22 +916,22 @@ return v2;
             } else {
                 
 //#line 165 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4318 =
+final boolean t4324 =
                   ((v3) > (((long)(v2))));
                 
 //#line 165 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-if (t4318) {
+if (t4324) {
                     
 //#line 166 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
 return v2;
                 } else {
                     
 //#line 167 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4317 =
+final boolean t4323 =
                       ((v3) > (((long)(v1))));
                     
 //#line 167 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
-if (t4317) {
+if (t4323) {
                         
 //#line 168 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Main.x10"
 return v3;

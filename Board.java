@@ -117,38 +117,38 @@ final int max =
                                                                                                                      size;
                                                                                                                    
 //#line 18 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3368 =
+final long t3380 =
                                                                                                                      ((long)(((int)(max))));
                                                                                                                    
 //#line 18 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3369 =
+final long t3381 =
                                                                                                                      ((long)(((int)(max))));
                                                                                                                    
 //#line 18 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3370 =
-                                                                                                                     ((x10.array.Array_2)(new x10.array.Array_2<x10.core.Int>((java.lang.System[]) null, x10.rtt.Types.INT).x10$array$Array_2$$init$S(t3368,
-                                                                                                                                                                                                                                                      t3369)));
+final x10.array.Array_2 t3382 =
+                                                                                                                     ((x10.array.Array_2)(new x10.array.Array_2<x10.core.Int>((java.lang.System[]) null, x10.rtt.Types.INT).x10$array$Array_2$$init$S(t3380,
+                                                                                                                                                                                                                                                      t3381)));
                                                                                                                    
 //#line 18 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-this.board = ((x10.array.Array_2)(t3370));
+this.board = ((x10.array.Array_2)(t3382));
                                                                                                                    
 //#line 19 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.core.Rail rail3684 =
+final x10.core.Rail rail3690 =
                                                                                                                      ((x10.core.Rail)(pawns));
                                                                                                                    
 //#line 19 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long size3685 =
-                                                                                                                     ((x10.core.Rail<Tile>)rail3684).
+final long size3691 =
+                                                                                                                     ((x10.core.Rail<Tile>)rail3690).
                                                                                                                        size;
                                                                                                                    
 //#line 19 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-long idx3674 =
+long idx3680 =
                                                                                                                      0L;
                                                                                                                    {
                                                                                                                        
 //#line 19 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final Tile[] rail3684$value3970 =
-                                                                                                                         ((Tile[])rail3684.value);
+final Tile[] rail3690$value3976 =
+                                                                                                                         ((Tile[])rail3690.value);
                                                                                                                        
 //#line 19 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 for (;
@@ -156,61 +156,61 @@ for (;
                                                                                                                                                                                                                     ) {
                                                                                                                            
 //#line 19 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3675 =
-                                                                                                                             idx3674;
+final long t3681 =
+                                                                                                                             idx3680;
                                                                                                                            
 //#line 19 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3676 =
-                                                                                                                             ((t3675) < (((long)(size3685))));
+final boolean t3682 =
+                                                                                                                             ((t3681) < (((long)(size3691))));
                                                                                                                            
 //#line 19 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3676)) {
+if (!(t3682)) {
                                                                                                                                
 //#line 19 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 break;
                                                                                                                            }
                                                                                                                            
 //#line 19 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3670 =
-                                                                                                                             idx3674;
+final long t3676 =
+                                                                                                                             idx3680;
                                                                                                                            
 //#line 19 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final Tile pawn3671 =
-                                                                                                                             ((Tile)(((Tile)rail3684$value3970[(int)t3670])));
+final Tile pawn3677 =
+                                                                                                                             ((Tile)(((Tile)rail3690$value3976[(int)t3676])));
                                                                                                                            
 //#line 20 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-this.place(((Tile)(pawn3671)));
+this.place(((Tile)(pawn3677)));
                                                                                                                            
 //#line 19 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3672 =
-                                                                                                                             idx3674;
+final long t3678 =
+                                                                                                                             idx3680;
                                                                                                                            
 //#line 19 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3673 =
-                                                                                                                             ((t3672) + (((long)(1L))));
+final long t3679 =
+                                                                                                                             ((t3678) + (((long)(1L))));
                                                                                                                            
 //#line 19 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-idx3674 = t3673;
+idx3680 = t3679;
                                                                                                                        }
                                                                                                                    }
                                                                                                                    
 //#line 22 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.core.Rail rail3686 =
+final x10.core.Rail rail3692 =
                                                                                                                      ((x10.core.Rail)(queens));
                                                                                                                    
 //#line 22 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long size3687 =
-                                                                                                                     ((x10.core.Rail<Tile>)rail3686).
+final long size3693 =
+                                                                                                                     ((x10.core.Rail<Tile>)rail3692).
                                                                                                                        size;
                                                                                                                    
 //#line 22 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-long idx3681 =
+long idx3687 =
                                                                                                                      0L;
                                                                                                                    {
                                                                                                                        
 //#line 22 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final Tile[] rail3686$value3971 =
-                                                                                                                         ((Tile[])rail3686.value);
+final Tile[] rail3692$value3977 =
+                                                                                                                         ((Tile[])rail3692.value);
                                                                                                                        
 //#line 22 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 for (;
@@ -218,41 +218,41 @@ for (;
                                                                                                                                                                                                                     ) {
                                                                                                                            
 //#line 22 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3682 =
-                                                                                                                             idx3681;
+final long t3688 =
+                                                                                                                             idx3687;
                                                                                                                            
 //#line 22 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3683 =
-                                                                                                                             ((t3682) < (((long)(size3687))));
+final boolean t3689 =
+                                                                                                                             ((t3688) < (((long)(size3693))));
                                                                                                                            
 //#line 22 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3683)) {
+if (!(t3689)) {
                                                                                                                                
 //#line 22 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 break;
                                                                                                                            }
                                                                                                                            
 //#line 22 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3677 =
-                                                                                                                             idx3681;
+final long t3683 =
+                                                                                                                             idx3687;
                                                                                                                            
 //#line 22 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final Tile queen3678 =
-                                                                                                                             ((Tile)(((Tile)rail3686$value3971[(int)t3677])));
+final Tile queen3684 =
+                                                                                                                             ((Tile)(((Tile)rail3692$value3977[(int)t3683])));
                                                                                                                            
 //#line 23 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-this.place(((Tile)(queen3678)));
+this.place(((Tile)(queen3684)));
                                                                                                                            
 //#line 22 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3679 =
-                                                                                                                             idx3681;
+final long t3685 =
+                                                                                                                             idx3687;
                                                                                                                            
 //#line 22 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3680 =
-                                                                                                                             ((t3679) + (((long)(1L))));
+final long t3686 =
+                                                                                                                             ((t3685) + (((long)(1L))));
                                                                                                                            
 //#line 22 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-idx3681 = t3680;
+idx3687 = t3686;
                                                                                                                        }
                                                                                                                    }
                                                                                                                }
@@ -267,22 +267,22 @@ private boolean
                                                                                                   ){
             
 //#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.core.Rail rail3744 =
+final x10.core.Rail rail3750 =
               ((x10.core.Rail)(queens));
             
 //#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long size3745 =
-              ((x10.core.Rail<Tile>)rail3744).
+final long size3751 =
+              ((x10.core.Rail<Tile>)rail3750).
                 size;
             
 //#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-long idx3741 =
+long idx3747 =
               0L;
             {
                 
 //#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final Tile[] rail3744$value3972 =
-                  ((Tile[])rail3744.value);
+final Tile[] rail3750$value3978 =
+                  ((Tile[])rail3750.value);
                 
 //#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 for (;
@@ -290,325 +290,325 @@ for (;
                                                                                                              ) {
                     
 //#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3742 =
-                      idx3741;
+final long t3748 =
+                      idx3747;
                     
 //#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3743 =
-                      ((t3742) < (((long)(size3745))));
+final boolean t3749 =
+                      ((t3748) < (((long)(size3751))));
                     
 //#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3743)) {
+if (!(t3749)) {
                         
 //#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 break;
                     }
                     
 //#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3737 =
-                      idx3741;
+final long t3743 =
+                      idx3747;
                     
 //#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final Tile queen3738 =
-                      ((Tile)(((Tile)rail3744$value3972[(int)t3737])));
+final Tile queen3744 =
+                      ((Tile)(((Tile)rail3750$value3978[(int)t3743])));
                     
 //#line 29 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-int xPos3714 =
-                      queen3738.
+int xPos3720 =
+                      queen3744.
                         x;
                     
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                         
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3715 =
-                          xPos3714;
+final int t3721 =
+                          xPos3720;
                         
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3716 =
+final int t3722 =
                           size;
                         
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3717 =
-                          ((t3715) < (((int)(t3716))));
+boolean t3723 =
+                          ((t3721) < (((int)(t3722))));
                         
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3717) {
+if (t3723) {
                             
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3718 =
+final x10.array.Array_2 t3724 =
                               ((x10.array.Array_2)(board));
                             
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3719 =
-                              xPos3714;
+final int t3725 =
+                              xPos3720;
                             
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3720 =
-                              ((long)(((int)(t3719))));
+final long t3726 =
+                              ((long)(((int)(t3725))));
                             
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3721 =
-                              queen3738.
+final int t3727 =
+                              queen3744.
                                 y;
                             
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3722 =
-                              ((long)(((int)(t3721))));
+final long t3728 =
+                              ((long)(((int)(t3727))));
                             
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3723 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3718).$apply$G((long)(t3720),
-                                                                                                    (long)(t3722)));
+final int t3729 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3724).$apply$G((long)(t3726),
+                                                                                                    (long)(t3728)));
                             
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3724 =
+final int t3730 =
                               PAWN;
                             
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3717 = ((int) t3723) !=
-                            ((int) t3724);
+t3723 = ((int) t3729) !=
+                            ((int) t3730);
                         }
                         
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3725 =
-                          t3717;
+final boolean t3731 =
+                          t3723;
                         
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3725)) {
+if (!(t3731)) {
                             
 //#line 30 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 break;
                         }
                         
 //#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3688 =
-                          xPos3714;
+final int t3694 =
+                          xPos3720;
                         
 //#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3689 =
-                          queen3738.
+final int t3695 =
+                          queen3744.
                             x;
                         
 //#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3690 =
-                          ((int) t3688) !=
-                        ((int) t3689);
+boolean t3696 =
+                          ((int) t3694) !=
+                        ((int) t3695);
                         
 //#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3690) {
+if (t3696) {
                             
 //#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3691 =
+final x10.array.Array_2 t3697 =
                               ((x10.array.Array_2)(board));
                             
 //#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3692 =
-                              xPos3714;
+final int t3698 =
+                              xPos3720;
                             
 //#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3693 =
-                              ((long)(((int)(t3692))));
+final long t3699 =
+                              ((long)(((int)(t3698))));
                             
 //#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3694 =
-                              queen3738.
+final int t3700 =
+                              queen3744.
                                 y;
                             
 //#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3695 =
-                              ((long)(((int)(t3694))));
+final long t3701 =
+                              ((long)(((int)(t3700))));
                             
 //#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3696 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3691).$apply$G((long)(t3693),
-                                                                                                    (long)(t3695)));
+final int t3702 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3697).$apply$G((long)(t3699),
+                                                                                                    (long)(t3701)));
                             
 //#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3697 =
+final int t3703 =
                               QUEEN;
                             
 //#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3690 = ((int) t3696) ==
-                            ((int) t3697);
+t3696 = ((int) t3702) ==
+                            ((int) t3703);
                         }
                         
 //#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3698 =
-                          t3690;
+final boolean t3704 =
+                          t3696;
                         
 //#line 31 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3698) {
+if (t3704) {
                             
 //#line 32 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                         }
                         
 //#line 34 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3699 =
-                          xPos3714;
+final int t3705 =
+                          xPos3720;
                         
 //#line 34 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3700 =
-                          ((t3699) + (((int)(1))));
+final int t3706 =
+                          ((t3705) + (((int)(1))));
                         
 //#line 34 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-xPos3714 = t3700;
+xPos3720 = t3706;
                     }
                     
 //#line 36 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3726 =
-                      queen3738.
+final int t3732 =
+                      queen3744.
                         x;
                     
 //#line 36 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-xPos3714 = t3726;
+xPos3720 = t3732;
                     
 //#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                         
 //#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3727 =
-                          xPos3714;
+final int t3733 =
+                          xPos3720;
                         
 //#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3728 =
-                          ((t3727) >= (((int)(0))));
+boolean t3734 =
+                          ((t3733) >= (((int)(0))));
                         
 //#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3728) {
+if (t3734) {
                             
 //#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3729 =
+final x10.array.Array_2 t3735 =
                               ((x10.array.Array_2)(board));
                             
 //#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3730 =
-                              xPos3714;
+final int t3736 =
+                              xPos3720;
                             
 //#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3731 =
-                              ((long)(((int)(t3730))));
+final long t3737 =
+                              ((long)(((int)(t3736))));
                             
 //#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3732 =
-                              queen3738.
+final int t3738 =
+                              queen3744.
                                 y;
                             
 //#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3733 =
-                              ((long)(((int)(t3732))));
+final long t3739 =
+                              ((long)(((int)(t3738))));
                             
 //#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3734 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3729).$apply$G((long)(t3731),
-                                                                                                    (long)(t3733)));
+final int t3740 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3735).$apply$G((long)(t3737),
+                                                                                                    (long)(t3739)));
                             
 //#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3735 =
+final int t3741 =
                               PAWN;
                             
 //#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3728 = ((int) t3734) !=
-                            ((int) t3735);
+t3734 = ((int) t3740) !=
+                            ((int) t3741);
                         }
                         
 //#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3736 =
-                          t3728;
+final boolean t3742 =
+                          t3734;
                         
 //#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3736)) {
+if (!(t3742)) {
                             
 //#line 37 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 break;
                         }
                         
 //#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3701 =
-                          xPos3714;
+final int t3707 =
+                          xPos3720;
                         
 //#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3702 =
-                          queen3738.
+final int t3708 =
+                          queen3744.
                             x;
                         
 //#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3703 =
-                          ((int) t3701) !=
-                        ((int) t3702);
+boolean t3709 =
+                          ((int) t3707) !=
+                        ((int) t3708);
                         
 //#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3703) {
+if (t3709) {
                             
 //#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3704 =
+final x10.array.Array_2 t3710 =
                               ((x10.array.Array_2)(board));
                             
 //#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3705 =
-                              xPos3714;
+final int t3711 =
+                              xPos3720;
                             
 //#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3706 =
-                              ((long)(((int)(t3705))));
+final long t3712 =
+                              ((long)(((int)(t3711))));
                             
 //#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3707 =
-                              queen3738.
+final int t3713 =
+                              queen3744.
                                 y;
                             
 //#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3708 =
-                              ((long)(((int)(t3707))));
+final long t3714 =
+                              ((long)(((int)(t3713))));
                             
 //#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3709 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3704).$apply$G((long)(t3706),
-                                                                                                    (long)(t3708)));
+final int t3715 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3710).$apply$G((long)(t3712),
+                                                                                                    (long)(t3714)));
                             
 //#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3710 =
+final int t3716 =
                               QUEEN;
                             
 //#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3703 = ((int) t3709) ==
-                            ((int) t3710);
+t3709 = ((int) t3715) ==
+                            ((int) t3716);
                         }
                         
 //#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3711 =
-                          t3703;
+final boolean t3717 =
+                          t3709;
                         
 //#line 38 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3711) {
+if (t3717) {
                             
 //#line 39 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                         }
                         
 //#line 41 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3712 =
-                          xPos3714;
+final int t3718 =
+                          xPos3720;
                         
 //#line 41 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3713 =
-                          ((t3712) - (((int)(1))));
+final int t3719 =
+                          ((t3718) - (((int)(1))));
                         
 //#line 41 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-xPos3714 = t3713;
+xPos3720 = t3719;
                     }
                     
 //#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3739 =
-                      idx3741;
+final long t3745 =
+                      idx3747;
                     
 //#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3740 =
-                      ((t3739) + (((long)(1L))));
+final long t3746 =
+                      ((t3745) + (((long)(1L))));
                     
 //#line 28 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-idx3741 = t3740;
+idx3747 = t3746;
                 }
             }
             
@@ -629,22 +629,22 @@ private boolean
                                                                                                   ){
             
 //#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.core.Rail rail3802 =
+final x10.core.Rail rail3808 =
               ((x10.core.Rail)(queens));
             
 //#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long size3803 =
-              ((x10.core.Rail<Tile>)rail3802).
+final long size3809 =
+              ((x10.core.Rail<Tile>)rail3808).
                 size;
             
 //#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-long idx3799 =
+long idx3805 =
               0L;
             {
                 
 //#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final Tile[] rail3802$value3973 =
-                  ((Tile[])rail3802.value);
+final Tile[] rail3808$value3979 =
+                  ((Tile[])rail3808.value);
                 
 //#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 for (;
@@ -652,325 +652,325 @@ for (;
                                                                                                              ) {
                     
 //#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3800 =
-                      idx3799;
+final long t3806 =
+                      idx3805;
                     
 //#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3801 =
-                      ((t3800) < (((long)(size3803))));
+final boolean t3807 =
+                      ((t3806) < (((long)(size3809))));
                     
 //#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3801)) {
+if (!(t3807)) {
                         
 //#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 break;
                     }
                     
 //#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3795 =
-                      idx3799;
+final long t3801 =
+                      idx3805;
                     
 //#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final Tile queen3796 =
-                      ((Tile)(((Tile)rail3802$value3973[(int)t3795])));
+final Tile queen3802 =
+                      ((Tile)(((Tile)rail3808$value3979[(int)t3801])));
                     
 //#line 49 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-int yPos3772 =
-                      queen3796.
+int yPos3778 =
+                      queen3802.
                         y;
                     
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                         
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3773 =
-                          yPos3772;
+final int t3779 =
+                          yPos3778;
                         
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3774 =
+final int t3780 =
                           size;
                         
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3775 =
-                          ((t3773) < (((int)(t3774))));
+boolean t3781 =
+                          ((t3779) < (((int)(t3780))));
                         
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3775) {
+if (t3781) {
                             
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3776 =
+final x10.array.Array_2 t3782 =
                               ((x10.array.Array_2)(board));
                             
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3777 =
-                              queen3796.
+final int t3783 =
+                              queen3802.
                                 x;
                             
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3778 =
-                              ((long)(((int)(t3777))));
+final long t3784 =
+                              ((long)(((int)(t3783))));
                             
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3779 =
-                              yPos3772;
+final int t3785 =
+                              yPos3778;
                             
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3780 =
-                              ((long)(((int)(t3779))));
+final long t3786 =
+                              ((long)(((int)(t3785))));
                             
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3781 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3776).$apply$G((long)(t3778),
-                                                                                                    (long)(t3780)));
+final int t3787 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3782).$apply$G((long)(t3784),
+                                                                                                    (long)(t3786)));
                             
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3782 =
+final int t3788 =
                               PAWN;
                             
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3775 = ((int) t3781) !=
-                            ((int) t3782);
+t3781 = ((int) t3787) !=
+                            ((int) t3788);
                         }
                         
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3783 =
-                          t3775;
+final boolean t3789 =
+                          t3781;
                         
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3783)) {
+if (!(t3789)) {
                             
 //#line 50 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 break;
                         }
                         
 //#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3746 =
-                          yPos3772;
+final int t3752 =
+                          yPos3778;
                         
 //#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3747 =
-                          queen3796.
+final int t3753 =
+                          queen3802.
                             y;
                         
 //#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3748 =
-                          ((int) t3746) !=
-                        ((int) t3747);
+boolean t3754 =
+                          ((int) t3752) !=
+                        ((int) t3753);
                         
 //#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3748) {
+if (t3754) {
                             
 //#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3749 =
+final x10.array.Array_2 t3755 =
                               ((x10.array.Array_2)(board));
                             
 //#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3750 =
-                              queen3796.
+final int t3756 =
+                              queen3802.
                                 x;
                             
 //#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3751 =
-                              ((long)(((int)(t3750))));
+final long t3757 =
+                              ((long)(((int)(t3756))));
                             
 //#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3752 =
-                              yPos3772;
+final int t3758 =
+                              yPos3778;
                             
 //#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3753 =
-                              ((long)(((int)(t3752))));
+final long t3759 =
+                              ((long)(((int)(t3758))));
                             
 //#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3754 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3749).$apply$G((long)(t3751),
-                                                                                                    (long)(t3753)));
+final int t3760 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3755).$apply$G((long)(t3757),
+                                                                                                    (long)(t3759)));
                             
 //#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3755 =
+final int t3761 =
                               QUEEN;
                             
 //#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3748 = ((int) t3754) ==
-                            ((int) t3755);
+t3754 = ((int) t3760) ==
+                            ((int) t3761);
                         }
                         
 //#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3756 =
-                          t3748;
+final boolean t3762 =
+                          t3754;
                         
 //#line 51 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3756) {
+if (t3762) {
                             
 //#line 52 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                         }
                         
 //#line 54 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3757 =
-                          yPos3772;
+final int t3763 =
+                          yPos3778;
                         
 //#line 54 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3758 =
-                          ((t3757) + (((int)(1))));
+final int t3764 =
+                          ((t3763) + (((int)(1))));
                         
 //#line 54 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-yPos3772 = t3758;
+yPos3778 = t3764;
                     }
                     
 //#line 56 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3784 =
-                      queen3796.
+final int t3790 =
+                      queen3802.
                         y;
                     
 //#line 56 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-yPos3772 = t3784;
+yPos3778 = t3790;
                     
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                         
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3785 =
-                          yPos3772;
+final int t3791 =
+                          yPos3778;
                         
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3786 =
-                          ((t3785) >= (((int)(0))));
+boolean t3792 =
+                          ((t3791) >= (((int)(0))));
                         
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3786) {
+if (t3792) {
                             
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3787 =
+final x10.array.Array_2 t3793 =
                               ((x10.array.Array_2)(board));
                             
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3788 =
-                              queen3796.
+final int t3794 =
+                              queen3802.
                                 x;
                             
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3789 =
-                              ((long)(((int)(t3788))));
+final long t3795 =
+                              ((long)(((int)(t3794))));
                             
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3790 =
-                              yPos3772;
+final int t3796 =
+                              yPos3778;
                             
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3791 =
-                              ((long)(((int)(t3790))));
+final long t3797 =
+                              ((long)(((int)(t3796))));
                             
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3792 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3787).$apply$G((long)(t3789),
-                                                                                                    (long)(t3791)));
+final int t3798 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3793).$apply$G((long)(t3795),
+                                                                                                    (long)(t3797)));
                             
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3793 =
+final int t3799 =
                               PAWN;
                             
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3786 = ((int) t3792) !=
-                            ((int) t3793);
+t3792 = ((int) t3798) !=
+                            ((int) t3799);
                         }
                         
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3794 =
-                          t3786;
+final boolean t3800 =
+                          t3792;
                         
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3794)) {
+if (!(t3800)) {
                             
 //#line 57 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 break;
                         }
                         
 //#line 58 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3759 =
-                          yPos3772;
+final int t3765 =
+                          yPos3778;
                         
 //#line 58 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3760 =
-                          queen3796.
+final int t3766 =
+                          queen3802.
                             y;
                         
 //#line 58 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3761 =
-                          ((int) t3759) !=
-                        ((int) t3760);
+boolean t3767 =
+                          ((int) t3765) !=
+                        ((int) t3766);
                         
 //#line 58 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3761) {
+if (t3767) {
                             
 //#line 58 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3762 =
+final x10.array.Array_2 t3768 =
                               ((x10.array.Array_2)(board));
                             
 //#line 58 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3763 =
-                              queen3796.
+final int t3769 =
+                              queen3802.
                                 x;
                             
 //#line 58 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3764 =
-                              ((long)(((int)(t3763))));
+final long t3770 =
+                              ((long)(((int)(t3769))));
                             
 //#line 58 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3765 =
-                              yPos3772;
+final int t3771 =
+                              yPos3778;
                             
 //#line 58 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3766 =
-                              ((long)(((int)(t3765))));
+final long t3772 =
+                              ((long)(((int)(t3771))));
                             
 //#line 58 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3767 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3762).$apply$G((long)(t3764),
-                                                                                                    (long)(t3766)));
+final int t3773 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3768).$apply$G((long)(t3770),
+                                                                                                    (long)(t3772)));
                             
 //#line 58 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3768 =
+final int t3774 =
                               QUEEN;
                             
 //#line 58 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3761 = ((int) t3767) ==
-                            ((int) t3768);
+t3767 = ((int) t3773) ==
+                            ((int) t3774);
                         }
                         
 //#line 58 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3769 =
-                          t3761;
+final boolean t3775 =
+                          t3767;
                         
 //#line 58 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3769) {
+if (t3775) {
                             
 //#line 59 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                         }
                         
 //#line 61 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3770 =
-                          yPos3772;
+final int t3776 =
+                          yPos3778;
                         
 //#line 61 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3771 =
-                          ((t3770) - (((int)(1))));
+final int t3777 =
+                          ((t3776) - (((int)(1))));
                         
 //#line 61 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-yPos3772 = t3771;
+yPos3778 = t3777;
                     }
                     
 //#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3797 =
-                      idx3799;
+final long t3803 =
+                      idx3805;
                     
 //#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3798 =
-                      ((t3797) + (((long)(1L))));
+final long t3804 =
+                      ((t3803) + (((long)(1L))));
                     
 //#line 48 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-idx3799 = t3798;
+idx3805 = t3804;
                 }
             }
             
@@ -991,22 +991,22 @@ private boolean
                                                                                                   ){
             
 //#line 68 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.core.Rail rail3943 =
+final x10.core.Rail rail3949 =
               ((x10.core.Rail)(queens));
             
 //#line 68 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long size3944 =
-              ((x10.core.Rail<Tile>)rail3943).
+final long size3950 =
+              ((x10.core.Rail<Tile>)rail3949).
                 size;
             
 //#line 68 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-long idx3940 =
+long idx3946 =
               0L;
             {
                 
 //#line 68 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final Tile[] rail3943$value3974 =
-                  ((Tile[])rail3943.value);
+final Tile[] rail3949$value3980 =
+                  ((Tile[])rail3949.value);
                 
 //#line 68 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 for (;
@@ -1014,832 +1014,832 @@ for (;
                                                                                                              ) {
                     
 //#line 68 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3941 =
-                      idx3940;
+final long t3947 =
+                      idx3946;
                     
 //#line 68 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3942 =
-                      ((t3941) < (((long)(size3944))));
+final boolean t3948 =
+                      ((t3947) < (((long)(size3950))));
                     
 //#line 68 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3942)) {
+if (!(t3948)) {
                         
 //#line 68 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 break;
                     }
                     
 //#line 68 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3936 =
-                      idx3940;
+final long t3942 =
+                      idx3946;
                     
 //#line 68 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final Tile queen3937 =
-                      ((Tile)(((Tile)rail3943$value3974[(int)t3936])));
+final Tile queen3943 =
+                      ((Tile)(((Tile)rail3949$value3980[(int)t3942])));
                     
 //#line 69 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-int yPos3876 =
-                      queen3937.
+int yPos3882 =
+                      queen3943.
                         y;
                     
 //#line 70 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-int xPos3877 =
-                      queen3937.
+int xPos3883 =
+                      queen3943.
                         x;
                     
 //#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                         
 //#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3878 =
-                          xPos3877;
+final int t3884 =
+                          xPos3883;
                         
 //#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3879 =
+final int t3885 =
                           size;
                         
 //#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3880 =
-                          ((t3878) < (((int)(t3879))));
+boolean t3886 =
+                          ((t3884) < (((int)(t3885))));
                         
 //#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3880) {
-                            
-//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3881 =
-                              yPos3876;
-                            
-//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3882 =
-                              size;
-                            
-//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3880 = ((t3881) < (((int)(t3882))));
-                        }
-                        
-//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3883 =
-                          t3880;
-                        
-//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3883) {
-                            
-//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3884 =
-                              ((x10.array.Array_2)(board));
-                            
-//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3885 =
-                              xPos3877;
-                            
-//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3886 =
-                              ((long)(((int)(t3885))));
+if (t3886) {
                             
 //#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 final int t3887 =
-                              yPos3876;
+                              yPos3882;
                             
 //#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3888 =
-                              ((long)(((int)(t3887))));
+final int t3888 =
+                              size;
                             
 //#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3889 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3884).$apply$G((long)(t3886),
-                                                                                                    (long)(t3888)));
-                            
-//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3890 =
-                              PAWN;
-                            
-//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3883 = ((int) t3889) !=
-                            ((int) t3890);
+t3886 = ((t3887) < (((int)(t3888))));
                         }
                         
 //#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3891 =
-                          t3883;
+boolean t3889 =
+                          t3886;
                         
 //#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3891)) {
+if (t3889) {
+                            
+//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final x10.array.Array_2 t3890 =
+                              ((x10.array.Array_2)(board));
+                            
+//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3891 =
+                              xPos3883;
+                            
+//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3892 =
+                              ((long)(((int)(t3891))));
+                            
+//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3893 =
+                              yPos3882;
+                            
+//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3894 =
+                              ((long)(((int)(t3893))));
+                            
+//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3895 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3890).$apply$G((long)(t3892),
+                                                                                                    (long)(t3894)));
+                            
+//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3896 =
+                              PAWN;
+                            
+//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+t3889 = ((int) t3895) !=
+                            ((int) t3896);
+                        }
+                        
+//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t3897 =
+                          t3889;
+                        
+//#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+if (!(t3897)) {
                             
 //#line 71 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 break;
                         }
                         
 //#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3804 =
-                          xPos3877;
+final int t3810 =
+                          xPos3883;
                         
 //#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3805 =
-                          queen3937.
+final int t3811 =
+                          queen3943.
                             x;
                         
 //#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3806 =
-                          ((int) t3804) !=
-                        ((int) t3805);
+boolean t3812 =
+                          ((int) t3810) !=
+                        ((int) t3811);
                         
 //#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3806) {
-                            
-//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3807 =
-                              yPos3876;
-                            
-//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3808 =
-                              queen3937.
-                                y;
-                            
-//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3806 = ((int) t3807) !=
-                            ((int) t3808);
-                        }
-                        
-//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3809 =
-                          t3806;
-                        
-//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3809) {
-                            
-//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3810 =
-                              ((x10.array.Array_2)(board));
-                            
-//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3811 =
-                              xPos3877;
-                            
-//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3812 =
-                              ((long)(((int)(t3811))));
+if (t3812) {
                             
 //#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 final int t3813 =
-                              yPos3876;
+                              yPos3882;
                             
 //#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3814 =
-                              ((long)(((int)(t3813))));
+final int t3814 =
+                              queen3943.
+                                y;
                             
 //#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3815 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3810).$apply$G((long)(t3812),
-                                                                                                    (long)(t3814)));
-                            
-//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3816 =
-                              QUEEN;
-                            
-//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3809 = ((int) t3815) ==
-                            ((int) t3816);
+t3812 = ((int) t3813) !=
+                            ((int) t3814);
                         }
                         
 //#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3817 =
-                          t3809;
+boolean t3815 =
+                          t3812;
                         
 //#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3817) {
+if (t3815) {
+                            
+//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final x10.array.Array_2 t3816 =
+                              ((x10.array.Array_2)(board));
+                            
+//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3817 =
+                              xPos3883;
+                            
+//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3818 =
+                              ((long)(((int)(t3817))));
+                            
+//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3819 =
+                              yPos3882;
+                            
+//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3820 =
+                              ((long)(((int)(t3819))));
+                            
+//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3821 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3816).$apply$G((long)(t3818),
+                                                                                                    (long)(t3820)));
+                            
+//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3822 =
+                              QUEEN;
+                            
+//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+t3815 = ((int) t3821) ==
+                            ((int) t3822);
+                        }
+                        
+//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t3823 =
+                          t3815;
+                        
+//#line 72 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+if (t3823) {
                             
 //#line 73 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                         }
                         
 //#line 75 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3818 =
-                          xPos3877;
+final int t3824 =
+                          xPos3883;
                         
 //#line 75 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3819 =
-                          ((t3818) + (((int)(1))));
+final int t3825 =
+                          ((t3824) + (((int)(1))));
                         
 //#line 75 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-xPos3877 = t3819;
+xPos3883 = t3825;
                         
 //#line 75 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3820 =
-                          yPos3876;
+final int t3826 =
+                          yPos3882;
                         
 //#line 75 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3821 =
-                          ((t3820) + (((int)(1))));
+final int t3827 =
+                          ((t3826) + (((int)(1))));
                         
 //#line 75 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-yPos3876 = t3821;
+yPos3882 = t3827;
                     }
                     
 //#line 77 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3892 =
-                      queen3937.
+final int t3898 =
+                      queen3943.
                         y;
                     
 //#line 77 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-yPos3876 = t3892;
+yPos3882 = t3898;
                     
 //#line 78 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3893 =
-                      queen3937.
+final int t3899 =
+                      queen3943.
                         x;
                     
 //#line 78 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-xPos3877 = t3893;
+xPos3883 = t3899;
                     
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                         
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3894 =
-                          xPos3877;
+final int t3900 =
+                          xPos3883;
                         
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3895 =
-                          ((t3894) >= (((int)(0))));
+boolean t3901 =
+                          ((t3900) >= (((int)(0))));
                         
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3895) {
+if (t3901) {
                             
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3896 =
-                              yPos3876;
+final int t3902 =
+                              yPos3882;
                             
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3895 = ((t3896) >= (((int)(0))));
+t3901 = ((t3902) >= (((int)(0))));
                         }
                         
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3897 =
-                          t3895;
+boolean t3903 =
+                          t3901;
                         
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3897) {
+if (t3903) {
                             
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3898 =
+final x10.array.Array_2 t3904 =
                               ((x10.array.Array_2)(board));
                             
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3899 =
-                              xPos3877;
+final int t3905 =
+                              xPos3883;
                             
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3900 =
-                              ((long)(((int)(t3899))));
+final long t3906 =
+                              ((long)(((int)(t3905))));
                             
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3901 =
-                              yPos3876;
+final int t3907 =
+                              yPos3882;
                             
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3902 =
-                              ((long)(((int)(t3901))));
+final long t3908 =
+                              ((long)(((int)(t3907))));
                             
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3903 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3898).$apply$G((long)(t3900),
-                                                                                                    (long)(t3902)));
+final int t3909 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3904).$apply$G((long)(t3906),
+                                                                                                    (long)(t3908)));
                             
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3904 =
+final int t3910 =
                               PAWN;
                             
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3897 = ((int) t3903) !=
-                            ((int) t3904);
+t3903 = ((int) t3909) !=
+                            ((int) t3910);
                         }
                         
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3905 =
-                          t3897;
+final boolean t3911 =
+                          t3903;
                         
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3905)) {
+if (!(t3911)) {
                             
 //#line 79 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 break;
                         }
                         
 //#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3822 =
-                          xPos3877;
+final int t3828 =
+                          xPos3883;
                         
 //#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3823 =
-                          queen3937.
+final int t3829 =
+                          queen3943.
                             x;
                         
 //#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3824 =
-                          ((int) t3822) !=
-                        ((int) t3823);
+boolean t3830 =
+                          ((int) t3828) !=
+                        ((int) t3829);
                         
 //#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3824) {
-                            
-//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3825 =
-                              yPos3876;
-                            
-//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3826 =
-                              queen3937.
-                                y;
-                            
-//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3824 = ((int) t3825) !=
-                            ((int) t3826);
-                        }
-                        
-//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3827 =
-                          t3824;
-                        
-//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3827) {
-                            
-//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3828 =
-                              ((x10.array.Array_2)(board));
-                            
-//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3829 =
-                              xPos3877;
-                            
-//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3830 =
-                              ((long)(((int)(t3829))));
+if (t3830) {
                             
 //#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 final int t3831 =
-                              yPos3876;
+                              yPos3882;
                             
 //#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3832 =
-                              ((long)(((int)(t3831))));
+final int t3832 =
+                              queen3943.
+                                y;
                             
 //#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3833 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3828).$apply$G((long)(t3830),
-                                                                                                    (long)(t3832)));
-                            
-//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3834 =
-                              QUEEN;
-                            
-//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3827 = ((int) t3833) ==
-                            ((int) t3834);
+t3830 = ((int) t3831) !=
+                            ((int) t3832);
                         }
                         
 //#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3835 =
-                          t3827;
+boolean t3833 =
+                          t3830;
                         
 //#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3835) {
+if (t3833) {
+                            
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final x10.array.Array_2 t3834 =
+                              ((x10.array.Array_2)(board));
+                            
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3835 =
+                              xPos3883;
+                            
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3836 =
+                              ((long)(((int)(t3835))));
+                            
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3837 =
+                              yPos3882;
+                            
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3838 =
+                              ((long)(((int)(t3837))));
+                            
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3839 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3834).$apply$G((long)(t3836),
+                                                                                                    (long)(t3838)));
+                            
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3840 =
+                              QUEEN;
+                            
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+t3833 = ((int) t3839) ==
+                            ((int) t3840);
+                        }
+                        
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t3841 =
+                          t3833;
+                        
+//#line 80 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+if (t3841) {
                             
 //#line 81 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                         }
                         
 //#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3836 =
-                          xPos3877;
+final int t3842 =
+                          xPos3883;
                         
 //#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3837 =
-                          ((t3836) - (((int)(1))));
+final int t3843 =
+                          ((t3842) - (((int)(1))));
                         
 //#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-xPos3877 = t3837;
+xPos3883 = t3843;
                         
 //#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3838 =
-                          yPos3876;
+final int t3844 =
+                          yPos3882;
                         
 //#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3839 =
-                          ((t3838) - (((int)(1))));
+final int t3845 =
+                          ((t3844) - (((int)(1))));
                         
 //#line 83 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-yPos3876 = t3839;
+yPos3882 = t3845;
                     }
                     
 //#line 85 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3906 =
-                      queen3937.
+final int t3912 =
+                      queen3943.
                         y;
                     
 //#line 85 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-yPos3876 = t3906;
+yPos3882 = t3912;
                     
 //#line 86 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3907 =
-                      queen3937.
+final int t3913 =
+                      queen3943.
                         x;
                     
 //#line 86 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-xPos3877 = t3907;
+xPos3883 = t3913;
                     
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                         
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3908 =
-                          xPos3877;
+final int t3914 =
+                          xPos3883;
                         
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3909 =
+final int t3915 =
                           size;
                         
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3910 =
-                          ((t3908) < (((int)(t3909))));
+boolean t3916 =
+                          ((t3914) < (((int)(t3915))));
                         
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3910) {
+if (t3916) {
                             
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3911 =
-                              yPos3876;
+final int t3917 =
+                              yPos3882;
                             
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3910 = ((t3911) >= (((int)(0))));
+t3916 = ((t3917) >= (((int)(0))));
                         }
                         
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3912 =
-                          t3910;
+boolean t3918 =
+                          t3916;
                         
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3912) {
+if (t3918) {
                             
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3913 =
+final x10.array.Array_2 t3919 =
                               ((x10.array.Array_2)(board));
                             
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3914 =
-                              xPos3877;
+final int t3920 =
+                              xPos3883;
                             
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3915 =
-                              ((long)(((int)(t3914))));
+final long t3921 =
+                              ((long)(((int)(t3920))));
                             
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3916 =
-                              yPos3876;
+final int t3922 =
+                              yPos3882;
                             
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3917 =
-                              ((long)(((int)(t3916))));
+final long t3923 =
+                              ((long)(((int)(t3922))));
                             
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3918 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3913).$apply$G((long)(t3915),
-                                                                                                    (long)(t3917)));
+final int t3924 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3919).$apply$G((long)(t3921),
+                                                                                                    (long)(t3923)));
                             
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3919 =
+final int t3925 =
                               PAWN;
                             
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3912 = ((int) t3918) !=
-                            ((int) t3919);
+t3918 = ((int) t3924) !=
+                            ((int) t3925);
                         }
                         
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3920 =
-                          t3912;
+final boolean t3926 =
+                          t3918;
                         
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3920)) {
+if (!(t3926)) {
                             
 //#line 87 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 break;
                         }
                         
 //#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3840 =
-                          xPos3877;
+final int t3846 =
+                          xPos3883;
                         
 //#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3841 =
-                          queen3937.
+final int t3847 =
+                          queen3943.
                             x;
                         
 //#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3842 =
-                          ((int) t3840) !=
-                        ((int) t3841);
+boolean t3848 =
+                          ((int) t3846) !=
+                        ((int) t3847);
                         
 //#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3842) {
-                            
-//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3843 =
-                              yPos3876;
-                            
-//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3844 =
-                              queen3937.
-                                y;
-                            
-//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3842 = ((int) t3843) !=
-                            ((int) t3844);
-                        }
-                        
-//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3845 =
-                          t3842;
-                        
-//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3845) {
-                            
-//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3846 =
-                              ((x10.array.Array_2)(board));
-                            
-//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3847 =
-                              xPos3877;
-                            
-//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3848 =
-                              ((long)(((int)(t3847))));
+if (t3848) {
                             
 //#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 final int t3849 =
-                              yPos3876;
+                              yPos3882;
                             
 //#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3850 =
-                              ((long)(((int)(t3849))));
+final int t3850 =
+                              queen3943.
+                                y;
                             
 //#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3851 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3846).$apply$G((long)(t3848),
-                                                                                                    (long)(t3850)));
-                            
-//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3852 =
-                              QUEEN;
-                            
-//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3845 = ((int) t3851) ==
-                            ((int) t3852);
+t3848 = ((int) t3849) !=
+                            ((int) t3850);
                         }
                         
 //#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3853 =
-                          t3845;
+boolean t3851 =
+                          t3848;
                         
 //#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3853) {
+if (t3851) {
+                            
+//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final x10.array.Array_2 t3852 =
+                              ((x10.array.Array_2)(board));
+                            
+//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3853 =
+                              xPos3883;
+                            
+//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3854 =
+                              ((long)(((int)(t3853))));
+                            
+//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3855 =
+                              yPos3882;
+                            
+//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3856 =
+                              ((long)(((int)(t3855))));
+                            
+//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3857 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3852).$apply$G((long)(t3854),
+                                                                                                    (long)(t3856)));
+                            
+//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3858 =
+                              QUEEN;
+                            
+//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+t3851 = ((int) t3857) ==
+                            ((int) t3858);
+                        }
+                        
+//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t3859 =
+                          t3851;
+                        
+//#line 88 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+if (t3859) {
                             
 //#line 89 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                         }
                         
 //#line 91 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3854 =
-                          xPos3877;
+final int t3860 =
+                          xPos3883;
                         
 //#line 91 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3855 =
-                          ((t3854) + (((int)(1))));
+final int t3861 =
+                          ((t3860) + (((int)(1))));
                         
 //#line 91 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-xPos3877 = t3855;
+xPos3883 = t3861;
                         
 //#line 91 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3856 =
-                          yPos3876;
+final int t3862 =
+                          yPos3882;
                         
 //#line 91 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3857 =
-                          ((t3856) - (((int)(1))));
+final int t3863 =
+                          ((t3862) - (((int)(1))));
                         
 //#line 91 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-yPos3876 = t3857;
+yPos3882 = t3863;
                     }
                     
 //#line 93 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3921 =
-                      queen3937.
+final int t3927 =
+                      queen3943.
                         y;
                     
 //#line 93 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-yPos3876 = t3921;
+yPos3882 = t3927;
                     
 //#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3922 =
-                      queen3937.
+final int t3928 =
+                      queen3943.
                         x;
                     
 //#line 94 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-xPos3877 = t3922;
+xPos3883 = t3928;
                     
 //#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                         
 //#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3923 =
-                          xPos3877;
-                        
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3924 =
-                          ((t3923) >= (((int)(0))));
-                        
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3924) {
-                            
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3925 =
-                              yPos3876;
-                            
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3926 =
-                              size;
-                            
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3924 = ((t3925) < (((int)(t3926))));
-                        }
-                        
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3927 =
-                          t3924;
-                        
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3927) {
-                            
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3928 =
-                              ((x10.array.Array_2)(board));
-                            
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 final int t3929 =
-                              xPos3877;
-                            
+                          xPos3883;
+                        
 //#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3930 =
-                              ((long)(((int)(t3929))));
+boolean t3930 =
+                          ((t3929) >= (((int)(0))));
+                        
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+if (t3930) {
                             
 //#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 final int t3931 =
-                              yPos3876;
+                              yPos3882;
                             
 //#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3932 =
-                              ((long)(((int)(t3931))));
+final int t3932 =
+                              size;
                             
 //#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3933 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3928).$apply$G((long)(t3930),
-                                                                                                    (long)(t3932)));
-                            
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3934 =
-                              PAWN;
-                            
-//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3927 = ((int) t3933) !=
-                            ((int) t3934);
+t3930 = ((t3931) < (((int)(t3932))));
                         }
                         
 //#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3935 =
-                          t3927;
+boolean t3933 =
+                          t3930;
                         
 //#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3935)) {
+if (t3933) {
+                            
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final x10.array.Array_2 t3934 =
+                              ((x10.array.Array_2)(board));
+                            
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3935 =
+                              xPos3883;
+                            
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3936 =
+                              ((long)(((int)(t3935))));
+                            
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3937 =
+                              yPos3882;
+                            
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3938 =
+                              ((long)(((int)(t3937))));
+                            
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3939 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3934).$apply$G((long)(t3936),
+                                                                                                    (long)(t3938)));
+                            
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3940 =
+                              PAWN;
+                            
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+t3933 = ((int) t3939) !=
+                            ((int) t3940);
+                        }
+                        
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t3941 =
+                          t3933;
+                        
+//#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+if (!(t3941)) {
                             
 //#line 95 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 break;
                         }
                         
 //#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3858 =
-                          xPos3877;
+final int t3864 =
+                          xPos3883;
                         
 //#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3859 =
-                          queen3937.
+final int t3865 =
+                          queen3943.
                             x;
                         
 //#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3860 =
-                          ((int) t3858) !=
-                        ((int) t3859);
+boolean t3866 =
+                          ((int) t3864) !=
+                        ((int) t3865);
                         
 //#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3860) {
-                            
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3861 =
-                              yPos3876;
-                            
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3862 =
-                              queen3937.
-                                y;
-                            
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3860 = ((int) t3861) !=
-                            ((int) t3862);
-                        }
-                        
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3863 =
-                          t3860;
-                        
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3863) {
-                            
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3864 =
-                              ((x10.array.Array_2)(board));
-                            
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3865 =
-                              xPos3877;
-                            
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3866 =
-                              ((long)(((int)(t3865))));
+if (t3866) {
                             
 //#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 final int t3867 =
-                              yPos3876;
+                              yPos3882;
                             
 //#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3868 =
-                              ((long)(((int)(t3867))));
+final int t3868 =
+                              queen3943.
+                                y;
                             
 //#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3869 =
-                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3864).$apply$G((long)(t3866),
-                                                                                                    (long)(t3868)));
-                            
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3870 =
-                              QUEEN;
-                            
-//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3863 = ((int) t3869) ==
-                            ((int) t3870);
+t3866 = ((int) t3867) !=
+                            ((int) t3868);
                         }
                         
 //#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3871 =
-                          t3863;
+boolean t3869 =
+                          t3866;
                         
 //#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3871) {
+if (t3869) {
+                            
+//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final x10.array.Array_2 t3870 =
+                              ((x10.array.Array_2)(board));
+                            
+//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3871 =
+                              xPos3883;
+                            
+//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3872 =
+                              ((long)(((int)(t3871))));
+                            
+//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3873 =
+                              yPos3882;
+                            
+//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3874 =
+                              ((long)(((int)(t3873))));
+                            
+//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3875 =
+                              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3870).$apply$G((long)(t3872),
+                                                                                                    (long)(t3874)));
+                            
+//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3876 =
+                              QUEEN;
+                            
+//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+t3869 = ((int) t3875) ==
+                            ((int) t3876);
+                        }
+                        
+//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t3877 =
+                          t3869;
+                        
+//#line 96 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+if (t3877) {
                             
 //#line 97 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                         }
                         
 //#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3872 =
-                          xPos3877;
+final int t3878 =
+                          xPos3883;
                         
 //#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3873 =
-                          ((t3872) - (((int)(1))));
+final int t3879 =
+                          ((t3878) - (((int)(1))));
                         
 //#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-xPos3877 = t3873;
+xPos3883 = t3879;
                         
 //#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3874 =
-                          yPos3876;
+final int t3880 =
+                          yPos3882;
                         
 //#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3875 =
-                          ((t3874) + (((int)(1))));
+final int t3881 =
+                          ((t3880) + (((int)(1))));
                         
 //#line 99 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-yPos3876 = t3875;
+yPos3882 = t3881;
                     }
                     
 //#line 68 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3938 =
-                      idx3940;
+final long t3944 =
+                      idx3946;
                     
 //#line 68 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3939 =
-                      ((t3938) + (((long)(1L))));
+final long t3945 =
+                      ((t3944) + (((long)(1L))));
                     
 //#line 68 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-idx3940 = t3939;
+idx3946 = t3945;
                 }
             }
             
@@ -1860,313 +1860,280 @@ public boolean
                                                                                                    ){
             
 //#line 106 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.io.Printer t3627 =
-              ((x10.io.Printer)(x10.io.Console.get$OUT()));
-            
-//#line 106 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3628 =
+boolean t3639 =
               this.validDiag$O();
             
 //#line 106 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3627.println(x10.core.Boolean.$box(t3628));
-            
-//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.io.Printer t3629 =
-              ((x10.io.Printer)(x10.io.Console.get$OUT()));
-            
-//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3630 =
-              this.validVert$O();
-            
-//#line 107 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3629.println(x10.core.Boolean.$box(t3630));
-            
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.io.Printer t3631 =
-              ((x10.io.Printer)(x10.io.Console.get$OUT()));
-            
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3632 =
-              this.validHoriz$O();
-            
-//#line 108 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3631.println(x10.core.Boolean.$box(t3632));
-            
-//#line 109 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3633 =
-              this.validDiag$O();
-            
-//#line 109 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3633) {
+if (t3639) {
                 
-//#line 109 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3633 = this.validVert$O();
+//#line 106 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+t3639 = this.validVert$O();
             }
             
-//#line 109 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3634 =
-              t3633;
+//#line 106 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+boolean t3640 =
+              t3639;
             
-//#line 109 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3634) {
+//#line 106 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+if (t3640) {
                 
-//#line 109 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3634 = this.validHoriz$O();
+//#line 106 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+t3640 = this.validHoriz$O();
             }
             
-//#line 109 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3635 =
-              t3634;
+//#line 106 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t3641 =
+              t3640;
             
-//#line 109 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-return t3635;
+//#line 106 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+return t3641;
         }
         
         
-//#line 112 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+//#line 109 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 public void
                                                                                                    print(
                                                                                                    ){
             
-//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int i3353min3967 =
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int i3365min3973 =
               0;
             
-//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3968 =
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3974 =
               size;
             
-//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int i3353max3969 =
-              ((t3968) - (((int)(1))));
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int i3365max3975 =
+              ((t3974) - (((int)(1))));
             
-//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-int i3964 =
-              i3353min3967;
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+int i3970 =
+              i3365min3973;
             
-//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 for (;
                                                                                                           true;
                                                                                                           ) {
                 
-//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3965 =
-                  i3964;
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3971 =
+                  i3970;
                 
-//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3966 =
-                  ((t3965) <= (((int)(i3353max3969))));
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t3972 =
+                  ((t3971) <= (((int)(i3365max3975))));
                 
-//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3966)) {
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+if (!(t3972)) {
                     
-//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 break;
                 }
                 
-//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int y3961 =
-                  i3964;
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int y3967 =
+                  i3970;
                 
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int i3337min3957 =
+//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int i3349min3963 =
                   0;
                 
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3958 =
+//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3964 =
                   size;
                 
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int i3337max3959 =
-                  ((t3958) - (((int)(1))));
+//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int i3349max3965 =
+                  ((t3964) - (((int)(1))));
                 
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-int i3954 =
-                  i3337min3957;
+//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+int i3960 =
+                  i3349min3963;
                 
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 for (;
                                                                                                               true;
                                                                                                               ) {
                     
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3955 =
-                      i3954;
+//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3961 =
+                      i3960;
                     
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3956 =
-                      ((t3955) <= (((int)(i3337max3959))));
+//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t3962 =
+                      ((t3961) <= (((int)(i3349max3965))));
                     
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3956)) {
+//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+if (!(t3962)) {
                         
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 break;
                     }
                     
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int x3951 =
-                      i3954;
+//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int x3957 =
+                      i3960;
                     
-//#line 115 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.io.Printer t3945 =
+//#line 112 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final x10.io.Printer t3951 =
                       ((x10.io.Printer)(x10.io.Console.get$OUT()));
                     
-//#line 115 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3946 =
+//#line 112 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final x10.array.Array_2 t3952 =
                       ((x10.array.Array_2)(board));
                     
-//#line 115 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3947 =
-                      ((long)(((int)(x3951))));
+//#line 112 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3953 =
+                      ((long)(((int)(x3957))));
                     
-//#line 115 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3948 =
-                      ((long)(((int)(y3961))));
+//#line 112 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3954 =
+                      ((long)(((int)(y3967))));
                     
-//#line 115 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3949 =
-                      x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3946).$apply$G((long)(t3947),
-                                                                                            (long)(t3948)));
+//#line 112 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3955 =
+                      x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3952).$apply$G((long)(t3953),
+                                                                                            (long)(t3954)));
                     
-//#line 115 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final java.lang.String t3950 =
-                      (("|") + ((x10.core.Int.$box(t3949))));
+//#line 112 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final java.lang.String t3956 =
+                      (("|") + ((x10.core.Int.$box(t3955))));
                     
-//#line 115 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3945.print(((java.lang.String)(t3950)));
+//#line 112 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+t3951.print(((java.lang.String)(t3956)));
                     
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3952 =
-                      i3954;
+//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3958 =
+                      i3960;
                     
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3953 =
-                      ((t3952) + (((int)(1))));
+//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3959 =
+                      ((t3958) + (((int)(1))));
                     
-//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-i3954 = t3953;
+//#line 111 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+i3960 = t3959;
                 }
                 
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.io.Printer t3960 =
+//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final x10.io.Printer t3966 =
                   ((x10.io.Printer)(x10.io.Console.get$OUT()));
                 
-//#line 117 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3960.print(((java.lang.String)("|\n")));
+//#line 114 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+t3966.print(((java.lang.String)("|\n")));
                 
-//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3962 =
-                  i3964;
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3968 =
+                  i3970;
                 
-//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3963 =
-                  ((t3962) + (((int)(1))));
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3969 =
+                  ((t3968) + (((int)(1))));
                 
-//#line 113 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-i3964 = t3963;
+//#line 110 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+i3970 = t3969;
             }
             
-//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.io.Printer t3655 =
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final x10.io.Printer t3661 =
               ((x10.io.Printer)(x10.io.Console.get$OUT()));
             
-//#line 119 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3655.print(((java.lang.String)("\n")));
+//#line 116 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+t3661.print(((java.lang.String)("\n")));
         }
         
         
-//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+//#line 120 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 private void
                                                                                                    place(
                                                                                                    final Tile someTile){
             
-//#line 124 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3658 =
+//#line 121 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final x10.array.Array_2 t3664 =
               ((x10.array.Array_2)(board));
             
-//#line 124 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3656 =
+//#line 121 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3662 =
               someTile.
                 x;
             
-//#line 124 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3659 =
-              ((long)(((int)(t3656))));
+//#line 121 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3665 =
+              ((long)(((int)(t3662))));
             
-//#line 124 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3657 =
+//#line 121 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3663 =
               someTile.
                 y;
             
-//#line 124 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3660 =
-              ((long)(((int)(t3657))));
+//#line 121 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3666 =
+              ((long)(((int)(t3663))));
             
-//#line 124 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+//#line 121 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
 final int occupation =
-              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3658).$apply$G((long)(t3659),
-                                                                                    (long)(t3660)));
+              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t3664).$apply$G((long)(t3665),
+                                                                                    (long)(t3666)));
             
-//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-boolean t3661 =
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+boolean t3667 =
               ((int) occupation) ==
             ((int) 2);
             
-//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t3661)) {
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+if (!(t3667)) {
                 
-//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-t3661 = ((int) occupation) ==
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+t3667 = ((int) occupation) ==
                 ((int) 3);
             }
             
-//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t3663 =
-              t3661;
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t3669 =
+              t3667;
             
-//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-if (t3663) {
+//#line 122 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+if (t3669) {
                 
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final java.lang.RuntimeException t3662 =
+//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final java.lang.RuntimeException t3668 =
                   ((java.lang.RuntimeException)(new java.lang.RuntimeException("Placing on a wrong place!")));
                 
-//#line 126 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-throw t3662;
+//#line 123 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+throw t3668;
             }
             
-//#line 128 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t3666 =
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final x10.array.Array_2 t3672 =
               ((x10.array.Array_2)(board));
             
-//#line 128 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3664 =
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3670 =
               someTile.
                 x;
             
-//#line 128 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3667 =
-              ((long)(((int)(t3664))));
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3673 =
+              ((long)(((int)(t3670))));
             
-//#line 128 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3665 =
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3671 =
               someTile.
                 y;
             
-//#line 128 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final long t3668 =
-              ((long)(((int)(t3665))));
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final long t3674 =
+              ((long)(((int)(t3671))));
             
-//#line 128 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-final int t3669 =
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+final int t3675 =
               someTile.
                 tileType;
             
-//#line 128 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
-((x10.array.Array_2<x10.core.Int>)t3666).$set__2x10$array$Array_2$$T$G((long)(t3667),
-                                                                                                                                                                            (long)(t3668),
-                                                                                                                                                                            x10.core.Int.$box(t3669));
+//#line 125 "/Users/dylandrop/Downloads/x10dt/workspace/NQueensWithPawns/src/Board.x10"
+((x10.array.Array_2<x10.core.Int>)t3672).$set__2x10$array$Array_2$$T$G((long)(t3673),
+                                                                                                                                                                            (long)(t3674),
+                                                                                                                                                                            x10.core.Int.$box(t3675));
         }
         
         public static void
