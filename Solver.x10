@@ -127,9 +127,9 @@ public class Solver
     		this.board = new Board(size, pawns, queens);
     	}
     	
-    	public check() {
-    		return board.valid();
-    	}
+    	// public check() {
+    	// 	return board.valid();
+    	// }
     	
     }
 }
