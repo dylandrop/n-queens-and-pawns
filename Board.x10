@@ -24,83 +24,86 @@ public class Board {
 		}
 	}
 	
-	private def validHoriz(queen:Tile) {
-		var xPos:Int = queen.x;
-		while(xPos < board.size && board(xPos, queen.y) != PAWN) {
-			if(board(xPos, queen.y) == QUEEN) {
-				return false;
+	private def validHoriz() {
+		for(queen in queens) {
+			var xPos:Int = queen.x;
+			while(xPos < board.size && board(xPos, queen.y) != PAWN) {
+				if(board(xPos, queen.y) == QUEEN) {
+					return false;
+				}
+				xPos++;
 			}
-			xPos++;
-		}
-		xPos = queen.x;
-		while(xPos >= 0 && board(xPos, queen.y) != PAWN) {
-			if(board(xPos, queen.y) == QUEEN) {
-				return false;
+			xPos = queen.x;
+			while(xPos >= 0 && board(xPos, queen.y) != PAWN) {
+				if(board(xPos, queen.y) == QUEEN) {
+					return false;
+				}
+				xPos--;
 			}
-			xPos--;
 		}
 		return true;
 	}
 	
-	private def validVert(queen:Tile) {
-		var yPos:Int = queen.y;
-		while(yPos < board.size && board(queen.x, yPos) != PAWN) {
-			if(board(yPos, queen.y) == QUEEN) {
-				return false;
+	private def validVert() {
+		for(queen in queens) {
+			var yPos:Int = queen.y;
+			while(yPos < board.size && board(queen.x, yPos) != PAWN) {
+				if(board(yPos, queen.y) == QUEEN) {
+					return false;
+				}
+				yPos++;
 			}
-			yPos++;
-		}
-		yPos = queen.x;
-		while(yPos >= 0 && board(queen.x, yPos) != PAWN) {
-			if(board(queen.x, yPos) == QUEEN) {
-				return false;
+			yPos = queen.x;
+			while(yPos >= 0 && board(queen.x, yPos) != PAWN) {
+				if(board(queen.x, yPos) == QUEEN) {
+					return false;
+				}
+				yPos--;
 			}
-			yPos--;
 		}
-		
 		return true;
 	}
 	
-	private def validDiag(queen:Tile) {
-		
-		var yPos:Int = queen.y;
-		var xPos:Int = queen.x;
-		while(xPos<size && yPos<size && board(xPos,yPos) != PAWN) {
-			if(board(xPos,yPos) == QUEEN) {
-				return false;
+	private def validDiag() {
+		for(queen in queens) {
+			var yPos:Int = queen.y;
+			var xPos:Int = queen.x;
+			while(xPos<size && yPos<size && board(xPos,yPos) != PAWN) {
+				if(board(xPos,yPos) == QUEEN) {
+					return false;
+				}
+				xPos++; yPos++;
 			}
-			xPos++; yPos++;
-		}
-		yPos = queen.y;
-		xPos = queen.x;
-		while(xPos>=0 && yPos>=0 && board(xPos,yPos) != PAWN) {
-			if(board(xPos,yPos) == QUEEN) {
-				return false;
+			yPos = queen.y;
+			xPos = queen.x;
+			while(xPos>=0 && yPos>=0 && board(xPos,yPos) != PAWN) {
+				if(board(xPos,yPos) == QUEEN) {
+					return false;
+				}
+				xPos--; yPos--;
 			}
-			xPos--; yPos--;
-		}
-		yPos = queen.y;
-		xPos = queen.x;
-		while(xPos<size && yPos>=0 && board(xPos,yPos) != PAWN) {
-			if(board(xPos,yPos) == QUEEN) {
-				return false;
+			yPos = queen.y;
+			xPos = queen.x;
+			while(xPos<size && yPos>=0 && board(xPos,yPos) != PAWN) {
+				if(board(xPos,yPos) == QUEEN) {
+					return false;
+				}
+				xPos++; yPos--;
 			}
-			xPos++; yPos--;
-		}
-		yPos = queen.y;
-		xPos = queen.x;
-		while(xPos>=0 && yPos<size && board(xPos,yPos) != PAWN) {
-			if(board(xPos,yPos) == QUEEN) {
-				return false;
+			yPos = queen.y;
+			xPos = queen.x;
+			while(xPos>=0 && yPos<size && board(xPos,yPos) != PAWN) {
+				if(board(xPos,yPos) == QUEEN) {
+					return false;
+				}
+				xPos--; yPos++;
 			}
-			xPos--; yPos++;
 		}
-		
 		return true;
 	}
 	
-	public def valid(queen:Tile) {
-		return validDiag(queen) && validVert(queen) && validHoriz(queen);
+	public def valid() {
+		return validDiag() && validVert() && validHoriz();
 	}
 	
 	
