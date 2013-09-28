@@ -22,9 +22,19 @@ public class Solver
     public def solve(size: int, pawns: ArrayList[Tile]) : long
     {
         // Your solution goes here
-        var results: ArrayList[Node] = generateBoards(size, pawns);
+        //var results: ArrayList[Node] = generateBoards(size, pawns);
         //Console.OUT.println("testcase done");
-        return results.size();
+    	
+    	ps:Rail[Tile] = new Rail[Tile]();    
+    	qs:Rail[Tile] = new Rail[Tile](4);
+    qs(0) = new Tile(0,1,2);
+    qs(1) = new Tile(1,3,2);
+    qs(2) = new Tile(2,0,2);
+    qs(3) = new Tile(3,2,2);
+    	board:Board = new Board(4,ps,qs);
+    	board.print();
+    	Console.OUT.println(board.valid());
+        return 42;
     }
     public def generateBoards(size: int, pawns: ArrayList[Tile]): ArrayList[Node]{
     	val t = new ArrayList[ArrayList[Node]]();

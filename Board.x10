@@ -27,15 +27,15 @@ public class Board {
 	private def validHoriz() {
 		for(queen in queens) {
 			var xPos:Int = queen.x;
-			while(xPos < board.size && board(xPos, queen.y) != PAWN) {
-				if(board(xPos, queen.y) == QUEEN) {
+			while(xPos < size && board(xPos, queen.y) != PAWN) {
+				if((xPos != queen.x) && board(xPos, queen.y) == QUEEN) {
 					return false;
 				}
 				xPos++;
 			}
 			xPos = queen.x;
 			while(xPos >= 0 && board(xPos, queen.y) != PAWN) {
-				if(board(xPos, queen.y) == QUEEN) {
+				if((xPos != queen.x) && board(xPos, queen.y) == QUEEN) {
 					return false;
 				}
 				xPos--;
@@ -47,15 +47,15 @@ public class Board {
 	private def validVert() {
 		for(queen in queens) {
 			var yPos:Int = queen.y;
-			while(yPos < board.size && board(queen.x, yPos) != PAWN) {
-				if(board(yPos, queen.y) == QUEEN) {
+			while(yPos < size && board(queen.x, yPos) != PAWN) {
+				if((yPos != queen.y) && board(queen.x, yPos) == QUEEN) {
 					return false;
 				}
 				yPos++;
 			}
-			yPos = queen.x;
+			yPos = queen.y;
 			while(yPos >= 0 && board(queen.x, yPos) != PAWN) {
-				if(board(queen.x, yPos) == QUEEN) {
+				if((yPos != queen.y) && board(queen.x, yPos) == QUEEN) {
 					return false;
 				}
 				yPos--;
@@ -69,7 +69,7 @@ public class Board {
 			var yPos:Int = queen.y;
 			var xPos:Int = queen.x;
 			while(xPos<size && yPos<size && board(xPos,yPos) != PAWN) {
-				if(board(xPos,yPos) == QUEEN) {
+				if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
 					return false;
 				}
 				xPos++; yPos++;
@@ -77,7 +77,7 @@ public class Board {
 			yPos = queen.y;
 			xPos = queen.x;
 			while(xPos>=0 && yPos>=0 && board(xPos,yPos) != PAWN) {
-				if(board(xPos,yPos) == QUEEN) {
+				if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
 					return false;
 				}
 				xPos--; yPos--;
@@ -85,7 +85,7 @@ public class Board {
 			yPos = queen.y;
 			xPos = queen.x;
 			while(xPos<size && yPos>=0 && board(xPos,yPos) != PAWN) {
-				if(board(xPos,yPos) == QUEEN) {
+				if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
 					return false;
 				}
 				xPos++; yPos--;
@@ -93,7 +93,7 @@ public class Board {
 			yPos = queen.y;
 			xPos = queen.x;
 			while(xPos>=0 && yPos<size && board(xPos,yPos) != PAWN) {
-				if(board(xPos,yPos) == QUEEN) {
+				if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
 					return false;
 				}
 				xPos--; yPos++;
@@ -104,6 +104,16 @@ public class Board {
 	
 	public def valid() {
 		return validDiag() && validVert() && validHoriz();
+	}
+	
+	public def print(){
+		for (y in 0..(size-1)) {
+			for (x in 0..(size-1)) {
+				Console.OUT.print("|" + board(x, y));
+			}
+			Console.OUT.print("|\n");
+		}
+		Console.OUT.print("\n");
 	}
 	
 	
