@@ -10,7 +10,7 @@ public class Board {
 	val size:Int;
 	val pawns:Rail[Tile];
 	val queens:Rail[Tile];
-	val OPEN = 1; val QUEEN = 2; val PAWN = 3;
+	val OPEN = 1n; val QUEEN = 2n; val PAWN = 3n;
 	
 	public def this(size:Int, pawns:Rail[Tile],queens:Rail[Tile]) {
 		this.size = size; this.pawns = pawns; this.queens = queens;
@@ -34,7 +34,7 @@ public class Board {
 				xPos++;
 			}
 			xPos = queen.x;
-			while(xPos >= 0 && board(xPos, queen.y) != PAWN) {
+			while(xPos >= 0n && board(xPos, queen.y) != PAWN) {
 				if((xPos != queen.x) && board(xPos, queen.y) == QUEEN) {
 					return false;
 				}
@@ -54,7 +54,7 @@ public class Board {
 				yPos++;
 			}
 			yPos = queen.y;
-			while(yPos >= 0 && board(queen.x, yPos) != PAWN) {
+			while(yPos >= 0n && board(queen.x, yPos) != PAWN) {
 				if((yPos != queen.y) && board(queen.x, yPos) == QUEEN) {
 					return false;
 				}
@@ -76,7 +76,7 @@ public class Board {
 			}
 			yPos = queen.y;
 			xPos = queen.x;
-			while(xPos>=0 && yPos>=0 && board(xPos,yPos) != PAWN) {
+			while(xPos>=0n && yPos>=0n && board(xPos,yPos) != PAWN) {
 				if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
 					return false;
 				}
@@ -84,7 +84,7 @@ public class Board {
 			}
 			yPos = queen.y;
 			xPos = queen.x;
-			while(xPos<size && yPos>=0 && board(xPos,yPos) != PAWN) {
+			while(xPos<size && yPos>=0n && board(xPos,yPos) != PAWN) {
 				if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
 					return false;
 				}
@@ -92,7 +92,7 @@ public class Board {
 			}
 			yPos = queen.y;
 			xPos = queen.x;
-			while(xPos>=0 && yPos<size && board(xPos,yPos) != PAWN) {
+			while(xPos>=0n && yPos<size && board(xPos,yPos) != PAWN) {
 				if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
 					return false;
 				}
@@ -107,8 +107,8 @@ public class Board {
 	}
 	
 	public def print(){
-		for (y in 0..(size-1)) {
-			for (x in 0..(size-1)) {
+		for (y in 0n..(size-1n)) {
+			for (x in 0n..(size-1n)) {
 				Console.OUT.print("-" + board(x, y));
 			}
 			Console.OUT.println("-");
@@ -118,7 +118,7 @@ public class Board {
 	
 	private def place(someTile:Tile) {
 		val occupation = board(someTile.x, someTile.y);
-		if (occupation == 2 || occupation == 3) {
+		if (occupation == 2n || occupation == 3n) {
 			throw new Exception("Placing on a wrong place!");
 		}
 		board(someTile.x, someTile.y) = someTile.tileType;
