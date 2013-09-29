@@ -117,6 +117,19 @@ public class Board {
 	}
 	
 	public def valid(x:Int, y:Int) {
+		if(pawns.size == 0) {
+			try {
+				for(queen in queens) {
+					if(queen.x == x || queen.y == y || queen.y - y == queen.x - x) {
+						return false;
+					}
+				}
+				return true;
+			}
+			catch(NullPointerException) {
+				return true;
+			}
+		}
 		return validHoriz(x,y) && validDiag(x,y) && validVert(x,y);
 	}
 	
