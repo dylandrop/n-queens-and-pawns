@@ -20,6 +20,9 @@ public class Board {
 			place(pawn);
 		}
 		for (queen in queens) {
+			if(queen.equals(null)) {
+				break;
+			}
 			place(queen);
 		}
 	}
