@@ -77,14 +77,14 @@ public class Main
                 pawns.add(point);
             }
             val input = Input(size, pawns, solutions);  //construct the input object
-            //if ( Int.parse( v(0) ) == 0 ){
-            //    Console.OUT.print("Test case: "+input.toString()+".....");
-           //     run_one_test(input);
-            comboTester(input);
-            //}else{
-              //  Console.OUT.println("Benchmark case: "+input.toString());
-               // val time = take_median(input);   //take median prints out the results
-            //}
+            if ( Int.parse( v(0n) ) == 0n ){
+                Console.OUT.print("Test case: "+input.toString()+".....");
+                run_one_test(input);
+            
+            }else{
+                Console.OUT.println("Benchmark case: "+input.toString());
+                val time = take_median(input);   //take median prints out the results
+            }
         }
     }
     
@@ -99,7 +99,7 @@ public class Main
      * Helper function that runs once a benchmark test, validate the
      * answer, return the times spent.
      */
-    /**static def run_one_test(input: Input) : long
+    static def run_one_test(input: Input) : long
     {
     	val start     = Timer.milliTime();
         var solver:Solver = new Solver();
@@ -107,7 +107,7 @@ public class Main
         val end       = Timer.milliTime();
         var time_in_millis: long = end - start;
 
-        if (solutions != input.solutions)
+        if (solutions != (input.solutions as Long))
         {
             Console.OUT.println("Incorrect answer given:"+solutions+". Correct Answer: "+input.solutions);
         } else {
@@ -121,11 +121,11 @@ public class Main
 	
         return time_in_millis;      // Return the median speedup
     }
-*/
+
     /**
      * Helper function that runs three times a benchmark test and return the median
      */
-    /**static def take_median(input: Input) : double
+    static def take_median(input: Input) : double
     {
         val times = new Rail[long](3);             // Run three times ... we'll take the median value
 
@@ -144,7 +144,7 @@ public class Main
 		
         return med;      // Return the median speedup
     }
-*/
+
 
     /**
      * Return the median of three values.

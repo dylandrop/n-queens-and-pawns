@@ -20,28 +20,35 @@ public class Board {
 			place(pawn);
 		}
 		for (queen in queens) {
-			if(queen.equals(null)) {
+			try {
+				place(queen);
+			}
+			catch(NullPointerException) {
 				break;
 			}
-			place(queen);
 		}
 	}
 	
 	private def validHoriz() {
 		for(queen in queens) {
-			var xPos:Int = queen.x;
-			while(xPos < size && board(xPos, queen.y) != PAWN) {
-				if((xPos != queen.x) && board(xPos, queen.y) == QUEEN) {
-					return false;
+			try {
+				var xPos:Int = queen.x;
+				while(xPos < size && board(xPos, queen.y) != PAWN) {
+					if((xPos != queen.x) && board(xPos, queen.y) == QUEEN) {
+						return false;
+					}
+					xPos++;
 				}
-				xPos++;
+				xPos = queen.x;
+				while(xPos >= 0n && board(xPos, queen.y) != PAWN) {
+					if((xPos != queen.x) && board(xPos, queen.y) == QUEEN) {
+						return false;
+					}
+					xPos--;
+				}
 			}
-			xPos = queen.x;
-			while(xPos >= 0n && board(xPos, queen.y) != PAWN) {
-				if((xPos != queen.x) && board(xPos, queen.y) == QUEEN) {
-					return false;
-				}
-				xPos--;
+			catch(NullPointerException) {
+				break;
 			}
 		}
 		return true;
@@ -49,19 +56,24 @@ public class Board {
 	
 	private def validVert() {
 		for(queen in queens) {
-			var yPos:Int = queen.y;
-			while(yPos < size && board(queen.x, yPos) != PAWN) {
-				if((yPos != queen.y) && board(queen.x, yPos) == QUEEN) {
-					return false;
+			try {
+				var yPos:Int = queen.y;
+				while(yPos < size && board(queen.x, yPos) != PAWN) {
+					if((yPos != queen.y) && board(queen.x, yPos) == QUEEN) {
+						return false;
+					}
+					yPos++;
 				}
-				yPos++;
+				yPos = queen.y;
+				while(yPos >= 0n && board(queen.x, yPos) != PAWN) {
+					if((yPos != queen.y) && board(queen.x, yPos) == QUEEN) {
+						return false;
+					}
+					yPos--;
+				}
 			}
-			yPos = queen.y;
-			while(yPos >= 0n && board(queen.x, yPos) != PAWN) {
-				if((yPos != queen.y) && board(queen.x, yPos) == QUEEN) {
-					return false;
-				}
-				yPos--;
+			catch(NullPointerException) {
+				break;
 			}
 		}
 		return true;
@@ -69,37 +81,42 @@ public class Board {
 	
 	private def validDiag() {
 		for(queen in queens) {
-			var yPos:Int = queen.y;
-			var xPos:Int = queen.x;
-			while(xPos<size && yPos<size && board(xPos,yPos) != PAWN) {
-				if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
-					return false;
+			try {
+				var yPos:Int = queen.y;
+				var xPos:Int = queen.x;
+				while(xPos<size && yPos<size && board(xPos,yPos) != PAWN) {
+					if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
+						return false;
+					}
+					xPos++; yPos++;
 				}
-				xPos++; yPos++;
+				yPos = queen.y;
+				xPos = queen.x;
+				while(xPos>=0n && yPos>=0n && board(xPos,yPos) != PAWN) {
+					if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
+						return false;
+					}
+					xPos--; yPos--;
+				}
+				yPos = queen.y;
+				xPos = queen.x;
+				while(xPos<size && yPos>=0n && board(xPos,yPos) != PAWN) {
+					if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
+						return false;
+					}
+					xPos++; yPos--;
+				}
+				yPos = queen.y;
+				xPos = queen.x;
+				while(xPos>=0n && yPos<size && board(xPos,yPos) != PAWN) {
+					if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
+						return false;
+					}
+					xPos--; yPos++;
+				}
 			}
-			yPos = queen.y;
-			xPos = queen.x;
-			while(xPos>=0n && yPos>=0n && board(xPos,yPos) != PAWN) {
-				if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
-					return false;
-				}
-				xPos--; yPos--;
-			}
-			yPos = queen.y;
-			xPos = queen.x;
-			while(xPos<size && yPos>=0n && board(xPos,yPos) != PAWN) {
-				if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
-					return false;
-				}
-				xPos++; yPos--;
-			}
-			yPos = queen.y;
-			xPos = queen.x;
-			while(xPos>=0n && yPos<size && board(xPos,yPos) != PAWN) {
-				if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
-					return false;
-				}
-				xPos--; yPos++;
+			catch(NullPointerException) {
+				break;
 			}
 		}
 		return true;
