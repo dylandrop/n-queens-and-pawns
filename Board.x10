@@ -29,101 +29,95 @@ public class Board {
 		}
 	}
 	
-	private def validHoriz() {
-		for(queen in queens) {
-			try {
-				var xPos:Int = queen.x;
-				while(xPos < size && board(xPos, queen.y) != PAWN) {
-					if((xPos != queen.x) && board(xPos, queen.y) == QUEEN) {
-						return false;
-					}
-					xPos++;
+	private def validHoriz(x:Int, y:Int) {
+		try {
+			var xPos:Int = x;
+			while(xPos < size && board(xPos, y) != PAWN) {
+				if((xPos != x) && board(xPos, y) == QUEEN) {
+					return false;
 				}
-				xPos = queen.x;
-				while(xPos >= 0n && board(xPos, queen.y) != PAWN) {
-					if((xPos != queen.x) && board(xPos, queen.y) == QUEEN) {
-						return false;
-					}
-					xPos--;
+				xPos++;
+			}
+			xPos = x;
+			while(xPos >= 0n && board(xPos, y) != PAWN) {
+				if((xPos != x) && board(xPos, y) == QUEEN) {
+					return false;
 				}
+				xPos--;
 			}
-			catch(NullPointerException) {
-				break;
-			}
+		}
+		catch(NullPointerException) {
+			break;
 		}
 		return true;
 	}
 	
-	private def validVert() {
-		for(queen in queens) {
-			try {
-				var yPos:Int = queen.y;
-				while(yPos < size && board(queen.x, yPos) != PAWN) {
-					if((yPos != queen.y) && board(queen.x, yPos) == QUEEN) {
-						return false;
-					}
-					yPos++;
+	private def validVert(x:Int, y:Int) {
+		try {
+			var yPos:Int = y;
+			while(yPos < size && board(x, yPos) != PAWN) {
+				if((yPos != y) && board(x, yPos) == QUEEN) {
+					return false;
 				}
-				yPos = queen.y;
-				while(yPos >= 0n && board(queen.x, yPos) != PAWN) {
-					if((yPos != queen.y) && board(queen.x, yPos) == QUEEN) {
-						return false;
-					}
-					yPos--;
+				yPos++;
+			}
+			yPos = y;
+			while(yPos >= 0n && board(x, yPos) != PAWN) {
+				if((yPos != y) && board(x, yPos) == QUEEN) {
+					return false;
 				}
+				yPos--;
 			}
-			catch(NullPointerException) {
-				break;
-			}
+		}
+		catch(NullPointerException) {
+			break;
 		}
 		return true;
 	}
 	
-	private def validDiag() {
-		for(queen in queens) {
-			try {
-				var yPos:Int = queen.y;
-				var xPos:Int = queen.x;
-				while(xPos<size && yPos<size && board(xPos,yPos) != PAWN) {
-					if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
-						return false;
-					}
-					xPos++; yPos++;
+	private def validDiag(x:Int, y:Int) {
+		try {
+			var yPos:Int = y;
+			var xPos:Int = x;
+			while(xPos<size && yPos<size && board(xPos,yPos) != PAWN) {
+				if((xPos != x) && (yPos != y) && board(xPos,yPos) == QUEEN) {
+					return false;
 				}
-				yPos = queen.y;
-				xPos = queen.x;
-				while(xPos>=0n && yPos>=0n && board(xPos,yPos) != PAWN) {
-					if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
-						return false;
-					}
-					xPos--; yPos--;
-				}
-				yPos = queen.y;
-				xPos = queen.x;
-				while(xPos<size && yPos>=0n && board(xPos,yPos) != PAWN) {
-					if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
-						return false;
-					}
-					xPos++; yPos--;
-				}
-				yPos = queen.y;
-				xPos = queen.x;
-				while(xPos>=0n && yPos<size && board(xPos,yPos) != PAWN) {
-					if((xPos != queen.x) && (yPos != queen.y) && board(xPos,yPos) == QUEEN) {
-						return false;
-					}
-					xPos--; yPos++;
-				}
+				xPos++; yPos++;
 			}
-			catch(NullPointerException) {
-				break;
+			yPos = y;
+			xPos = x;
+			while(xPos>=0n && yPos>=0n && board(xPos,yPos) != PAWN) {
+				if((xPos != x) && (yPos != y) && board(xPos,yPos) == QUEEN) {
+					return false;
+				}
+				xPos--; yPos--;
 			}
+			yPos = y;
+			xPos = x;
+			while(xPos<size && yPos>=0n && board(xPos,yPos) != PAWN) {
+				if((xPos != x) && (yPos != y) && board(xPos,yPos) == QUEEN) {
+					return false;
+				}
+				xPos++; yPos--;
+			}
+			yPos = y;
+			xPos = x;
+			while(xPos>=0n && yPos<size && board(xPos,yPos) != PAWN) {
+				if((xPos != x) && (yPos != y) && board(xPos,yPos) == QUEEN) {
+					return false;
+				}
+				xPos--; yPos++;
+			}
+		}
+		catch(NullPointerException) {
+			break;
 		}
 		return true;
 	}
 	
-	public def valid() {
-		return validDiag() && validVert() && validHoriz();
+	public def valid(x:Int, y:Int) {
+		return validHoriz(x,y) && validDiag(x,y) && validVert(x,y);
 	}
 	
 	public def print(){
