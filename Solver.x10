@@ -31,7 +31,10 @@ public class Solver
     	
     	//Console.OUT.println("size is "+ (size)+ "arr length is "+arr.size);
     	
-    	boardCombos((size as Long), 0n, size, pawns.toRail(), new Rail[Tile](size), 0n);
+    	finish{
+            boardCombos((size as Long), 0n, size, pawns.toRail(), new Rail[Tile](size), 0n);    
+        }
+        
         return solutions;
     }
     // occupied should start off at 1
@@ -40,27 +43,29 @@ public class Solver
     	if(size==0n)
     		return;
     	if(len ==0L){
-    		solutions++;
+    		atomic solutions++;
     		return;
     	}
-    	for(var i:int = startPos; i<=arr.size-len; i++){
-    		var qTemp: Rail[Tile] = cloneArray(queens);
-    		//Console.OUT.println("assignment goes through");
-    		if(safe(pawns, qTemp, arr(i).x, arr(i).y)){
-    				//Console.OUT.println("is safe");
-    				//Console.OUT.println("i is "+i+" arr size is "+arr.size);
-    				qTemp(occupied) = arr(i);
-    				
-    				val n:Node = new Node(pawns, qTemp, size);
-    				
-    				if(n.board.valid()){
-    					//Console.OUT.println("isvalid");
-    					// n.board.print();
-    					var oTemp:Int = occupied+1n;
-    					boardCombos(len-1, i+1n, size, pawns, qTemp, oTemp);
-    				}
-    			
-    		}
+    	async{ for(var i:int = startPos; i<=arr.size-len; i++){
+    		
+                var qTemp: Rail[Tile] = cloneArray(queens);
+                        //Console.OUT.println("assignment goes through");
+                if(safe(pawns, qTemp, arr(i).x, arr(i).y)){
+                        //Console.OUT.println("is safe");
+                        //Console.OUT.println("i is "+i+" arr size is "+arr.size);
+                        qTemp(occupied) = arr(i);
+                        
+                        val n:Node = new Node(pawns, qTemp, size);
+                        
+                        if(n.board.valid()){
+                            //Console.OUT.println("isvalid");
+                            // n.board.print();
+                            var oTemp:Int = occupied+1n;
+                            boardCombos(len-1, i+1n, size, pawns, qTemp, oTemp);
+                        }
+                    
+                }
+            }
     		
     		
     	}

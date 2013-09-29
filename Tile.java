@@ -89,8 +89,8 @@ this.tileType = tileType;
 final public java.lang.String
                                                                                                             typeName(
                                                                                                             ){try {return x10.rtt.Types.typeName(this);}
-        catch (java.lang.Throwable exc$5860) {
-        throw x10.runtime.impl.java.ThrowableUtils.ensureX10Exception(exc$5860);
+        catch (java.lang.Throwable exc$5857) {
+        throw x10.runtime.impl.java.ThrowableUtils.ensureX10Exception(exc$5857);
         }
         }
         

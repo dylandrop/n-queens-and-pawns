@@ -165,8 +165,8 @@ return t3885;
 final public java.lang.String
                                                                                                                      typeName(
                                                                                                                      ){try {return x10.rtt.Types.typeName(this);}
-                catch (java.lang.Throwable exc$5859) {
-                throw x10.runtime.impl.java.ThrowableUtils.ensureX10Exception(exc$5859);
+                catch (java.lang.Throwable exc$5856) {
+                throw x10.runtime.impl.java.ThrowableUtils.ensureX10Exception(exc$5856);
                 }
                 }
                 
