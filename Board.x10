@@ -47,7 +47,7 @@ public class Board {
 			}
 		}
 		catch(NullPointerException) {
-			break;
+			return true;
 		}
 		return true;
 	}
@@ -70,7 +70,7 @@ public class Board {
 			}
 		}
 		catch(NullPointerException) {
-			break;
+			return true;
 		}
 		return true;
 	}
@@ -111,7 +111,7 @@ public class Board {
 			}
 		}
 		catch(NullPointerException) {
-			break;
+			return true;
 		}
 		return true;
 	}
@@ -120,7 +120,7 @@ public class Board {
 		if(pawns.size == 0) {
 			try {
 				for(queen in queens) {
-					if(queen.x == x || queen.y == y || queen.y - y == queen.x - x) {
+					if(queen.x == x || queen.y == y || Math.abs(queen.y - y) ==Math.abs( queen.x - x)) {
 						return false;
 					}
 				}

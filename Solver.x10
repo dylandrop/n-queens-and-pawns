@@ -15,6 +15,7 @@ public class Solver
 {
 	public var solutions: Int = 0n;
 	public var arr:Rail[Tile];
+    public var arr2:Rail[Tile];
     /**
      * Solve a single 'N'-Queens with pawns problem.
      *     'size' is 'N'.
@@ -28,17 +29,18 @@ public class Solver
         
         //Console.OUT.println("testcase done");
     	arr = queensForBoard(size);
+        arr2 = new Rail[Tile](size);
     	
     	//Console.OUT.println("size is "+ (size)+ "arr length is "+arr.size);
     	
     	finish{
-            boardCombos((size as Long), 0n, size, pawns.toRail(), new Rail[Tile](size), 0n);    
+            boardCombos((size as Long), 0n, size, pawns.toRail(), new Rail[Tile](size), 0n, 0n);    
         }
         
         return solutions;
     }
     // occupied should start off at 1
-    public def boardCombos( len: long, startPos: Int, size: int, pawns: Rail[Tile], queens: Rail[Tile], occupied: Int){
+    public def boardCombos( len: long, startPos: Int, size: int, pawns: Rail[Tile], queens: Rail[Tile], occupied: Int, takenUpTo: Int){
     	// Console.OUT.println("calls boardCombos with len "+len+ " start pos " +startPos);
     	if(size==0n)
     		return;
@@ -46,29 +48,53 @@ public class Solver
     		atomic solutions++;
     		return;
     	}
-    	async{ for(var i:int = startPos; i<=arr.size-len; i++){
-    		
-                var qTemp: Rail[Tile] = cloneArray(queens);
-                        //Console.OUT.println("assignment goes through");
-                if(safe(pawns, qTemp, arr(i).x, arr(i).y)){
-                        //Console.OUT.println("is safe");
-                        //Console.OUT.println("i is "+i+" arr size is "+arr.size);
-                        qTemp(occupied) = arr(i);
+        if(pawns.size==0){
+            async{
+                for( var i: int = 0n; i< size; i++){
+                     var qTemp: Rail[Tile] = cloneArray(queens);
+                     if(safe(pawns, qTemp, i, takenUpTo)){
                         
                         val n:Node = new Node(pawns, qTemp, size);
+                             
+                             if(n.board.valid(i, takenUpTo)){
+                                 //Console.OUT.println("isvalid");
+                                 // n.board.print();
+                                 var oTemp:Int = occupied+1n;
+                                 qTemp(occupied) = new Tile(i , takenUpTo, 2n);
+                                 boardCombos(len-1, i+1n, size, pawns, qTemp, oTemp, takenUpTo+1n);
+                             }
                         
-                        if(n.board.valid()){
-                            //Console.OUT.println("isvalid");
-                            // n.board.print();
-                            var oTemp:Int = occupied+1n;
-                            boardCombos(len-1, i+1n, size, pawns, qTemp, oTemp);
-                        }
-                    
+                     }
+
                 }
             }
-    		
-    		
-    	}
+        }
+        else{
+            async{ for(var i:int = startPos; i<=arr.size-len; i++){
+                
+                     var qTemp: Rail[Tile] = cloneArray(queens);
+                             //Console.OUT.println("assignment goes through");
+                     if(safe(pawns, qTemp, arr(i).x, arr(i).y)){
+                             //Console.OUT.println("is safe");
+                             //Console.OUT.println("i is "+i+" arr size is "+arr.size);
+                             qTemp(occupied) = arr(i);
+                             
+                             val n:Node = new Node(pawns, qTemp, size);
+                             
+                             if(n.board.valid(arr(i).x, arr(i).y)){
+                                 //Console.OUT.println("isvalid");
+                                 // n.board.print();
+                                 var oTemp:Int = occupied+1n;
+                                 boardCombos(len-1, i+1n, size, pawns, qTemp, oTemp, 0n);
+                             }
+                         
+                     }
+                 }
+                
+                
+            }   
+        }
+    	
     }
 
     public def cloneArray(x: Rail[Tile]): Rail[Tile]{
@@ -152,9 +178,7 @@ public class Solver
     		this.board = new Board(size, pawns, queens);
     	}
     	
-    	public check() {
-    		return board.valid();
-    	}
+    	
     	
     }
 }

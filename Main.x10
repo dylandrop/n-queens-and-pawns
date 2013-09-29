@@ -111,7 +111,7 @@ public class Main
         {
             Console.OUT.println("Incorrect answer given:"+solutions+". Correct Answer: "+input.solutions);
         } else {
-        	Console.OUT.println("Correct Answer");
+        	Console.OUT.println("Correct Answer and it took "+ time_in_millis);
         }
 	
         // Sanity Check

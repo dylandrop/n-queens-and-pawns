@@ -64,7 +64,7 @@ public int tileType;
 
                                                                     
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile this6278 =
+final Tile this6473 =
                                                                       this;
                                                                     
 //#line 7 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
@@ -85,8 +85,8 @@ this.tileType = tileType;
 final public java.lang.String
                                                                                                             typeName(
                                                                                                             ){try {return x10.rtt.Types.typeName(this);}
-        catch (java.lang.Throwable exc$9768) {
-        throw x10.runtime.impl.java.ThrowableUtils.ensureX10Exception(exc$9768);
+        catch (java.lang.Throwable exc$11212) {
+        throw x10.runtime.impl.java.ThrowableUtils.ensureX10Exception(exc$11212);
         }
         }
         
@@ -98,46 +98,46 @@ final public java.lang.String
                                                                                                             ){
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.String t6217 =
+final java.lang.String t6412 =
               "struct Tile: x=";
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6218 =
+final int t6413 =
               this.
                 x;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.String t6219 =
-              ((t6217) + ((x10.core.Int.$box(t6218))));
+final java.lang.String t6414 =
+              ((t6412) + ((x10.core.Int.$box(t6413))));
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.String t6220 =
-              ((t6219) + (" y="));
+final java.lang.String t6415 =
+              ((t6414) + (" y="));
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6221 =
+final int t6416 =
               this.
                 y;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.String t6222 =
-              ((t6220) + ((x10.core.Int.$box(t6221))));
+final java.lang.String t6417 =
+              ((t6415) + ((x10.core.Int.$box(t6416))));
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.String t6223 =
-              ((t6222) + (" tileType="));
+final java.lang.String t6418 =
+              ((t6417) + (" tileType="));
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6224 =
+final int t6419 =
               this.
                 tileType;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.String t6225 =
-              ((t6223) + ((x10.core.Int.$box(t6224))));
+final java.lang.String t6420 =
+              ((t6418) + ((x10.core.Int.$box(t6419))));
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-return t6225;
+return t6420;
         }
         
         
@@ -151,83 +151,83 @@ int result =
               1;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6226 =
+final int t6421 =
               result;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6228 =
-              ((8191) * (((int)(t6226))));
+final int t6423 =
+              ((8191) * (((int)(t6421))));
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6227 =
+final int t6422 =
               this.
                 x;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6229 =
-              x10.rtt.Types.hashCode(t6227);
+final int t6424 =
+              x10.rtt.Types.hashCode(t6422);
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6230 =
-              ((t6228) + (((int)(t6229))));
+final int t6425 =
+              ((t6423) + (((int)(t6424))));
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-result = t6230;
+result = t6425;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6231 =
+final int t6426 =
               result;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6233 =
-              ((8191) * (((int)(t6231))));
+final int t6428 =
+              ((8191) * (((int)(t6426))));
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6232 =
+final int t6427 =
               this.
                 y;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6234 =
-              x10.rtt.Types.hashCode(t6232);
+final int t6429 =
+              x10.rtt.Types.hashCode(t6427);
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6235 =
-              ((t6233) + (((int)(t6234))));
+final int t6430 =
+              ((t6428) + (((int)(t6429))));
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-result = t6235;
+result = t6430;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6236 =
+final int t6431 =
               result;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6238 =
-              ((8191) * (((int)(t6236))));
+final int t6433 =
+              ((8191) * (((int)(t6431))));
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6237 =
+final int t6432 =
               this.
                 tileType;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6239 =
-              x10.rtt.Types.hashCode(t6237);
+final int t6434 =
+              x10.rtt.Types.hashCode(t6432);
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6240 =
-              ((t6238) + (((int)(t6239))));
+final int t6435 =
+              ((t6433) + (((int)(t6434))));
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-result = t6240;
+result = t6435;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6241 =
+final int t6436 =
               result;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-return t6241;
+return t6436;
         }
         
         
@@ -237,38 +237,38 @@ final public boolean
                                                                                                             java.lang.Object other){
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.Object t6242 =
+final java.lang.Object t6437 =
               other;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t6243 =
-              Tile.$RTT.isInstance(t6242);
+final boolean t6438 =
+              Tile.$RTT.isInstance(t6437);
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t6244 =
-              !(t6243);
+final boolean t6439 =
+              !(t6438);
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-if (t6244) {
+if (t6439) {
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
 return false;
             }
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.Object t6245 =
+final java.lang.Object t6440 =
               other;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t6246 =
-              ((Tile)x10.rtt.Types.asStruct(Tile.$RTT,t6245));
+final Tile t6441 =
+              ((Tile)x10.rtt.Types.asStruct(Tile.$RTT,t6440));
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t6247 =
-              this.equals$O(((Tile)(t6246)));
+final boolean t6442 =
+              this.equals$O(((Tile)(t6441)));
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-return t6247;
+return t6442;
         }
         
         
@@ -278,78 +278,78 @@ final public boolean
                                                                                                             Tile other){
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6249 =
+final int t6444 =
               this.
                 x;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t6248 =
+final Tile t6443 =
               other;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6250 =
-              t6248.
+final int t6445 =
+              t6443.
                 x;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-boolean t6254 =
-              ((int) t6249) ==
-            ((int) t6250);
+boolean t6449 =
+              ((int) t6444) ==
+            ((int) t6445);
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-if (t6254) {
+if (t6449) {
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6252 =
+final int t6447 =
                   this.
                     y;
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t6251 =
+final Tile t6446 =
                   other;
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6253 =
-                  t6251.
+final int t6448 =
+                  t6446.
                     y;
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-t6254 = ((int) t6252) ==
-                ((int) t6253);
+t6449 = ((int) t6447) ==
+                ((int) t6448);
             }
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-boolean t6258 =
-              t6254;
+boolean t6453 =
+              t6449;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-if (t6258) {
+if (t6453) {
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6256 =
+final int t6451 =
                   this.
                     tileType;
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t6255 =
+final Tile t6450 =
                   other;
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6257 =
-                  t6255.
+final int t6452 =
+                  t6450.
                     tileType;
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-t6258 = ((int) t6256) ==
-                ((int) t6257);
+t6453 = ((int) t6451) ==
+                ((int) t6452);
             }
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t6259 =
-              t6258;
+final boolean t6454 =
+              t6453;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-return t6259;
+return t6454;
         }
         
         
@@ -359,38 +359,38 @@ final public boolean
                                                                                                             java.lang.Object other){
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.Object t6260 =
+final java.lang.Object t6455 =
               other;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t6261 =
-              Tile.$RTT.isInstance(t6260);
+final boolean t6456 =
+              Tile.$RTT.isInstance(t6455);
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t6262 =
-              !(t6261);
+final boolean t6457 =
+              !(t6456);
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-if (t6262) {
+if (t6457) {
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
 return false;
             }
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final java.lang.Object t6263 =
+final java.lang.Object t6458 =
               other;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t6264 =
-              ((Tile)x10.rtt.Types.asStruct(Tile.$RTT,t6263));
+final Tile t6459 =
+              ((Tile)x10.rtt.Types.asStruct(Tile.$RTT,t6458));
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t6265 =
-              this._struct_equals$O(((Tile)(t6264)));
+final boolean t6460 =
+              this._struct_equals$O(((Tile)(t6459)));
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-return t6265;
+return t6460;
         }
         
         
@@ -400,78 +400,78 @@ final public boolean
                                                                                                             Tile other){
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6267 =
+final int t6462 =
               this.
                 x;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t6266 =
+final Tile t6461 =
               other;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6268 =
-              t6266.
+final int t6463 =
+              t6461.
                 x;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-boolean t6272 =
-              ((int) t6267) ==
-            ((int) t6268);
+boolean t6467 =
+              ((int) t6462) ==
+            ((int) t6463);
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-if (t6272) {
+if (t6467) {
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6270 =
+final int t6465 =
                   this.
                     y;
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t6269 =
+final Tile t6464 =
                   other;
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6271 =
-                  t6269.
+final int t6466 =
+                  t6464.
                     y;
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-t6272 = ((int) t6270) ==
-                ((int) t6271);
+t6467 = ((int) t6465) ==
+                ((int) t6466);
             }
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-boolean t6276 =
-              t6272;
+boolean t6471 =
+              t6467;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-if (t6276) {
+if (t6471) {
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6274 =
+final int t6469 =
                   this.
                     tileType;
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final Tile t6273 =
+final Tile t6468 =
                   other;
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final int t6275 =
-                  t6273.
+final int t6470 =
+                  t6468.
                     tileType;
                 
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-t6276 = ((int) t6274) ==
-                ((int) t6275);
+t6471 = ((int) t6469) ==
+                ((int) t6470);
             }
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-final boolean t6277 =
-              t6276;
+final boolean t6472 =
+              t6471;
             
 //#line 2 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Tile.x10"
-return t6277;
+return t6472;
         }
         
         
