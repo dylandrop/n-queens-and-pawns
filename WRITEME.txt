@@ -1,0 +1,31 @@
+Dylan Drop (dhd2110) and Dobri Dobrev (dmd2169)
+==============================================
+
+1) The way we check the number of solutions for a given
+number of queens is by generating every possible location for
+a queen, and then generating every combination of a set of
+N of those queens. The way we have parallelized our code
+is by designating the first queen in one of those combinations
+as a parent node, and then having each thread count the number
+of children solutions of that node in parallel.
+
+One way we optimized this solution is by stopping a branch short
+if the placement of a subsequent queen from the first is invalid
+off the bat. This way, we won't create a bunch of nodes and children
+of those nodes that will inevitably be invalid.
+
+We have also optimized our code by implementing a check that operates
+in O(q) time (where q is the number of queens) if there are no
+pawns. 
+
+2) What didn't work was using a hashmap in a dynamic programming approach
+to check which solutions didn't work before, because we often had 
+memory overflow. What worked was using a recursive algorithm that 
+generates unique combinations of queens of size N.
+
+3) If given more time, we would also try to parallelize the 
+checking for placing queens on boards with pawns, because each of 
+those checks takes a pretty large amount of time and would cause
+our system to wait. Also, we would probably refactor our code to 
+make simple checks earlier to avoid creating nodes that will inevitably
+end in invalid boards.
