@@ -1,6 +1,18 @@
 Dylan Drop (dhd2110) and Dobri Dobrev (dmd2169)
 ==============================================
 
+To compile:
+
+make Nqueens
+
+To run:
+
+make test
+
+To clean: 
+
+make clean
+
 1) The way we check the number of solutions for a given
 number of queens is by generating every possible location for
 a queen, and then generating every combination of a set of
