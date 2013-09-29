@@ -8,10 +8,8 @@
     public x10.rtt.RuntimeType<?> $getRTT() {return $RTT;}
     
     public x10.rtt.Type<?> $getParam(int i) {return null;}
-    private void writeObject(java.io.ObjectOutputStream oos) throws java.io.IOException { if (x10.runtime.impl.java.Runtime.TRACE_SER) { java.lang.System.out.println("Serializer: writeObject(ObjectOutputStream) of " + this + " calling"); } oos.defaultWriteObject(); }
     public static x10.serialization.X10JavaSerializable $_deserialize_body(Main $_obj , x10.serialization.X10JavaDeserializer $deserializer) throws java.io.IOException {
     
-        if (x10.runtime.impl.java.Runtime.TRACE_SER) { x10.runtime.impl.java.Runtime.printTraceMessage("X10JavaSerializable: $_deserialize_body() of " + Main.class + " calling"); } 
         return $_obj;
     }
     
@@ -43,10 +41,8 @@
             public x10.rtt.RuntimeType<?> $getRTT() {return $RTT;}
             
             public x10.rtt.Type<?> $getParam(int i) {return null;}
-            private void writeObject(java.io.ObjectOutputStream oos) throws java.io.IOException { if (x10.runtime.impl.java.Runtime.TRACE_SER) { java.lang.System.out.println("Serializer: writeObject(ObjectOutputStream) of " + this + " calling"); } oos.defaultWriteObject(); }
             public static x10.serialization.X10JavaSerializable $_deserialize_body(Main.Input $_obj , x10.serialization.X10JavaDeserializer $deserializer) throws java.io.IOException {
             
-                if (x10.runtime.impl.java.Runtime.TRACE_SER) { x10.runtime.impl.java.Runtime.printTraceMessage("X10JavaSerializable: $_deserialize_body() of " + Input.class + " calling"); } 
                 $_obj.size = $deserializer.readInt();
                 $_obj.pawns = $deserializer.readRef();
                 $_obj.solutions = $deserializer.readInt();
@@ -103,13 +99,11 @@ public int solutions;
                                                            final int solutions, __1$1Tile$2 $dummy) { {
                                                                                                              
 //#line 29 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-;
-                                                                                                             
-//#line 29 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 
                                                                                                              
 //#line 23 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-this.__fieldInitializers_Main_Input();
+final Main.Input this6146 =
+                                                                                                               this;
                                                                                                              
 //#line 31 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 this.size = size;
@@ -131,33 +125,33 @@ final public java.lang.String
                                                                                                                      ){
                     
 //#line 39 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3880 =
+final int t5988 =
                       this.
                         size;
                     
 //#line 39 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t3882 =
-                      (((x10.core.Int.$box(t3880))) + ("-Queens with "));
+final java.lang.String t5990 =
+                      (((x10.core.Int.$box(t5988))) + ("-Queens with "));
                     
 //#line 39 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList t3881 =
+final x10.util.ArrayList t5989 =
                       ((x10.util.ArrayList)(this.
                                               pawns));
                     
 //#line 39 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t3883 =
-                      ((x10.util.ArrayList<Tile>)t3881).size$O();
+final long t5991 =
+                      ((x10.util.ArrayList<Tile>)t5989).size$O();
                     
 //#line 39 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t3884 =
-                      ((t3882) + ((x10.core.Long.$box(t3883))));
+final java.lang.String t5992 =
+                      ((t5990) + ((x10.core.Long.$box(t5991))));
                     
 //#line 39 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t3885 =
-                      ((t3884) + (" pawns"));
+final java.lang.String t5993 =
+                      ((t5992) + (" pawns"));
                     
 //#line 39 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-return t3885;
+return t5993;
                 }
                 
                 
@@ -165,8 +159,8 @@ return t3885;
 final public java.lang.String
                                                                                                                      typeName(
                                                                                                                      ){try {return x10.rtt.Types.typeName(this);}
-                catch (java.lang.Throwable exc$5856) {
-                throw x10.runtime.impl.java.ThrowableUtils.ensureX10Exception(exc$5856);
+                catch (java.lang.Throwable exc$9767) {
+                throw x10.runtime.impl.java.ThrowableUtils.ensureX10Exception(exc$9767);
                 }
                 }
                 
@@ -182,83 +176,83 @@ int result =
                       1;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3886 =
+final int t5994 =
                       result;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3888 =
-                      ((8191) * (((int)(t3886))));
+final int t5996 =
+                      ((8191) * (((int)(t5994))));
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3887 =
+final int t5995 =
                       this.
                         size;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3889 =
-                      x10.rtt.Types.hashCode(t3887);
+final int t5997 =
+                      x10.rtt.Types.hashCode(t5995);
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3890 =
-                      ((t3888) + (((int)(t3889))));
+final int t5998 =
+                      ((t5996) + (((int)(t5997))));
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-result = t3890;
+result = t5998;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3891 =
+final int t5999 =
                       result;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3893 =
-                      ((8191) * (((int)(t3891))));
+final int t6001 =
+                      ((8191) * (((int)(t5999))));
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList t3892 =
+final x10.util.ArrayList t6000 =
                       ((x10.util.ArrayList)(this.
                                               pawns));
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3894 =
-                      x10.rtt.Types.hashCode(((java.lang.Object)(t3892)));
+final int t6002 =
+                      x10.rtt.Types.hashCode(((java.lang.Object)(t6000)));
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3895 =
-                      ((t3893) + (((int)(t3894))));
+final int t6003 =
+                      ((t6001) + (((int)(t6002))));
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-result = t3895;
+result = t6003;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3896 =
+final int t6004 =
                       result;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3898 =
-                      ((8191) * (((int)(t3896))));
+final int t6006 =
+                      ((8191) * (((int)(t6004))));
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3897 =
+final int t6005 =
                       this.
                         solutions;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3899 =
-                      x10.rtt.Types.hashCode(t3897);
+final int t6007 =
+                      x10.rtt.Types.hashCode(t6005);
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3900 =
-                      ((t3898) + (((int)(t3899))));
+final int t6008 =
+                      ((t6006) + (((int)(t6007))));
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-result = t3900;
+result = t6008;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3901 =
+final int t6009 =
                       result;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-return t3901;
+return t6009;
                 }
                 
                 
@@ -268,38 +262,38 @@ final public boolean
                                                                                                                      java.lang.Object other){
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.Object t3902 =
+final java.lang.Object t6010 =
                       other;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t3903 =
-                      Main.Input.$RTT.isInstance(t3902);
+final boolean t6011 =
+                      Main.Input.$RTT.isInstance(t6010);
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t3904 =
-                      !(t3903);
+final boolean t6012 =
+                      !(t6011);
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t3904) {
+if (t6012) {
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 return false;
                     }
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.Object t3905 =
+final java.lang.Object t6013 =
                       other;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t3906 =
-                      ((Main.Input)x10.rtt.Types.asStruct(Main.Input.$RTT,t3905));
+final Main.Input t6014 =
+                      ((Main.Input)x10.rtt.Types.asStruct(Main.Input.$RTT,t6013));
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t3907 =
-                      this.equals$O(((Main.Input)(t3906)));
+final boolean t6015 =
+                      this.equals$O(((Main.Input)(t6014)));
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-return t3907;
+return t6015;
                 }
                 
                 
@@ -309,77 +303,77 @@ final public boolean
                                                                                                                      Main.Input other){
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3909 =
+final int t6017 =
                       this.
                         size;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t3908 =
+final Main.Input t6016 =
                       other;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3910 =
-                      t3908.
+final int t6018 =
+                      t6016.
                         size;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-boolean t3914 =
-                      ((int) t3909) ==
-                    ((int) t3910);
+boolean t6022 =
+                      ((int) t6017) ==
+                    ((int) t6018);
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t3914) {
+if (t6022) {
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList t3912 =
+final x10.util.ArrayList t6020 =
                           ((x10.util.ArrayList)(this.
                                                   pawns));
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t3911 =
+final Main.Input t6019 =
                           other;
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList t3913 =
-                          ((x10.util.ArrayList)(t3911.
+final x10.util.ArrayList t6021 =
+                          ((x10.util.ArrayList)(t6019.
                                                   pawns));
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-t3914 = x10.rtt.Equality.equalsequals((t3912),(t3913));
+t6022 = x10.rtt.Equality.equalsequals((t6020),(t6021));
                     }
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-boolean t3918 =
-                      t3914;
+boolean t6026 =
+                      t6022;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t3918) {
+if (t6026) {
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3916 =
+final int t6024 =
                           this.
                             solutions;
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t3915 =
+final Main.Input t6023 =
                           other;
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3917 =
-                          t3915.
+final int t6025 =
+                          t6023.
                             solutions;
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-t3918 = ((int) t3916) ==
-                        ((int) t3917);
+t6026 = ((int) t6024) ==
+                        ((int) t6025);
                     }
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t3919 =
-                      t3918;
+final boolean t6027 =
+                      t6026;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-return t3919;
+return t6027;
                 }
                 
                 
@@ -389,38 +383,38 @@ final public boolean
                                                                                                                      java.lang.Object other){
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.Object t3920 =
+final java.lang.Object t6028 =
                       other;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t3921 =
-                      Main.Input.$RTT.isInstance(t3920);
+final boolean t6029 =
+                      Main.Input.$RTT.isInstance(t6028);
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t3922 =
-                      !(t3921);
+final boolean t6030 =
+                      !(t6029);
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t3922) {
+if (t6030) {
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 return false;
                     }
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.Object t3923 =
+final java.lang.Object t6031 =
                       other;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t3924 =
-                      ((Main.Input)x10.rtt.Types.asStruct(Main.Input.$RTT,t3923));
+final Main.Input t6032 =
+                      ((Main.Input)x10.rtt.Types.asStruct(Main.Input.$RTT,t6031));
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t3925 =
-                      this._struct_equals$O(((Main.Input)(t3924)));
+final boolean t6033 =
+                      this._struct_equals$O(((Main.Input)(t6032)));
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-return t3925;
+return t6033;
                 }
                 
                 
@@ -430,77 +424,77 @@ final public boolean
                                                                                                                      Main.Input other){
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3927 =
+final int t6035 =
                       this.
                         size;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t3926 =
+final Main.Input t6034 =
                       other;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3928 =
-                      t3926.
+final int t6036 =
+                      t6034.
                         size;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-boolean t3932 =
-                      ((int) t3927) ==
-                    ((int) t3928);
+boolean t6040 =
+                      ((int) t6035) ==
+                    ((int) t6036);
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t3932) {
+if (t6040) {
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList t3930 =
+final x10.util.ArrayList t6038 =
                           ((x10.util.ArrayList)(this.
                                                   pawns));
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t3929 =
+final Main.Input t6037 =
                           other;
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList t3931 =
-                          ((x10.util.ArrayList)(t3929.
+final x10.util.ArrayList t6039 =
+                          ((x10.util.ArrayList)(t6037.
                                                   pawns));
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-t3932 = x10.rtt.Equality.equalsequals((t3930),(t3931));
+t6040 = x10.rtt.Equality.equalsequals((t6038),(t6039));
                     }
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-boolean t3936 =
-                      t3932;
+boolean t6044 =
+                      t6040;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t3936) {
+if (t6044) {
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3934 =
+final int t6042 =
                           this.
                             solutions;
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input t3933 =
+final Main.Input t6041 =
                           other;
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3935 =
-                          t3933.
+final int t6043 =
+                          t6041.
                             solutions;
                         
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-t3936 = ((int) t3934) ==
-                        ((int) t3935);
+t6044 = ((int) t6042) ==
+                        ((int) t6043);
                     }
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t3937 =
-                      t3936;
+final boolean t6045 =
+                      t6044;
                     
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-return t3937;
+return t6045;
                 }
                 
                 
@@ -563,56 +557,59 @@ final java.lang.String filename =
                   ((java.lang.String[])args.value)[(int)0L];
                 
 //#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.File t3938 =
-                  ((x10.io.File)(new x10.io.File((java.lang.System[]) null).x10$io$File$$init$S(((java.lang.String)(filename)))));
+final x10.io.File alloc3809 =
+                  ((x10.io.File)(new x10.io.File((java.lang.System[]) null)));
                 
 //#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-F = t3938;
+alloc3809.x10$io$File$$init$S(((java.lang.String)(filename)));
+                
+//#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+F = alloc3809;
             }}catch (final x10.io.FileNotFoundException id$0) {
                 
 //#line 56 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.Printer t3940 =
+final x10.io.Printer t6047 =
                   ((x10.io.Printer)(x10.io.Console.get$ERR()));
                 
 //#line 56 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t3939 =
+final java.lang.String t6046 =
                   ((java.lang.String[])args.value)[(int)0L];
                 
 //#line 56 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t3941 =
-                  ((t3939) + (" is not a valid file"));
+final java.lang.String t6048 =
+                  ((t6046) + (" is not a valid file"));
                 
 //#line 56 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-t3940.println(((java.lang.Object)(t3941)));
+t6047.println(((java.lang.Object)(t6048)));
                 
 //#line 57 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t3942 =
+final java.lang.String t6049 =
                   ((java.lang.String[])args.value)[(int)0L];
                 
 //#line 57 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t3943 =
-                  ((t3942) + (" is not a valid file"));
+final java.lang.String t6050 =
+                  ((t6049) + (" is not a valid file"));
                 
 //#line 57 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.IllegalArgumentException t3944 =
-                  ((java.lang.IllegalArgumentException)(new java.lang.IllegalArgumentException(t3943)));
+final java.lang.IllegalArgumentException t6051 =
+                  ((java.lang.IllegalArgumentException)(new java.lang.IllegalArgumentException(t6050)));
                 
 //#line 57 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-throw t3944;
+throw t6051;
             }
             
 //#line 59 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.File t4052 =
+final x10.io.File t6164 =
               F;
             
 //#line 59 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.ReaderIterator t4053 =
-              t4052.lines();
+final x10.io.ReaderIterator t6165 =
+              t6164.lines();
             
 //#line 59 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.lang.Iterator line4054 =
+final x10.lang.Iterator line6166 =
               ((x10.lang.Iterator<java.lang.String>)
-                ((x10.io.ReaderIterator<java.lang.String>)t4053).iterator());
+                ((x10.io.ReaderIterator<java.lang.String>)t6165).iterator());
             
 //#line 59 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 for (;
@@ -620,95 +617,94 @@ for (;
                                                                                                                     ) {
                 
 //#line 59 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4055 =
-                  ((x10.lang.Iterator<java.lang.String>)line4054).hasNext$O();
+final boolean t6167 =
+                  ((x10.lang.Iterator<java.lang.String>)line6166).hasNext$O();
                 
 //#line 59 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (!(t4055)) {
+if (!(t6167)) {
                     
 //#line 59 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 break;
                 }
                 
 //#line 59 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-L4056: {
+L6168: {
 //#line 59 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String line4057 =
-                  ((java.lang.String)(((x10.lang.Iterator<java.lang.String>)line4054).next$G()));
+final java.lang.String line6169 =
+                  ((java.lang.String)(((x10.lang.Iterator<java.lang.String>)line6166).next$G()));
 //#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t4058 =
-                  (line4057).length();
+final int t6170 =
+                  (line6169).length();
 //#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4059 =
-                  ((int) t4058) ==
+final boolean t6171 =
+                  ((int) t6170) ==
                 ((int) 0);
 //#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t4059) {
+if (t6171) {
                     
 //#line 62 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-break L4056;
+break L6168;
                 }
 //#line 64 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final char t4060 =
-                  (line4057).charAt(((int)(0)));
+final char t6172 =
+                  (line6169).charAt(((int)(0)));
 //#line 64 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4061 =
-                  ((char) t4060) ==
+final boolean t6173 =
+                  ((char) t6172) ==
                 ((char) '/');
 //#line 64 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t4061) {
+if (t6173) {
                     
 //#line 65 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.Printer t4062 =
+final x10.io.Printer t6174 =
                       ((x10.io.Printer)(x10.io.Console.get$OUT()));
                     
 //#line 65 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-t4062.println(((java.lang.Object)(line4057)));
+t6174.println(((java.lang.Object)(line6169)));
                     
 //#line 66 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-break L4056;
+break L6168;
                 }
 //#line 69 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.core.Rail v4063 =
-                  x10.lang.StringHelper.split(";", line4057);
+final x10.core.Rail v6175 =
+                  x10.lang.StringHelper.split(";", line6169);
 //#line 71 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4064 =
-                  ((java.lang.String[])v4063.value)[(int)1L];
+final java.lang.String t6176 =
+                  ((java.lang.String[])v6175.value)[(int)1L];
 //#line 71 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4065 =
-                  (t4064).trim();
+final java.lang.String t6177 =
+                  (t6176).trim();
 //#line 71 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int size4066 =
-                  java.lang.Integer.parseInt(t4065);
+final int size6178 =
+                  java.lang.Integer.parseInt(t6177);
 //#line 72 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4067 =
-                  ((java.lang.String[])v4063.value)[(int)2L];
+final java.lang.String t6179 =
+                  ((java.lang.String[])v6175.value)[(int)2L];
 //#line 72 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4068 =
-                  (t4067).trim();
+final java.lang.String t6180 =
+                  (t6179).trim();
 //#line 72 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int solutions4069 =
-                  java.lang.Integer.parseInt(t4068);
+final int solutions6181 =
+                  java.lang.Integer.parseInt(t6180);
 //#line 73 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList pawns4070 =
-                  ((x10.util.ArrayList)(new x10.util.ArrayList<Tile>((java.lang.System[]) null, Tile.$RTT).x10$util$ArrayList$$init$S()));
+final x10.util.ArrayList pawns6182 =
+                  ((x10.util.ArrayList)(new x10.util.ArrayList<Tile>((java.lang.System[]) null, Tile.$RTT)));
+//#line 73 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+pawns6182.x10$util$ArrayList$$init$S();
 //#line 74 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long i3847min4049 =
-                  Main.CONF_PAWN_OFFSET;
-//#line 74 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4050 =
-                  ((x10.core.Rail<java.lang.String>)v4063).
+final long t6162 =
+                  ((x10.core.Rail<java.lang.String>)v6175).
                     size;
 //#line 74 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long i3847max4051 =
-                  ((t4050) - (((long)(1L))));
+final long i3848max6163 =
+                  ((t6162) - (((long)(1L))));
 //#line 74 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-long i4046 =
-                  i3847min4049;{
+long i6159 =
+                  3L;{
                     
 //#line 74 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String[] v4063$value4098 =
-                      ((java.lang.String[])v4063.value);
+final java.lang.String[] v6175$value6212 =
+                      ((java.lang.String[])v6175.value);
                     
 //#line 74 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 for (;
@@ -716,139 +712,144 @@ for (;
                                                                                                                             ) {
                         
 //#line 74 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4047 =
-                          i4046;
+final long t6160 =
+                          i6159;
                         
 //#line 74 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4048 =
-                          ((t4047) <= (((long)(i3847max4051))));
+final boolean t6161 =
+                          ((t6160) <= (((long)(i3848max6163))));
                         
 //#line 74 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (!(t4048)) {
+if (!(t6161)) {
                             
 //#line 74 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 break;
                         }
                         
 //#line 74 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long i4043 =
-                          i4046;
+final long i6156 =
+                          i6159;
                         
 //#line 75 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4034 =
-                          ((java.lang.String)v4063$value4098[(int)i4043]);
+final java.lang.String t6153 =
+                          ((java.lang.String)v6175$value6212[(int)i6156]);
                         
 //#line 75 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.core.Rail coords4035 =
-                          x10.lang.StringHelper.split(",", t4034);
+final x10.core.Rail coords6154 =
+                          x10.lang.StringHelper.split(",", t6153);
                         
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4036 =
-                          ((java.lang.String[])coords4035.value)[(int)0L];
+final Tile point6155 =
+                          new Tile((java.lang.System[]) null);
                         
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4037 =
-                          (t4036).trim();
+final java.lang.String t6147 =
+                          ((java.lang.String[])coords6154.value)[(int)0L];
                         
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t4038 =
-                          java.lang.Integer.parseInt(t4037);
+final java.lang.String t6148 =
+                          (t6147).trim();
                         
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4039 =
-                          ((java.lang.String[])coords4035.value)[(int)1L];
+final int t6149 =
+                          java.lang.Integer.parseInt(t6148);
                         
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4040 =
-                          (t4039).trim();
+final java.lang.String t6150 =
+                          ((java.lang.String[])coords6154.value)[(int)1L];
                         
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t4041 =
-                          java.lang.Integer.parseInt(t4040);
+final java.lang.String t6151 =
+                          (t6150).trim();
                         
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final Tile point4042 =
-                          new Tile((java.lang.System[]) null).Tile$$init$S(t4038,
-                                                                           t4041,
-                                                                           ((int)(3)));
+final int t6152 =
+                          java.lang.Integer.parseInt(t6151);
+                        
+//#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+point6155.Tile$$init$S(t6149,
+                                                                                                                                                  t6152,
+                                                                                                                                                  ((int)(3)));
                         
 //#line 77 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-((x10.util.ArrayList<Tile>)pawns4070).add__0x10$util$ArrayList$$T$O(((Tile)(point4042)));
+((x10.util.ArrayList<Tile>)pawns6182).add__0x10$util$ArrayList$$T$O(((Tile)(point6155)));
                         
 //#line 74 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4044 =
-                          i4046;
+final long t6157 =
+                          i6159;
                         
 //#line 74 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4045 =
-                          ((t4044) + (((long)(1L))));
+final long t6158 =
+                          ((t6157) + (((long)(1L))));
                         
 //#line 74 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-i4046 = t4045;
+i6159 = t6158;
                     }
                 }
 //#line 79 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final Main.Input input4071 =
-                  new Main.Input((java.lang.System[]) null).Main$Input$$init$S(((int)(size4066)),
-                                                                               ((x10.util.ArrayList<Tile>)(pawns4070)),
-                                                                               ((int)(solutions4069)), (Main.Input.__1$1Tile$2) null);
+final Main.Input input6183 =
+                  new Main.Input((java.lang.System[]) null);
+//#line 79 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+input6183.Main$Input$$init$S(((int)(size6178)),
+                                                                                                                                                                                            ((x10.util.ArrayList<Tile>)(pawns6182)),
+                                                                                                                                                                                            ((int)(solutions6181)), (Main.Input.__1$1Tile$2) null);
 //#line 80 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4072 =
+final long t6184 =
                   ((long)(((int)(0))));
 //#line 80 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4073 =
-                  ((java.lang.String[])v4063.value)[(int)t4072];
+final java.lang.String t6185 =
+                  ((java.lang.String[])v6175.value)[(int)t6184];
 //#line 80 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t4074 =
-                  java.lang.Integer.parseInt(t4073);
+final int t6186 =
+                  java.lang.Integer.parseInt(t6185);
 //#line 80 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4075 =
-                  ((int) t4074) ==
+final boolean t6187 =
+                  ((int) t6186) ==
                 ((int) 0);
 //#line 80 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t4075) {
+if (t6187) {
                     
 //#line 81 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.Printer t4076 =
+final x10.io.Printer t6188 =
                       ((x10.io.Printer)(x10.io.Console.get$OUT()));
                     
 //#line 81 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4077 =
-                      input4071.toString();
+final java.lang.String t6189 =
+                      input6183.toString();
                     
 //#line 81 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4078 =
-                      (("Test case: ") + (t4077));
+final java.lang.String t6190 =
+                      (("Test case: ") + (t6189));
                     
 //#line 81 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4079 =
-                      ((t4078) + ("....."));
+final java.lang.String t6191 =
+                      ((t6190) + ("....."));
                     
 //#line 81 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-t4076.print(((java.lang.String)(t4079)));
+t6188.print(((java.lang.String)(t6191)));
                     
 //#line 82 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-Main.run_one_test$O(((Main.Input)(input4071)));
+Main.run_one_test$O(((Main.Input)(input6183)));
                 } else {
                     
 //#line 85 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.Printer t4080 =
+final x10.io.Printer t6192 =
                       ((x10.io.Printer)(x10.io.Console.get$OUT()));
                     
 //#line 85 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4081 =
-                      input4071.toString();
+final java.lang.String t6193 =
+                      input6183.toString();
                     
 //#line 85 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4082 =
-                      (("Benchmark case: ") + (t4081));
+final java.lang.String t6194 =
+                      (("Benchmark case: ") + (t6193));
                     
 //#line 85 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-t4080.println(((java.lang.Object)(t4082)));
+t6192.println(((java.lang.Object)(t6194)));
                     
 //#line 86 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final double time4083 =
-                      Main.take_median$O(((Main.Input)(input4071)));
+final double time6195 =
+                      Main.take_median$O(((Main.Input)(input6183)));
                 }}
             }
         }
@@ -861,37 +862,51 @@ public static void
             
 //#line 92 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 Solver solver =
-              new Solver((java.lang.System[]) null).Solver$$init$S();
+              new Solver((java.lang.System[]) null);
+            
+//#line 14 .. "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
+final Solver t6196 =
+              solver;
+            
+//#line 14 .. "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
+t6196.solutions = 0;
+            
+//#line 14 .. "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
+final Solver t6197 =
+              solver;
+            
+//#line 14 .. "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
+t6197.arr = null;
             
 //#line 93 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final Solver t3982 =
+final Solver t6091 =
               solver;
             
 //#line 93 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3983 =
+final int t6092 =
               input.
                 size;
             
 //#line 93 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList t3984 =
+final x10.util.ArrayList t6093 =
               ((x10.util.ArrayList)(input.
                                       pawns));
             
 //#line 93 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 final long numberOfCombinations =
-              t3982.solve__1$1Tile$2$O((int)(t3983),
-                                       ((x10.util.ArrayList)(t3984)));
+              t6091.solve__1$1Tile$2$O((int)(t6092),
+                                       ((x10.util.ArrayList)(t6093)));
             
 //#line 94 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.Printer t3985 =
+final x10.io.Printer t6094 =
               ((x10.io.Printer)(x10.io.Console.get$OUT()));
             
 //#line 94 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t3986 =
+final java.lang.String t6095 =
               (("The number of generated combinations is ") + ((x10.core.Long.$box(numberOfCombinations))));
             
 //#line 94 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-t3985.println(((java.lang.Object)(t3986)));
+t6094.println(((java.lang.Object)(t6095)));
         }
         
         
@@ -906,26 +921,40 @@ final long start =
             
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 Solver solver =
-              new Solver((java.lang.System[]) null).Solver$$init$S();
+              new Solver((java.lang.System[]) null);
+            
+//#line 14 .. "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
+final Solver t6198 =
+              solver;
+            
+//#line 14 .. "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
+t6198.solutions = 0;
+            
+//#line 14 .. "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
+final Solver t6199 =
+              solver;
+            
+//#line 14 .. "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
+t6199.arr = null;
             
 //#line 106 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final Solver t3987 =
+final Solver t6098 =
               solver;
             
 //#line 106 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3988 =
+final int t6099 =
               input.
                 size;
             
 //#line 106 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.util.ArrayList t3989 =
+final x10.util.ArrayList t6100 =
               ((x10.util.ArrayList)(input.
                                       pawns));
             
 //#line 106 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 final long solutions =
-              t3987.solve__1$1Tile$2$O((int)(t3988),
-                                       ((x10.util.ArrayList)(t3989)));
+              t6098.solve__1$1Tile$2$O((int)(t6099),
+                                       ((x10.util.ArrayList)(t6100)));
             
 //#line 107 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 final long end =
@@ -936,77 +965,77 @@ long time_in_millis =
               ((end) - (((long)(start))));
             
 //#line 110 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3990 =
+final int t6101 =
               input.
                 solutions;
             
 //#line 110 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t3991 =
-              ((long)(((int)(t3990))));
+final long t6102 =
+              ((long)(((int)(t6101))));
             
 //#line 110 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t3998 =
+final boolean t6109 =
               ((long) solutions) !=
-            ((long) t3991);
+            ((long) t6102);
             
 //#line 110 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t3998) {
+if (t6109) {
                 
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.Printer t3995 =
+final x10.io.Printer t6106 =
                   ((x10.io.Printer)(x10.io.Console.get$OUT()));
                 
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t3992 =
+final java.lang.String t6103 =
                   (("Incorrect answer given:") + ((x10.core.Long.$box(solutions))));
                 
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t3993 =
-                  ((t3992) + (". Correct Answer: "));
+final java.lang.String t6104 =
+                  ((t6103) + (". Correct Answer: "));
                 
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final int t3994 =
+final int t6105 =
                   input.
                     solutions;
                 
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t3996 =
-                  ((t3993) + ((x10.core.Int.$box(t3994))));
+final java.lang.String t6107 =
+                  ((t6104) + ((x10.core.Int.$box(t6105))));
                 
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-t3995.println(((java.lang.Object)(t3996)));
+t6106.println(((java.lang.Object)(t6107)));
             } else {
                 
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.Printer t3997 =
+final x10.io.Printer t6108 =
                   ((x10.io.Printer)(x10.io.Console.get$OUT()));
                 
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-t3997.println(((java.lang.Object)("Correct Answer")));
+t6108.println(((java.lang.Object)("Correct Answer")));
             }
             
 //#line 119 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t3999 =
+final long t6110 =
               time_in_millis;
             
 //#line 119 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4000 =
-              ((long) t3999) ==
+final boolean t6111 =
+              ((long) t6110) ==
             ((long) 0L);
             
 //#line 119 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t4000) {
+if (t6111) {
                 
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 time_in_millis = 1L;
             }
             
 //#line 122 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4001 =
+final long t6112 =
               time_in_millis;
             
 //#line 122 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-return t4001;
+return t6112;
         }
         
         
@@ -1020,25 +1049,16 @@ final x10.core.Rail times =
               ((x10.core.Rail)(new x10.core.Rail<x10.core.Long>(x10.rtt.Types.LONG, ((long)(3L)))));
             
 //#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long i3865min4095 =
+final long i3866max6211 =
+              ((3L) - (((long)(1L))));
+            
+//#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+long i6208 =
               0L;
-            
-//#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4096 =
-              ((x10.core.Rail<x10.core.Long>)times).
-                size;
-            
-//#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long i3865max4097 =
-              ((t4096) - (((long)(1L))));
-            
-//#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-long i4092 =
-              i3865min4095;
             {
                 
 //#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long[] times$value4099 =
+final long[] times$value6213 =
                   ((long[])times.value);
                 
 //#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
@@ -1047,138 +1067,222 @@ for (;
                                                                                                                          ) {
                     
 //#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4093 =
-                      i4092;
+final long t6209 =
+                      i6208;
                     
 //#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4094 =
-                      ((t4093) <= (((long)(i3865max4097))));
+final boolean t6210 =
+                      ((t6209) <= (((long)(i3866max6211))));
                     
 //#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (!(t4094)) {
+if (!(t6210)) {
                         
 //#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 break;
                     }
                     
 //#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long index4089 =
-                      i4092;
+final long index6205 =
+                      i6208;
                     
 //#line 134 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.Printer t4084 =
+final x10.io.Printer t6200 =
                       ((x10.io.Printer)(x10.io.Console.get$OUT()));
                     
 //#line 134 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4085 =
-                      ((index4089) + (((long)(1L))));
+final long t6201 =
+                      ((index6205) + (((long)(1L))));
                     
 //#line 134 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4086 =
-                      (("Subtest #") + ((x10.core.Long.$box(t4085))));
+final java.lang.String t6202 =
+                      (("Subtest #") + ((x10.core.Long.$box(t6201))));
                     
 //#line 134 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4087 =
-                      ((t4086) + (": "));
+final java.lang.String t6203 =
+                      ((t6202) + (": "));
                     
 //#line 134 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-t4084.print(((java.lang.String)(t4087)));
+t6200.print(((java.lang.String)(t6203)));
                     
 //#line 135 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4088 =
+final long t6204 =
                       Main.run_one_test$O(((Main.Input)(input)));
                     
 //#line 135 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-times$value4099[(int)index4089]=t4088;
+times$value6213[(int)index6205]=t6204;
                     
 //#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4090 =
-                      i4092;
+final long t6206 =
+                      i6208;
                     
 //#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4091 =
-                      ((t4090) + (((long)(1L))));
+final long t6207 =
+                      ((t6206) + (((long)(1L))));
                     
 //#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-i4092 = t4091;
+i6208 = t6207;
                 }
             }
             
-//#line 138 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4013 =
+//#line 152 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+final long v5965 =
               ((long[])times.value)[(int)0L];
             
-//#line 138 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4014 =
+//#line 152 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+final long v5966 =
               ((long[])times.value)[(int)1L];
             
-//#line 138 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4015 =
+//#line 152 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+final long v5967 =
               ((long[])times.value)[(int)2L];
+            
+//#line 152 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+long ret5968 =
+               0;
+            
+//#line 153 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+__ret5969: {
+//#line 154 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+final boolean t6127 =
+              ((v5965) > (((long)(v5966))));
+//#line 154 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+if (t6127) {
+                
+//#line 156 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+final boolean t6124 =
+                  ((v5967) > (((long)(v5965))));
+                
+//#line 156 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+if (t6124) {
+                    
+//#line 157 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+ret5968 = v5965;
+                    
+//#line 157 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+break __ret5969;
+                } else {
+                    
+//#line 158 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+final boolean t6123 =
+                      ((v5967) > (((long)(v5966))));
+                    
+//#line 158 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+if (t6123) {
+                        
+//#line 159 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+ret5968 = v5967;
+                        
+//#line 159 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+break __ret5969;
+                    } else {
+                        
+//#line 161 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+ret5968 = v5966;
+                        
+//#line 161 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+break __ret5969;
+                    }
+                }
+            } else {
+                
+//#line 165 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+final boolean t6126 =
+                  ((v5967) > (((long)(v5966))));
+                
+//#line 165 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+if (t6126) {
+                    
+//#line 166 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+ret5968 = v5966;
+                    
+//#line 166 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+break __ret5969;
+                } else {
+                    
+//#line 167 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+final boolean t6125 =
+                      ((v5967) > (((long)(v5965))));
+                    
+//#line 167 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+if (t6125) {
+                        
+//#line 168 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+ret5968 = v5967;
+                        
+//#line 168 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+break __ret5969;
+                    } else {
+                        
+//#line 170 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+ret5968 = v5965;
+                        
+//#line 170 . "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
+break __ret5969;
+                    }
+                }
+            }}
             
 //#line 138 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 final long med =
-              Main.median$O((long)(t4013),
-                            (long)(t4014),
-                            (long)(t4015));
+              ret5968;
             
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final x10.io.Printer t4026 =
+final x10.io.Printer t6138 =
               ((x10.io.Printer)(x10.io.Console.get$OUT()));
             
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4016 =
+final long t6128 =
               ((long[])times.value)[(int)0L];
             
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4017 =
-              (("    Times (in milliseconds): [") + ((x10.core.Long.$box(t4016))));
+final java.lang.String t6129 =
+              (("    Times (in milliseconds): [") + ((x10.core.Long.$box(t6128))));
             
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4018 =
-              ((t4017) + (", "));
+final java.lang.String t6130 =
+              ((t6129) + (", "));
             
 //#line 141 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4019 =
+final long t6131 =
               ((long[])times.value)[(int)1L];
             
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4020 =
-              ((t4018) + ((x10.core.Long.$box(t4019))));
+final java.lang.String t6132 =
+              ((t6130) + ((x10.core.Long.$box(t6131))));
             
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4021 =
-              ((t4020) + (", "));
+final java.lang.String t6133 =
+              ((t6132) + (", "));
             
 //#line 142 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final long t4022 =
+final long t6134 =
               ((long[])times.value)[(int)2L];
             
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4023 =
-              ((t4021) + ((x10.core.Long.$box(t4022))));
+final java.lang.String t6135 =
+              ((t6133) + ((x10.core.Long.$box(t6134))));
             
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4024 =
-              ((t4023) + ("] ... median: "));
+final java.lang.String t6136 =
+              ((t6135) + ("] ... median: "));
             
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4025 =
-              ((t4024) + ((x10.core.Long.$box(med))));
+final java.lang.String t6137 =
+              ((t6136) + ((x10.core.Long.$box(med))));
             
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final java.lang.String t4027 =
-              ((t4025) + ("\n"));
+final java.lang.String t6139 =
+              ((t6137) + ("\n"));
             
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-t4026.println(((java.lang.Object)(t4027)));
+t6138.println(((java.lang.Object)(t6139)));
             
 //#line 145 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final double t4028 =
+final double t6140 =
               ((double)(long)(((long)(med))));
             
 //#line 145 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-return t4028;
+return t6140;
         }
         
         
@@ -1190,29 +1294,29 @@ public static long
                                                                                                               final long v3){
             
 //#line 154 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4033 =
+final boolean t6145 =
               ((v1) > (((long)(v2))));
             
 //#line 154 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t4033) {
+if (t6145) {
                 
 //#line 156 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4030 =
+final boolean t6142 =
                   ((v3) > (((long)(v1))));
                 
 //#line 156 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t4030) {
+if (t6142) {
                     
 //#line 157 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 return v1;
                 } else {
                     
 //#line 158 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4029 =
+final boolean t6141 =
                       ((v3) > (((long)(v2))));
                     
 //#line 158 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t4029) {
+if (t6141) {
                         
 //#line 159 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 return v3;
@@ -1225,22 +1329,22 @@ return v2;
             } else {
                 
 //#line 165 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4032 =
+final boolean t6144 =
                   ((v3) > (((long)(v2))));
                 
 //#line 165 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t4032) {
+if (t6144) {
                     
 //#line 166 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 return v2;
                 } else {
                     
 //#line 167 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-final boolean t4031 =
+final boolean t6143 =
                       ((v3) > (((long)(v1))));
                     
 //#line 167 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-if (t4031) {
+if (t6143) {
                         
 //#line 168 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 return v3;
@@ -1273,13 +1377,11 @@ return Main.this;
         final public Main Main$$init$S() { {
                                                   
 //#line 18 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-;
-                                                  
-//#line 18 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
 
                                                   
 //#line 17 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Main.x10"
-this.__fieldInitializers_Main();
+final Main this5985 =
+                                                    this;
                                               }
                                               return this;
                                               }

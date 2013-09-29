@@ -123,7 +123,21 @@ public class Board {
 	}
 	
 	public def valid() {
-		return validDiag() && validVert() && validHoriz();
+		var valid_1: boolean = true;
+		var valid_2: boolean = true;
+		var valid_3: boolean = true;
+		finish {
+			async {
+				valid_1 = validDiag();
+			}
+			async {
+				valid_2 = validVert();
+			}
+			async {
+				valid_3 = validHoriz();
+			}
+		}
+		return valid_1 && valid_2 && valid_3;
 	}
 	
 	public def print(){

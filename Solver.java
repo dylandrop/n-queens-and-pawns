@@ -8,10 +8,8 @@
     public x10.rtt.RuntimeType<?> $getRTT() {return $RTT;}
     
     public x10.rtt.Type<?> $getParam(int i) {return null;}
-    private void writeObject(java.io.ObjectOutputStream oos) throws java.io.IOException { if (x10.runtime.impl.java.Runtime.TRACE_SER) { java.lang.System.out.println("Serializer: writeObject(ObjectOutputStream) of " + this + " calling"); } oos.defaultWriteObject(); }
     public static x10.serialization.X10JavaSerializable $_deserialize_body(Solver $_obj , x10.serialization.X10JavaDeserializer $deserializer) throws java.io.IOException {
     
-        if (x10.runtime.impl.java.Runtime.TRACE_SER) { x10.runtime.impl.java.Runtime.printTraceMessage("X10JavaSerializable: $_deserialize_body() of " + Solver.class + " calling"); } 
         $_obj.solutions = $deserializer.readInt();
         $_obj.arr = $deserializer.readRef();
         return $_obj;
@@ -55,11 +53,11 @@ public long
                                                                                                                final x10.util.ArrayList pawns){
             
 //#line 30 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4540 =
+final x10.core.Rail t6595 =
               this.queensForBoard((int)(size));
             
 //#line 30 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-this.arr = ((x10.core.Rail)(t4540));
+this.arr = ((x10.core.Rail)(t6595));
             {
                 
 //#line 34 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
@@ -74,28 +72,28 @@ try {{
                     {
                         
 //#line 35 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4542 =
+final long t6597 =
                           ((long)(((int)(size))));
                         
 //#line 35 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4543 =
+final x10.core.Rail t6598 =
                           ((x10.core.Rail<Tile>)
                             ((x10.util.ArrayList<Tile>)pawns).toRail());
                         
 //#line 35 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4541 =
+final long t6596 =
                           ((long)(((int)(size))));
                         
 //#line 35 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4544 =
-                          ((x10.core.Rail)(new x10.core.Rail<Tile>(Tile.$RTT, t4541)));
+final x10.core.Rail t6599 =
+                          ((x10.core.Rail)(new x10.core.Rail<Tile>(Tile.$RTT, t6596)));
                         
 //#line 35 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-this.boardCombos__3$1Tile$2__4$1Tile$2((long)(t4542),
+this.boardCombos__3$1Tile$2__4$1Tile$2((long)(t6597),
                                                                                                                                                                     (int)(0),
                                                                                                                                                                     (int)(size),
-                                                                                                                                                                    ((x10.core.Rail)(t4543)),
-                                                                                                                                                                    ((x10.core.Rail)(t4544)),
+                                                                                                                                                                    ((x10.core.Rail)(t6598)),
+                                                                                                                                                                    ((x10.core.Rail)(t6599)),
                                                                                                                                                                     (int)(0));
                     }
                 }}catch (java.lang.Throwable __lowerer__var__0__) {
@@ -113,15 +111,15 @@ x10.lang.Runtime.stopFinish(((x10.lang.FinishState)(x10$__var0)));
                 }
             
 //#line 38 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4545 =
+final int t6600 =
               solutions;
             
 //#line 38 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4546 =
-              ((long)(((int)(t4545))));
+final long t6601 =
+              ((long)(((int)(t6600))));
             
 //#line 38 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-return t4546;
+return t6601;
             }
         
         
@@ -136,24 +134,24 @@ public void
                                                                                                                final int occupied){
             
 //#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4547 =
+final boolean t6602 =
               ((int) size) ==
             ((int) 0);
             
 //#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4547) {
+if (t6602) {
                 
 //#line 44 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 return;
             }
             
 //#line 45 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4550 =
+final boolean t6605 =
               ((long) len) ==
             ((long) 0L);
             
 //#line 45 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4550) {
+if (t6605) {
                 
 //#line 46 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 try {{
@@ -163,23 +161,20 @@ x10.lang.Runtime.enterAtomic();
                     {
                         
 //#line 46 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Solver x4538 =
+final Solver x6279 =
                           ((Solver)(this));
                         
 //#line 46 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-;
-                        
-//#line 46 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4548 =
-                          x4538.
+final int t6603 =
+                          x6279.
                             solutions;
                         
 //#line 46 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4549 =
-                          ((t4548) + (((int)(1))));
+final int t6604 =
+                          ((t6603) + (((int)(1))));
                         
 //#line 46 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-x4538.solutions = t4549;
+x6279.solutions = t6604;
                     }
                 }}finally {{
                       
@@ -208,21 +203,21 @@ public x10.core.Rail
                                                                                                                final x10.core.Rail x){
             
 //#line 75 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4586 =
+final long t6641 =
               ((x10.core.Rail<Tile>)x).
                 size;
             
 //#line 75 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 x10.core.Rail out =
-              new x10.core.Rail<Tile>(Tile.$RTT, ((long)(t4586)));
+              new x10.core.Rail<Tile>(Tile.$RTT, ((long)(t6641)));
             
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-long i4791 =
+long i6844 =
               0L;
             {
                 
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile[] x$value4944 =
+final Tile[] x$value6998 =
                   ((Tile[])x.value);
                 
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
@@ -231,63 +226,63 @@ for (;
                                                                                                                           ) {
                     
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4792 =
-                      i4791;
+final long t6845 =
+                      i6844;
                     
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4793 =
+final long t6846 =
                       ((x10.core.Rail<Tile>)x).
                         size;
                     
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4794 =
-                      ((t4792) < (((long)(t4793))));
+final boolean t6847 =
+                      ((t6845) < (((long)(t6846))));
                     
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (!(t4794)) {
+if (!(t6847)) {
                         
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 break;
                     }
                     
 //#line 77 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4785 =
+final x10.core.Rail t6838 =
                       out;
                     
 //#line 77 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4786 =
-                      i4791;
+final long t6839 =
+                      i6844;
                     
 //#line 77 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4787 =
-                      i4791;
+final long t6840 =
+                      i6844;
                     
 //#line 77 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4788 =
-                      ((Tile)x$value4944[(int)t4787]);
+final Tile t6841 =
+                      ((Tile)x$value6998[(int)t6840]);
                     
 //#line 77 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-((Tile[])t4785.value)[(int)t4786] = t4788;
+((Tile[])t6838.value)[(int)t6839] = t6841;
                     
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4789 =
-                      i4791;
+final long t6842 =
+                      i6844;
                     
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4790 =
-                      ((t4789) + (((long)(1L))));
+final long t6843 =
+                      ((t6842) + (((long)(1L))));
                     
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-i4791 = t4790;
+i6844 = t6843;
                 }
             }
             
 //#line 79 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4597 =
+final x10.core.Rail t6652 =
               out;
             
 //#line 79 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-return t4597;
+return t6652;
         }
         
         
@@ -304,46 +299,46 @@ boolean out =
               true;
             
 //#line 85 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4598 =
+final long t6653 =
               ((x10.core.Rail<Tile>)pawns).
                 size;
             
 //#line 85 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4599 =
-              ((long) t4598) ==
+final boolean t6654 =
+              ((long) t6653) ==
             ((long) 0L);
             
 //#line 85 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4599) {
+if (t6654) {
                 
 //#line 86 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 return true;
             }
             
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4600 =
+final long t6655 =
               ((x10.core.Rail<Tile>)qRail).
                 size;
             
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4601 =
-              ((long) t4600) ==
+final boolean t6656 =
+              ((long) t6655) ==
             ((long) 0L);
             
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4601) {
+if (t6656) {
                 
 //#line 89 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 return true;
             }
             
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-int i4912 =
+int i6965 =
               0;
             {
                 
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile[] pawns$value4945 =
+final Tile[] pawns$value6999 =
                   ((Tile[])pawns.value);
                 
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
@@ -352,107 +347,107 @@ for (;
                                                                                                                           ) {
                     
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4913 =
-                      i4912;
+final int t6966 =
+                      i6965;
                     
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4914 =
-                      ((long)(((int)(t4913))));
+final long t6967 =
+                      ((long)(((int)(t6966))));
                     
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4915 =
+final long t6968 =
                       ((x10.core.Rail<Tile>)pawns).
                         size;
                     
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4916 =
-                      ((t4914) < (((long)(t4915))));
+final boolean t6969 =
+                      ((t6967) < (((long)(t6968))));
                     
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (!(t4916)) {
+if (!(t6969)) {
                         
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 break;
                     }
                     
 //#line 92 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4795 =
-                      i4912;
+final int t6848 =
+                      i6965;
                     
 //#line 92 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4796 =
-                      ((long)(((int)(t4795))));
+final long t6849 =
+                      ((long)(((int)(t6848))));
                     
 //#line 92 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4797 =
-                      ((Tile)pawns$value4945[(int)t4796]);
+final Tile t6850 =
+                      ((Tile)pawns$value6999[(int)t6849]);
                     
 //#line 92 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4798 =
-                      t4797.
+final int t6851 =
+                      t6850.
                         x;
                     
 //#line 92 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4799 =
-                      ((int) t4798) ==
+boolean t6852 =
+                      ((int) t6851) ==
                     ((int) x);
                     
 //#line 92 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4799) {
+if (t6852) {
                         
 //#line 92 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4800 =
-                          i4912;
+final int t6853 =
+                          i6965;
                         
 //#line 92 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4801 =
-                          ((long)(((int)(t4800))));
+final long t6854 =
+                          ((long)(((int)(t6853))));
                         
 //#line 92 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4802 =
-                          ((Tile)pawns$value4945[(int)t4801]);
+final Tile t6855 =
+                          ((Tile)pawns$value6999[(int)t6854]);
                         
 //#line 92 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4803 =
-                          t4802.
+final int t6856 =
+                          t6855.
                             y;
                         
 //#line 92 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-t4799 = ((int) t4803) ==
+t6852 = ((int) t6856) ==
                         ((int) y);
                     }
                     
 //#line 92 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4804 =
-                      t4799;
+final boolean t6857 =
+                      t6852;
                     
 //#line 92 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4804) {
+if (t6857) {
                         
 //#line 93 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 return false;
                     }
                     
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4805 =
-                      i4912;
+final int t6858 =
+                      i6965;
                     
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4806 =
-                      ((t4805) + (((int)(1))));
+final int t6859 =
+                      ((t6858) + (((int)(1))));
                     
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-i4912 = t4806;
+i6965 = t6859;
                 }
             }
             
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-int i4917 =
+int i6970 =
               0;
             {
                 
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile[] qRail$value4946 =
+final Tile[] qRail$value7000 =
                   ((Tile[])qRail.value);
                 
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
@@ -461,24 +456,24 @@ for (;
                                                                                                                           ) {
                     
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4918 =
-                      i4917;
+final int t6971 =
+                      i6970;
                     
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4919 =
-                      ((long)(((int)(t4918))));
+final long t6972 =
+                      ((long)(((int)(t6971))));
                     
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4920 =
+final long t6973 =
                       ((x10.core.Rail<Tile>)qRail).
                         size;
                     
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4921 =
-                      ((t4919) < (((long)(t4920))));
+final boolean t6974 =
+                      ((t6972) < (((long)(t6973))));
                     
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (!(t4921)) {
+if (!(t6974)) {
                         
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 break;
@@ -488,599 +483,599 @@ break;
 try {{
                         
 //#line 98 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4807 =
-                          i4917;
+final int t6860 =
+                          i6970;
                         
 //#line 98 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4808 =
-                          ((long)(((int)(t4807))));
+final long t6861 =
+                          ((long)(((int)(t6860))));
                         
 //#line 98 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4809 =
-                          ((Tile)qRail$value4946[(int)t4808]);
+final Tile t6862 =
+                          ((Tile)qRail$value7000[(int)t6861]);
                         
 //#line 98 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4810 =
-                          t4809.
+final int t6863 =
+                          t6862.
                             x;
                         
 //#line 98 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4811 =
-                          ((int) t4810) ==
+boolean t6864 =
+                          ((int) t6863) ==
                         ((int) x);
                         
 //#line 98 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4811) {
+if (t6864) {
                             
 //#line 98 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4812 =
-                              i4917;
+final int t6865 =
+                              i6970;
                             
 //#line 98 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4813 =
-                              ((long)(((int)(t4812))));
+final long t6866 =
+                              ((long)(((int)(t6865))));
                             
 //#line 98 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4814 =
-                              ((Tile)qRail$value4946[(int)t4813]);
+final Tile t6867 =
+                              ((Tile)qRail$value7000[(int)t6866]);
                             
 //#line 98 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4815 =
-                              t4814.
+final int t6868 =
+                              t6867.
                                 y;
                             
 //#line 98 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-t4811 = ((int) t4815) ==
+t6864 = ((int) t6868) ==
                             ((int) y);
                         }
                         
 //#line 98 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4816 =
-                          t4811;
+final boolean t6869 =
+                          t6864;
                         
 //#line 98 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4816) {
+if (t6869) {
                             
 //#line 99 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 return false;
                         }
                         
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4817 =
-                          i4917;
+final int t6870 =
+                          i6970;
                         
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4818 =
-                          ((long)(((int)(t4817))));
+final long t6871 =
+                          ((long)(((int)(t6870))));
                         
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4819 =
-                          ((Tile)qRail$value4946[(int)t4818]);
+final Tile t6872 =
+                          ((Tile)qRail$value7000[(int)t6871]);
                         
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4820 =
-                          t4819.
+final int t6873 =
+                          t6872.
                             x;
                         
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4821 =
-                          ((int) t4820) ==
+boolean t6874 =
+                          ((int) t6873) ==
                         ((int) x);
                         
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4821) {
+if (t6874) {
                             
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4822 =
-                              i4917;
+final int t6875 =
+                              i6970;
                             
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4823 =
-                              ((long)(((int)(t4822))));
+final long t6876 =
+                              ((long)(((int)(t6875))));
                             
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4824 =
-                              ((Tile)qRail$value4946[(int)t4823]);
+final Tile t6877 =
+                              ((Tile)qRail$value7000[(int)t6876]);
                             
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4825 =
-                              t4824.
+final int t6878 =
+                              t6877.
                                 y;
                             
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4826 =
+final int t6879 =
                               ((y) - (((int)(1))));
                             
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-t4821 = ((int) t4825) ==
-                            ((int) t4826);
+t6874 = ((int) t6878) ==
+                            ((int) t6879);
                         }
                         
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4827 =
-                          t4821;
+final boolean t6880 =
+                          t6874;
                         
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4827) {
+if (t6880) {
                             
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 return false;
                         }
                         
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4828 =
-                          i4917;
+final int t6881 =
+                          i6970;
                         
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4829 =
-                          ((long)(((int)(t4828))));
+final long t6882 =
+                          ((long)(((int)(t6881))));
                         
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4830 =
-                          ((Tile)qRail$value4946[(int)t4829]);
+final Tile t6883 =
+                          ((Tile)qRail$value7000[(int)t6882]);
                         
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4831 =
-                          t4830.
+final int t6884 =
+                          t6883.
                             x;
                         
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4832 =
-                          ((int) t4831) ==
+boolean t6885 =
+                          ((int) t6884) ==
                         ((int) x);
                         
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4832) {
+if (t6885) {
                             
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4833 =
-                              i4917;
+final int t6886 =
+                              i6970;
                             
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4834 =
-                              ((long)(((int)(t4833))));
+final long t6887 =
+                              ((long)(((int)(t6886))));
                             
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4835 =
-                              ((Tile)qRail$value4946[(int)t4834]);
+final Tile t6888 =
+                              ((Tile)qRail$value7000[(int)t6887]);
                             
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4836 =
-                              t4835.
+final int t6889 =
+                              t6888.
                                 y;
                             
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4837 =
+final int t6890 =
                               ((y) + (((int)(1))));
                             
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-t4832 = ((int) t4836) ==
-                            ((int) t4837);
+t6885 = ((int) t6889) ==
+                            ((int) t6890);
                         }
                         
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4838 =
-                          t4832;
+final boolean t6891 =
+                          t6885;
                         
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4838) {
+if (t6891) {
                             
 //#line 106 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 return false;
                         }
                         
 //#line 108 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4839 =
-                          i4917;
+final int t6892 =
+                          i6970;
                         
 //#line 108 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4840 =
-                          ((long)(((int)(t4839))));
+final long t6893 =
+                          ((long)(((int)(t6892))));
                         
 //#line 108 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4841 =
-                          ((Tile)qRail$value4946[(int)t4840]);
+final Tile t6894 =
+                          ((Tile)qRail$value7000[(int)t6893]);
                         
 //#line 108 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4842 =
-                          t4841.
+final int t6895 =
+                          t6894.
                             x;
                         
 //#line 108 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4843 =
+final int t6896 =
                           ((x) - (((int)(1))));
                         
 //#line 108 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4844 =
-                          ((int) t4842) ==
-                        ((int) t4843);
+boolean t6897 =
+                          ((int) t6895) ==
+                        ((int) t6896);
                         
 //#line 108 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4844) {
+if (t6897) {
                             
 //#line 108 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4845 =
-                              i4917;
+final int t6898 =
+                              i6970;
                             
 //#line 108 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4846 =
-                              ((long)(((int)(t4845))));
+final long t6899 =
+                              ((long)(((int)(t6898))));
                             
 //#line 108 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4847 =
-                              ((Tile)qRail$value4946[(int)t4846]);
+final Tile t6900 =
+                              ((Tile)qRail$value7000[(int)t6899]);
                             
 //#line 108 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4848 =
-                              t4847.
+final int t6901 =
+                              t6900.
                                 y;
                             
 //#line 108 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-t4844 = ((int) t4848) ==
+t6897 = ((int) t6901) ==
                             ((int) y);
                         }
                         
 //#line 108 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4849 =
-                          t4844;
+final boolean t6902 =
+                          t6897;
                         
 //#line 108 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4849) {
+if (t6902) {
                             
 //#line 109 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 return false;
                         }
                         
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4850 =
-                          i4917;
+final int t6903 =
+                          i6970;
                         
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4851 =
-                          ((long)(((int)(t4850))));
+final long t6904 =
+                          ((long)(((int)(t6903))));
                         
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4852 =
-                          ((Tile)qRail$value4946[(int)t4851]);
+final Tile t6905 =
+                          ((Tile)qRail$value7000[(int)t6904]);
                         
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4853 =
-                          t4852.
+final int t6906 =
+                          t6905.
                             x;
                         
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4854 =
+final int t6907 =
                           ((x) + (((int)(1))));
                         
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4855 =
-                          ((int) t4853) ==
-                        ((int) t4854);
+boolean t6908 =
+                          ((int) t6906) ==
+                        ((int) t6907);
                         
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4855) {
+if (t6908) {
                             
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4856 =
-                              i4917;
+final int t6909 =
+                              i6970;
                             
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4857 =
-                              ((long)(((int)(t4856))));
+final long t6910 =
+                              ((long)(((int)(t6909))));
                             
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4858 =
-                              ((Tile)qRail$value4946[(int)t4857]);
+final Tile t6911 =
+                              ((Tile)qRail$value7000[(int)t6910]);
                             
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4859 =
-                              t4858.
+final int t6912 =
+                              t6911.
                                 y;
                             
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-t4855 = ((int) t4859) ==
+t6908 = ((int) t6912) ==
                             ((int) y);
                         }
                         
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4860 =
-                          t4855;
+final boolean t6913 =
+                          t6908;
                         
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4860) {
+if (t6913) {
                             
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 return false;
                         }
                         
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4861 =
-                          i4917;
+final int t6914 =
+                          i6970;
                         
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4862 =
-                          ((long)(((int)(t4861))));
+final long t6915 =
+                          ((long)(((int)(t6914))));
                         
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4863 =
-                          ((Tile)qRail$value4946[(int)t4862]);
+final Tile t6916 =
+                          ((Tile)qRail$value7000[(int)t6915]);
                         
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4864 =
-                          t4863.
+final int t6917 =
+                          t6916.
                             x;
                         
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4865 =
+final int t6918 =
                           ((x) + (((int)(1))));
                         
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4866 =
-                          ((int) t4864) ==
-                        ((int) t4865);
+boolean t6919 =
+                          ((int) t6917) ==
+                        ((int) t6918);
                         
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4866) {
+if (t6919) {
                             
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4867 =
-                              i4917;
+final int t6920 =
+                              i6970;
                             
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4868 =
-                              ((long)(((int)(t4867))));
+final long t6921 =
+                              ((long)(((int)(t6920))));
                             
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4869 =
-                              ((Tile)qRail$value4946[(int)t4868]);
+final Tile t6922 =
+                              ((Tile)qRail$value7000[(int)t6921]);
                             
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4870 =
-                              t4869.
+final int t6923 =
+                              t6922.
                                 y;
                             
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4871 =
+final int t6924 =
                               ((y) + (((int)(1))));
                             
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-t4866 = ((int) t4870) ==
-                            ((int) t4871);
+t6919 = ((int) t6923) ==
+                            ((int) t6924);
                         }
                         
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4872 =
-                          t4866;
+final boolean t6925 =
+                          t6919;
                         
 //#line 114 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4872) {
+if (t6925) {
                             
 //#line 115 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 return false;
                         }
                         
 //#line 117 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4873 =
-                          i4917;
+final int t6926 =
+                          i6970;
                         
 //#line 117 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4874 =
-                          ((long)(((int)(t4873))));
+final long t6927 =
+                          ((long)(((int)(t6926))));
                         
 //#line 117 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4875 =
-                          ((Tile)qRail$value4946[(int)t4874]);
+final Tile t6928 =
+                          ((Tile)qRail$value7000[(int)t6927]);
                         
 //#line 117 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4876 =
-                          t4875.
+final int t6929 =
+                          t6928.
                             x;
                         
 //#line 117 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4877 =
+final int t6930 =
                           ((x) - (((int)(1))));
                         
 //#line 117 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4878 =
-                          ((int) t4876) ==
-                        ((int) t4877);
+boolean t6931 =
+                          ((int) t6929) ==
+                        ((int) t6930);
                         
 //#line 117 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4878) {
+if (t6931) {
                             
 //#line 117 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4879 =
-                              i4917;
+final int t6932 =
+                              i6970;
                             
 //#line 117 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4880 =
-                              ((long)(((int)(t4879))));
+final long t6933 =
+                              ((long)(((int)(t6932))));
                             
 //#line 117 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4881 =
-                              ((Tile)qRail$value4946[(int)t4880]);
+final Tile t6934 =
+                              ((Tile)qRail$value7000[(int)t6933]);
                             
 //#line 117 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4882 =
-                              t4881.
+final int t6935 =
+                              t6934.
                                 y;
                             
 //#line 117 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4883 =
+final int t6936 =
                               ((y) + (((int)(1))));
                             
 //#line 117 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-t4878 = ((int) t4882) ==
-                            ((int) t4883);
+t6931 = ((int) t6935) ==
+                            ((int) t6936);
                         }
                         
 //#line 117 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4884 =
-                          t4878;
+final boolean t6937 =
+                          t6931;
                         
 //#line 117 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4884) {
+if (t6937) {
                             
 //#line 118 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 return false;
                         }
                         
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4885 =
-                          i4917;
+final int t6938 =
+                          i6970;
                         
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4886 =
-                          ((long)(((int)(t4885))));
+final long t6939 =
+                          ((long)(((int)(t6938))));
                         
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4887 =
-                          ((Tile)qRail$value4946[(int)t4886]);
+final Tile t6940 =
+                          ((Tile)qRail$value7000[(int)t6939]);
                         
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4888 =
-                          t4887.
+final int t6941 =
+                          t6940.
                             x;
                         
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4889 =
+final int t6942 =
                           ((x) + (((int)(1))));
                         
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4890 =
-                          ((int) t4888) ==
-                        ((int) t4889);
+boolean t6943 =
+                          ((int) t6941) ==
+                        ((int) t6942);
                         
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4890) {
+if (t6943) {
                             
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4891 =
-                              i4917;
+final int t6944 =
+                              i6970;
                             
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4892 =
-                              ((long)(((int)(t4891))));
+final long t6945 =
+                              ((long)(((int)(t6944))));
                             
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4893 =
-                              ((Tile)qRail$value4946[(int)t4892]);
+final Tile t6946 =
+                              ((Tile)qRail$value7000[(int)t6945]);
                             
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4894 =
-                              t4893.
+final int t6947 =
+                              t6946.
                                 y;
                             
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4895 =
+final int t6948 =
                               ((y) - (((int)(1))));
                             
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-t4890 = ((int) t4894) ==
-                            ((int) t4895);
+t6943 = ((int) t6947) ==
+                            ((int) t6948);
                         }
                         
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4896 =
-                          t4890;
+final boolean t6949 =
+                          t6943;
                         
 //#line 120 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4896) {
+if (t6949) {
                             
 //#line 121 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 return false;
                         }
                         
 //#line 123 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4897 =
-                          i4917;
+final int t6950 =
+                          i6970;
                         
 //#line 123 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4898 =
-                          ((long)(((int)(t4897))));
+final long t6951 =
+                          ((long)(((int)(t6950))));
                         
 //#line 123 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4899 =
-                          ((Tile)qRail$value4946[(int)t4898]);
+final Tile t6952 =
+                          ((Tile)qRail$value7000[(int)t6951]);
                         
 //#line 123 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4900 =
-                          t4899.
+final int t6953 =
+                          t6952.
                             x;
                         
 //#line 123 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4901 =
+final int t6954 =
                           ((x) - (((int)(1))));
                         
 //#line 123 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-boolean t4902 =
-                          ((int) t4900) ==
-                        ((int) t4901);
+boolean t6955 =
+                          ((int) t6953) ==
+                        ((int) t6954);
                         
 //#line 123 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4902) {
+if (t6955) {
                             
 //#line 123 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4903 =
-                              i4917;
+final int t6956 =
+                              i6970;
                             
 //#line 123 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4904 =
-                              ((long)(((int)(t4903))));
+final long t6957 =
+                              ((long)(((int)(t6956))));
                             
 //#line 123 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4905 =
-                              ((Tile)qRail$value4946[(int)t4904]);
+final Tile t6958 =
+                              ((Tile)qRail$value7000[(int)t6957]);
                             
 //#line 123 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4906 =
-                              t4905.
+final int t6959 =
+                              t6958.
                                 y;
                             
 //#line 123 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4907 =
+final int t6960 =
                               ((y) - (((int)(1))));
                             
 //#line 123 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-t4902 = ((int) t4906) ==
-                            ((int) t4907);
+t6955 = ((int) t6959) ==
+                            ((int) t6960);
                         }
                         
 //#line 123 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4908 =
-                          t4902;
+final boolean t6961 =
+                          t6955;
                         
 //#line 123 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4908) {
+if (t6961) {
                             
 //#line 125 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 return false;
                         }
-                    }}catch (final java.lang.NullPointerException id$4909) {
+                    }}catch (final java.lang.NullPointerException id$6962) {
                         
 //#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 return true;
                     }
                     
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4910 =
-                      i4917;
+final int t6963 =
+                      i6970;
                     
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4911 =
-                      ((t4910) + (((int)(1))));
+final int t6964 =
+                      ((t6963) + (((int)(1))));
                     
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-i4917 = t4911;
+i6970 = t6964;
                 }
             }
             
 //#line 133 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4728 =
+final boolean t6783 =
               out;
             
 //#line 133 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-return t4728;
+return t6783;
         }
         
         
@@ -1090,44 +1085,44 @@ public x10.core.Rail
                                                                                                                 final int ofSize){
             
 //#line 136 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4731 =
+final boolean t6786 =
               ((int) ofSize) ==
             ((int) 0);
             
 //#line 136 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4731) {
+if (t6786) {
                 
 //#line 137 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4729 =
+final long t6784 =
                   ((long)(((int)(0))));
                 
 //#line 137 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4730 =
-                  ((x10.core.Rail)(new x10.core.Rail<Tile>(Tile.$RTT, t4729)));
+final x10.core.Rail t6785 =
+                  ((x10.core.Rail)(new x10.core.Rail<Tile>(Tile.$RTT, t6784)));
                 
 //#line 137 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-return t4730;
+return t6785;
             }
             
 //#line 139 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4732 =
+final int t6787 =
               ((ofSize) * (((int)(ofSize))));
             
 //#line 139 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4733 =
-              ((long)(((int)(t4732))));
+final long t6788 =
+              ((long)(((int)(t6787))));
             
 //#line 139 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 final x10.core.Rail queens =
-              new x10.core.Rail<Tile>(Tile.$RTT, t4733);
+              new x10.core.Rail<Tile>(Tile.$RTT, t6788);
             
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-int i4936 =
+int i6989 =
               1;
             {
                 
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile[] queens$value4947 =
+final Tile[] queens$value7001 =
                   ((Tile[])queens.value);
                 
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
@@ -1136,87 +1131,90 @@ for (;
                                                                                                                            ) {
                     
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4937 =
-                      i4936;
+final int t6990 =
+                      i6989;
                     
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4938 =
+final int t6991 =
                       ((ofSize) * (((int)(ofSize))));
                     
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4939 =
-                      ((t4937) <= (((int)(t4938))));
+final boolean t6992 =
+                      ((t6990) <= (((int)(t6991))));
                     
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (!(t4939)) {
+if (!(t6992)) {
                         
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 break;
                     }
                     
 //#line 141 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4922 =
-                      i4936;
+final int t6977 =
+                      i6989;
                     
 //#line 141 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4923 =
-                      ((t4922) - (((int)(1))));
+final int t6978 =
+                      ((t6977) - (((int)(1))));
                     
 //#line 141 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-int x4924 =
-                      ((t4923) % (((int)(ofSize))));
+int x6979 =
+                      ((t6978) % (((int)(ofSize))));
                     
 //#line 142 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4925 =
-                      i4936;
+final int t6980 =
+                      i6989;
                     
 //#line 142 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4926 =
-                      ((t4925) - (((int)(1))));
+final int t6981 =
+                      ((t6980) - (((int)(1))));
                     
 //#line 142 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-int y4927 =
-                      ((t4926) / (((int)(ofSize))));
+int y6982 =
+                      ((t6981) / (((int)(ofSize))));
                     
 //#line 143 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4928 =
-                      i4936;
+final int t6983 =
+                      i6989;
                     
 //#line 143 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4929 =
-                      ((long)(((int)(t4928))));
+final long t6984 =
+                      ((long)(((int)(t6983))));
                     
 //#line 143 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4930 =
-                      ((t4929) - (((long)(1L))));
+final long t6985 =
+                      ((t6984) - (((long)(1L))));
                     
 //#line 143 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4931 =
-                      x4924;
+final Tile alloc6986 =
+                      new Tile((java.lang.System[]) null);
                     
 //#line 143 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4932 =
-                      y4927;
+final int t6975 =
+                      x6979;
                     
 //#line 143 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4933 =
-                      new Tile((java.lang.System[]) null).Tile$$init$S(t4931,
-                                                                       t4932,
-                                                                       ((int)(2)));
+final int t6976 =
+                      y6982;
                     
 //#line 143 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-queens$value4947[(int)t4930]=t4933;
+alloc6986.Tile$$init$S(t6975,
+                                                                                                                                                 t6976,
+                                                                                                                                                 ((int)(2)));
+                    
+//#line 143 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
+queens$value7001[(int)t6985]=alloc6986;
                     
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4934 =
-                      i4936;
+final int t6987 =
+                      i6989;
                     
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4935 =
-                      ((t4934) + (((int)(1))));
+final int t6988 =
+                      ((t6987) + (((int)(1))));
                     
 //#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-i4936 = t4935;
+i6989 = t6988;
                 }
             }
             
@@ -1235,10 +1233,8 @@ return queens;
             public x10.rtt.RuntimeType<?> $getRTT() {return $RTT;}
             
             public x10.rtt.Type<?> $getParam(int i) {return null;}
-            private void writeObject(java.io.ObjectOutputStream oos) throws java.io.IOException { if (x10.runtime.impl.java.Runtime.TRACE_SER) { java.lang.System.out.println("Serializer: writeObject(ObjectOutputStream) of " + this + " calling"); } oos.defaultWriteObject(); }
             public static x10.serialization.X10JavaSerializable $_deserialize_body(Solver.Node $_obj , x10.serialization.X10JavaDeserializer $deserializer) throws java.io.IOException {
             
-                if (x10.runtime.impl.java.Runtime.TRACE_SER) { x10.runtime.impl.java.Runtime.printTraceMessage("X10JavaSerializable: $_deserialize_body() of " + Node.class + " calling"); } 
                 $_obj.board = $deserializer.readRef();
                 $_obj.out$ = $deserializer.readRef();
                 return $_obj;
@@ -1297,22 +1293,23 @@ public Board board;
 this.out$ = out$;
                                                                                                                      
 //#line 151 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-;
-                                                                                                                     
-//#line 151 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 
                                                                                                                      
 //#line 149 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-this.__fieldInitializers_Solver_Node();
+final Solver.Node this6993 =
+                                                                                                                       this;
                                                                                                                      
 //#line 152 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Board t4750 =
-                                                                                                                       ((Board)(new Board((java.lang.System[]) null).Board$$init$S(((int)(size)),
-                                                                                                                                                                                   ((x10.core.Rail)(pawns)),
-                                                                                                                                                                                   ((x10.core.Rail)(queens)), (Board.__1$1Tile$2__2$1Tile$2) null)));
+final Board alloc5958 =
+                                                                                                                       ((Board)(new Board((java.lang.System[]) null)));
                                                                                                                      
 //#line 152 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-this.board = ((Board)(t4750));
+alloc5958.Board$$init$S(((int)(size)),
+                                                                                                                                                                                                                                                   ((x10.core.Rail)(pawns)),
+                                                                                                                                                                                                                                                   ((x10.core.Rail)(queens)), (Board.__1$1Tile$2__2$1Tile$2) null);
+                                                                                                                     
+//#line 152 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
+this.board = ((Board)(alloc5958));
                                                                                                                  }
                                                                                                                  return this;
                                                                                                                  }
@@ -1325,15 +1322,15 @@ final public boolean
                                                                                                                         ){
                     
 //#line 156 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Board t4751 =
+final Board t6804 =
                       ((Board)(board));
                     
 //#line 156 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4752 =
-                      t4751.valid$O();
+final boolean t6805 =
+                      t6804.valid$O();
                     
 //#line 156 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-return t4752;
+return t6805;
                 }
                 
                 
@@ -1353,12 +1350,12 @@ final public Solver
                                                                                                                         ){
                     
 //#line 149 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Solver t4753 =
+final Solver t6806 =
                       this.
                         out$;
                     
 //#line 149 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-return t4753;
+return t6806;
                 }
                 
                 
@@ -1394,13 +1391,17 @@ return Solver.this;
         final public Solver Solver$$init$S() { {
                                                       
 //#line 15 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-;
-                                                      
-//#line 15 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 
                                                       
 //#line 14 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-this.__fieldInitializers_Solver();
+final Solver this6592 =
+                                                        this;
+                                                      
+//#line 14 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
+this6592.solutions = 0;
+                                                      
+//#line 14 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
+this6592.arr = null;
                                                   }
                                                   return this;
                                                   }
@@ -1428,10 +1429,8 @@ this.arr = null;
             public x10.rtt.RuntimeType<?> $getRTT() {return $RTT;}
             
             public x10.rtt.Type<?> $getParam(int i) {return null;}
-            private void writeObject(java.io.ObjectOutputStream oos) throws java.io.IOException { if (x10.runtime.impl.java.Runtime.TRACE_SER) { java.lang.System.out.println("Serializer: writeObject(ObjectOutputStream) of " + this + " calling"); } oos.defaultWriteObject(); }
             public static x10.serialization.X10JavaSerializable $_deserialize_body(Solver.$Closure$0 $_obj , x10.serialization.X10JavaDeserializer $deserializer) throws java.io.IOException {
             
-                if (x10.runtime.impl.java.Runtime.TRACE_SER) { x10.runtime.impl.java.Runtime.printTraceMessage("X10JavaSerializable: $_deserialize_body() of " + $Closure$0.class + " calling"); } 
                 $_obj.out$$ = $deserializer.readRef();
                 $_obj.startPos = $deserializer.readInt();
                 $_obj.len = $deserializer.readLong();
@@ -1497,213 +1496,216 @@ for (;
                                                                                                                                   ) {
                             
 //#line 49 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4552 =
+final int t6607 =
                               i;
                             
 //#line 49 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4555 =
-                              ((long)(((int)(t4552))));
+final long t6610 =
+                              ((long)(((int)(t6607))));
                             
 //#line 49 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4553 =
+final x10.core.Rail t6608 =
                               ((x10.core.Rail)(this.
                                                  out$$.
                                                  arr));
                             
 //#line 49 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4554 =
-                              ((x10.core.Rail<Tile>)t4553).
+final long t6609 =
+                              ((x10.core.Rail<Tile>)t6608).
                                 size;
                             
 //#line 49 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4556 =
-                              ((t4554) - (((long)(this.
+final long t6611 =
+                              ((t6609) - (((long)(this.
                                                     len))));
                             
 //#line 49 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4585 =
-                              ((t4555) <= (((long)(t4556))));
+final boolean t6640 =
+                              ((t6610) <= (((long)(t6611))));
                             
 //#line 49 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (!(t4585)) {
+if (!(t6640)) {
                                 
 //#line 49 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 break;
                             }
                             
 //#line 51 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-x10.core.Rail qTemp4754 =
+x10.core.Rail qTemp6808 =
                               this.
                                 out$$.cloneArray__0$1Tile$2(((x10.core.Rail)(this.
                                                                                queens)));
                             
 //#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4755 =
-                              qTemp4754;
+final x10.core.Rail t6809 =
+                              qTemp6808;
                             
 //#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4756 =
+final x10.core.Rail t6810 =
                               ((x10.core.Rail)(this.
                                                  out$$.
                                                  arr));
                             
 //#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4757 =
+final int t6811 =
                               i;
                             
 //#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4758 =
-                              ((long)(((int)(t4757))));
+final long t6812 =
+                              ((long)(((int)(t6811))));
                             
 //#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4759 =
-                              ((Tile[])t4756.value)[(int)t4758];
+final Tile t6813 =
+                              ((Tile[])t6810.value)[(int)t6812];
                             
 //#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4760 =
-                              t4759.
+final int t6814 =
+                              t6813.
                                 x;
                             
 //#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4761 =
+final x10.core.Rail t6815 =
                               ((x10.core.Rail)(this.
                                                  out$$.
                                                  arr));
                             
 //#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4762 =
+final int t6816 =
                               i;
                             
 //#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4763 =
-                              ((long)(((int)(t4762))));
+final long t6817 =
+                              ((long)(((int)(t6816))));
                             
 //#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4764 =
-                              ((Tile[])t4761.value)[(int)t4763];
+final Tile t6818 =
+                              ((Tile[])t6815.value)[(int)t6817];
                             
 //#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4765 =
-                              t4764.
+final int t6819 =
+                              t6818.
                                 y;
                             
 //#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4766 =
+final boolean t6820 =
                               this.
                                 out$$.safe__0$1Tile$2__1$1Tile$2$O(((x10.core.Rail)(this.
                                                                                       pawns)),
-                                                                   ((x10.core.Rail)(t4755)),
-                                                                   (int)(t4760),
-                                                                   (int)(t4765));
+                                                                   ((x10.core.Rail)(t6809)),
+                                                                   (int)(t6814),
+                                                                   (int)(t6819));
                             
 //#line 53 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4766) {
+if (t6820) {
                                 
 //#line 56 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4767 =
-                                  qTemp4754;
+final x10.core.Rail t6821 =
+                                  qTemp6808;
                                 
 //#line 56 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4768 =
+final long t6822 =
                                   ((long)(((int)(this.
                                                    occupied))));
                                 
 //#line 56 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4769 =
+final x10.core.Rail t6823 =
                                   ((x10.core.Rail)(this.
                                                      out$$.
                                                      arr));
                                 
 //#line 56 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4770 =
+final int t6824 =
                                   i;
                                 
 //#line 56 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4771 =
-                                  ((long)(((int)(t4770))));
+final long t6825 =
+                                  ((long)(((int)(t6824))));
                                 
 //#line 56 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Tile t4772 =
-                                  ((Tile[])t4769.value)[(int)t4771];
+final Tile t6826 =
+                                  ((Tile[])t6823.value)[(int)t6825];
                                 
 //#line 56 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-((Tile[])t4767.value)[(int)t4768] = t4772;
+((Tile[])t6821.value)[(int)t6822] = t6826;
                                 
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4773 =
-                                  qTemp4754;
+final Solver.Node n6827 =
+                                  new Solver.Node((java.lang.System[]) null);
                                 
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Solver.Node n4774 =
-                                  new Solver.Node((java.lang.System[]) null).Solver$Node$$init$S(((Solver)(this.
-                                                                                                             out$$)),
-                                                                                                 this.
-                                                                                                   pawns,
-                                                                                                 t4773,
-                                                                                                 this.
-                                                                                                   size, (Solver.Node.__1$1Tile$2__2$1Tile$2) null);
+final x10.core.Rail t6807 =
+                                  qTemp6808;
+                                
+//#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
+n6827.Solver$Node$$init$S(((Solver)(this.
+                                                                                                                                                                           out$$)),
+                                                                                                                                                               this.
+                                                                                                                                                                 pawns,
+                                                                                                                                                               t6807,
+                                                                                                                                                               this.
+                                                                                                                                                                 size, (Solver.Node.__1$1Tile$2__2$1Tile$2) null);
                                 
 //#line 60 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final Board t4775 =
-                                  ((Board)(n4774.
+final Board t6828 =
+                                  ((Board)(n6827.
                                              board));
                                 
 //#line 60 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final boolean t4776 =
-                                  t4775.valid$O();
+final boolean t6829 =
+                                  t6828.valid$O();
                                 
 //#line 60 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-if (t4776) {
+if (t6829) {
                                     
 //#line 63 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-int oTemp4777 =
+int oTemp6830 =
                                       ((this.
                                           occupied) + (((int)(1))));
                                     
 //#line 64 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final long t4778 =
+final long t6831 =
                                       ((this.
                                           len) - (((long)(1L))));
                                     
 //#line 64 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4779 =
+final int t6832 =
                                       i;
                                     
 //#line 64 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4780 =
-                                      ((t4779) + (((int)(1))));
+final int t6833 =
+                                      ((t6832) + (((int)(1))));
                                     
 //#line 64 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final x10.core.Rail t4781 =
-                                      qTemp4754;
+final x10.core.Rail t6834 =
+                                      qTemp6808;
                                     
 //#line 64 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4782 =
-                                      oTemp4777;
+final int t6835 =
+                                      oTemp6830;
                                     
 //#line 64 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
 this.
-                                                                                                                                           out$$.boardCombos__3$1Tile$2__4$1Tile$2((long)(t4778),
-                                                                                                                                                                                   (int)(t4780),
+                                                                                                                                           out$$.boardCombos__3$1Tile$2__4$1Tile$2((long)(t6831),
+                                                                                                                                                                                   (int)(t6833),
                                                                                                                                                                                    (int)(this.
                                                                                                                                                                                            size),
                                                                                                                                                                                    ((x10.core.Rail)(this.
                                                                                                                                                                                                       pawns)),
-                                                                                                                                                                                   ((x10.core.Rail)(t4781)),
-                                                                                                                                                                                   (int)(t4782));
+                                                                                                                                                                                   ((x10.core.Rail)(t6834)),
+                                                                                                                                                                                   (int)(t6835));
                                 }
                             }
                             
 //#line 49 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4783 =
+final int t6836 =
                               i;
                             
 //#line 49 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-final int t4784 =
-                              ((t4783) + (((int)(1))));
+final int t6837 =
+                              ((t6836) + (((int)(1))));
                             
 //#line 49 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Solver.x10"
-i = t4784;
+i = t6837;
                         }
                     }}catch (java.lang.Error __lowerer__var__0__) {
                         

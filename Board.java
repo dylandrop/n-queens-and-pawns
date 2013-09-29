@@ -8,10 +8,8 @@
     public x10.rtt.RuntimeType<?> $getRTT() {return $RTT;}
     
     public x10.rtt.Type<?> $getParam(int i) {return null;}
-    private void writeObject(java.io.ObjectOutputStream oos) throws java.io.IOException { if (x10.runtime.impl.java.Runtime.TRACE_SER) { java.lang.System.out.println("Serializer: writeObject(ObjectOutputStream) of " + this + " calling"); } oos.defaultWriteObject(); }
     public static x10.serialization.X10JavaSerializable $_deserialize_body(Board $_obj , x10.serialization.X10JavaDeserializer $deserializer) throws java.io.IOException {
     
-        if (x10.runtime.impl.java.Runtime.TRACE_SER) { x10.runtime.impl.java.Runtime.printTraceMessage("X10JavaSerializable: $_deserialize_body() of " + Board.class + " calling"); } 
         $_obj.board = $deserializer.readRef();
         $_obj.size = $deserializer.readInt();
         $_obj.pawns = $deserializer.readRef();
@@ -94,13 +92,20 @@ public int PAWN;
                                          final x10.core.Rail<Tile> queens, __1$1Tile$2__2$1Tile$2 $dummy) { {
                                                                                                                    
 //#line 15 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-;
-                                                                                                                   
-//#line 15 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 
                                                                                                                    
 //#line 8 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-this.__fieldInitializers_Board();
+final Board this9214 =
+                                                                                                                     this;
+                                                                                                                   
+//#line 8 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+this9214.OPEN = 1;
+                                                                                                                   
+//#line 8 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+this9214.QUEEN = 2;
+                                                                                                                   
+//#line 8 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+this9214.PAWN = 3;
                                                                                                                    
 //#line 16 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 this.size = size;
@@ -116,38 +121,41 @@ final int max =
                                                                                                                      size;
                                                                                                                    
 //#line 18 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5255 =
+final x10.array.Array_2 alloc6446 =
+                                                                                                                     ((x10.array.Array_2)(new x10.array.Array_2<x10.core.Int>((java.lang.System[]) null, x10.rtt.Types.INT)));
+                                                                                                                   
+//#line 18 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final long t9215 =
                                                                                                                      ((long)(((int)(max))));
                                                                                                                    
 //#line 18 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5256 =
+final long t9216 =
                                                                                                                      ((long)(((int)(max))));
                                                                                                                    
 //#line 18 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5257 =
-                                                                                                                     ((x10.array.Array_2)(new x10.array.Array_2<x10.core.Int>((java.lang.System[]) null, x10.rtt.Types.INT).x10$array$Array_2$$init$S(t5255,
-                                                                                                                                                                                                                                                      t5256)));
+alloc6446.x10$array$Array_2$$init$S(t9215,
+                                                                                                                                                                                                                                                           t9216);
                                                                                                                    
 //#line 18 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-this.board = ((x10.array.Array_2)(t5257));
+this.board = ((x10.array.Array_2)(alloc6446));
                                                                                                                    
 //#line 19 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.core.Rail rail5565 =
+final x10.core.Rail rail9217 =
                                                                                                                      ((x10.core.Rail)(pawns));
                                                                                                                    
 //#line 19 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long size5566 =
-                                                                                                                     ((x10.core.Rail<Tile>)rail5565).
+final long size9218 =
+                                                                                                                     ((x10.core.Rail<Tile>)rail9217).
                                                                                                                        size;
                                                                                                                    
 //#line 19 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-long idx5554 =
+long idx9203 =
                                                                                                                      0L;
                                                                                                                    {
                                                                                                                        
 //#line 19 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final Tile[] rail5565$value5851 =
-                                                                                                                         ((Tile[])rail5565.value);
+final Tile[] rail9217$value9762 =
+                                                                                                                         ((Tile[])rail9217.value);
                                                                                                                        
 //#line 19 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 for (;
@@ -155,61 +163,61 @@ for (;
                                                                                                                                                                                                                                 ) {
                                                                                                                            
 //#line 19 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5555 =
-                                                                                                                             idx5554;
+final long t9204 =
+                                                                                                                             idx9203;
                                                                                                                            
 //#line 19 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5556 =
-                                                                                                                             ((t5555) < (((long)(size5566))));
+final boolean t9205 =
+                                                                                                                             ((t9204) < (((long)(size9218))));
                                                                                                                            
 //#line 19 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5556)) {
+if (!(t9205)) {
                                                                                                                                
 //#line 19 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                                                                                                                            }
                                                                                                                            
 //#line 19 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5550 =
-                                                                                                                             idx5554;
+final long t9199 =
+                                                                                                                             idx9203;
                                                                                                                            
 //#line 19 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final Tile pawn5551 =
-                                                                                                                             ((Tile)(((Tile)rail5565$value5851[(int)t5550])));
+final Tile pawn9200 =
+                                                                                                                             ((Tile)(((Tile)rail9217$value9762[(int)t9199])));
                                                                                                                            
 //#line 20 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-this.place(((Tile)(pawn5551)));
+this.place(((Tile)(pawn9200)));
                                                                                                                            
 //#line 19 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5552 =
-                                                                                                                             idx5554;
+final long t9201 =
+                                                                                                                             idx9203;
                                                                                                                            
 //#line 19 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5553 =
-                                                                                                                             ((t5552) + (((long)(1L))));
+final long t9202 =
+                                                                                                                             ((t9201) + (((long)(1L))));
                                                                                                                            
 //#line 19 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-idx5554 = t5553;
+idx9203 = t9202;
                                                                                                                        }
                                                                                                                    }
                                                                                                                    
 //#line 22 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.core.Rail rail5567 =
+final x10.core.Rail rail9219 =
                                                                                                                      ((x10.core.Rail)(queens));
                                                                                                                    
 //#line 22 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long size5568 =
-                                                                                                                     ((x10.core.Rail<Tile>)rail5567).
+final long size9220 =
+                                                                                                                     ((x10.core.Rail<Tile>)rail9219).
                                                                                                                        size;
                                                                                                                    
 //#line 22 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-long idx5562 =
+long idx9211 =
                                                                                                                      0L;
                                                                                                                    {
                                                                                                                        
 //#line 22 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final Tile[] rail5567$value5852 =
-                                                                                                                         ((Tile[])rail5567.value);
+final Tile[] rail9219$value9763 =
+                                                                                                                         ((Tile[])rail9219.value);
                                                                                                                        
 //#line 22 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 for (;
@@ -217,49 +225,49 @@ for (;
                                                                                                                                                                                                                                 ) {
                                                                                                                            
 //#line 22 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5563 =
-                                                                                                                             idx5562;
+final long t9212 =
+                                                                                                                             idx9211;
                                                                                                                            
 //#line 22 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5564 =
-                                                                                                                             ((t5563) < (((long)(size5568))));
+final boolean t9213 =
+                                                                                                                             ((t9212) < (((long)(size9220))));
                                                                                                                            
 //#line 22 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5564)) {
+if (!(t9213)) {
                                                                                                                                
 //#line 22 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                                                                                                                            }
                                                                                                                            
 //#line 22 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5558 =
-                                                                                                                             idx5562;
+final long t9207 =
+                                                                                                                             idx9211;
                                                                                                                            
 //#line 22 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final Tile queen5559 =
-                                                                                                                             ((Tile)(((Tile)rail5567$value5852[(int)t5558])));
+final Tile queen9208 =
+                                                                                                                             ((Tile)(((Tile)rail9219$value9763[(int)t9207])));
                                                                                                                            
 //#line 23 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 try {{
                                                                                                                                
 //#line 24 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-this.place(((Tile)(queen5559)));
-                                                                                                                           }}catch (final java.lang.NullPointerException id$5557) {
+this.place(((Tile)(queen9208)));
+                                                                                                                           }}catch (final java.lang.NullPointerException id$9206) {
                                                                                                                                
 //#line 27 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                                                                                                                            }
                                                                                                                            
 //#line 22 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5560 =
-                                                                                                                             idx5562;
+final long t9209 =
+                                                                                                                             idx9211;
                                                                                                                            
 //#line 22 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5561 =
-                                                                                                                             ((t5560) + (((long)(1L))));
+final long t9210 =
+                                                                                                                             ((t9209) + (((long)(1L))));
                                                                                                                            
 //#line 22 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-idx5562 = t5561;
+idx9211 = t9210;
                                                                                                                        }
                                                                                                                    }
                                                                                                                }
@@ -274,22 +282,22 @@ private boolean
                                                                                                               ){
             
 //#line 33 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.core.Rail rail5626 =
+final x10.core.Rail rail9330 =
               ((x10.core.Rail)(queens));
             
 //#line 33 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long size5627 =
-              ((x10.core.Rail<Tile>)rail5626).
+final long size9331 =
+              ((x10.core.Rail<Tile>)rail9330).
                 size;
             
 //#line 33 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-long idx5623 =
+long idx9327 =
               0L;
             {
                 
 //#line 33 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final Tile[] rail5626$value5853 =
-                  ((Tile[])rail5626.value);
+final Tile[] rail9330$value9764 =
+                  ((Tile[])rail9330.value);
                 
 //#line 33 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 for (;
@@ -297,333 +305,681 @@ for (;
                                                                                                                          ) {
                     
 //#line 33 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5624 =
-                      idx5623;
+final long t9328 =
+                      idx9327;
                     
 //#line 33 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5625 =
-                      ((t5624) < (((long)(size5627))));
+final boolean t9329 =
+                      ((t9328) < (((long)(size9331))));
                     
 //#line 33 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5625)) {
+if (!(t9329)) {
                         
 //#line 33 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                     }
                     
 //#line 33 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5619 =
-                      idx5623;
+final long t9323 =
+                      idx9327;
                     
 //#line 33 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final Tile queen5620 =
-                      ((Tile)(((Tile)rail5626$value5853[(int)t5619])));
+final Tile queen9324 =
+                      ((Tile)(((Tile)rail9330$value9764[(int)t9323])));
                     
 //#line 34 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 try {{
                         
 //#line 35 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-int xPos5595 =
-                          queen5620.
+int xPos9299 =
+                          queen9324.
                             x;
                         
 //#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                             
 //#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5596 =
-                              xPos5595;
+final int t9300 =
+                              xPos9299;
                             
 //#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5597 =
+final int t9301 =
                               size;
                             
 //#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5598 =
-                              ((t5596) < (((int)(t5597))));
+boolean t9302 =
+                              ((t9300) < (((int)(t9301))));
                             
 //#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5598) {
+if (t9302) {
                                 
 //#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5599 =
+final x10.array.Array_2 this9303 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5600 =
-                                  xPos5595;
+final int t9304 =
+                                  xPos9299;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9305 =
+                                  ((long)(((int)(t9304))));
                                 
 //#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5601 =
-                                  ((long)(((int)(t5600))));
-                                
-//#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5602 =
-                                  queen5620.
+final int t9306 =
+                                  queen9324.
                                     y;
                                 
-//#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5603 =
-                                  ((long)(((int)(t5602))));
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9307 =
+                                  ((long)(((int)(t9306))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9308 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9221 =
+                                  ((i9305) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9221)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9222 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9303).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9221 = ((i9305) >= (((long)(t9222))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9223 =
+                                  t9221;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9223)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9223 = ((j9307) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9224 =
+                                  t9223;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9224)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9225 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9303).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9224 = ((j9307) >= (((long)(t9225))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9226 =
+                                  t9224;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9226) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9305),
+                                                                                                                                                       (long)(j9307));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9227 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9303).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9228 =
+                                  i9305;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9229 =
+                                  j9307;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9230 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9303).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9231 =
+                                  ((i9228) * (((long)(t9230))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9232 =
+                                  ((j9229) + (((long)(t9231))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9233 =
+                                  ((int[])r9227.value)[(int)i9232];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9308 = t9233;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9309 =
+                                  ret9308;
                                 
 //#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5604 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5599).$apply$G((long)(t5601),
-                                                                                                        (long)(t5603)));
-                                
-//#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5605 =
-                                  PAWN;
-                                
-//#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5598 = ((int) t5604) !=
-                                ((int) t5605);
+t9302 = ((int) t9309) !=
+                                ((int) 3);
                             }
                             
 //#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5606 =
-                              t5598;
+final boolean t9310 =
+                              t9302;
                             
 //#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5606)) {
+if (!(t9310)) {
                                 
 //#line 36 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                             }
                             
 //#line 37 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5569 =
-                              xPos5595;
+final int t9247 =
+                              xPos9299;
                             
 //#line 37 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5570 =
-                              queen5620.
+final int t9248 =
+                              queen9324.
                                 x;
                             
 //#line 37 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5571 =
-                              ((int) t5569) !=
-                            ((int) t5570);
+boolean t9249 =
+                              ((int) t9247) !=
+                            ((int) t9248);
                             
 //#line 37 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5571) {
+if (t9249) {
                                 
 //#line 37 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5572 =
+final x10.array.Array_2 this9250 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 37 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5573 =
-                                  xPos5595;
+final int t9251 =
+                                  xPos9299;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9252 =
+                                  ((long)(((int)(t9251))));
                                 
 //#line 37 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5574 =
-                                  ((long)(((int)(t5573))));
-                                
-//#line 37 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5575 =
-                                  queen5620.
+final int t9253 =
+                                  queen9324.
                                     y;
                                 
-//#line 37 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5576 =
-                                  ((long)(((int)(t5575))));
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9254 =
+                                  ((long)(((int)(t9253))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9255 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9234 =
+                                  ((i9252) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9234)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9235 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9250).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9234 = ((i9252) >= (((long)(t9235))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9236 =
+                                  t9234;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9236)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9236 = ((j9254) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9237 =
+                                  t9236;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9237)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9238 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9250).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9237 = ((j9254) >= (((long)(t9238))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9239 =
+                                  t9237;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9239) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9252),
+                                                                                                                                                       (long)(j9254));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9240 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9250).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9241 =
+                                  i9252;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9242 =
+                                  j9254;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9243 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9250).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9244 =
+                                  ((i9241) * (((long)(t9243))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9245 =
+                                  ((j9242) + (((long)(t9244))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9246 =
+                                  ((int[])r9240.value)[(int)i9245];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9255 = t9246;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9256 =
+                                  ret9255;
                                 
 //#line 37 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5577 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5572).$apply$G((long)(t5574),
-                                                                                                        (long)(t5576)));
-                                
-//#line 37 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5578 =
-                                  QUEEN;
-                                
-//#line 37 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5571 = ((int) t5577) ==
-                                ((int) t5578);
+t9249 = ((int) t9256) ==
+                                ((int) 2);
                             }
                             
 //#line 37 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5579 =
-                              t5571;
+final boolean t9257 =
+                              t9249;
                             
 //#line 37 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5579) {
+if (t9257) {
                                 
 //#line 38 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                             }
                             
 //#line 40 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5580 =
-                              xPos5595;
+final int t9258 =
+                              xPos9299;
                             
 //#line 40 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5581 =
-                              ((t5580) + (((int)(1))));
+final int t9259 =
+                              ((t9258) + (((int)(1))));
                             
 //#line 40 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-xPos5595 = t5581;
+xPos9299 = t9259;
                         }
                         
 //#line 42 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5607 =
-                          queen5620.
+final int t9311 =
+                          queen9324.
                             x;
                         
 //#line 42 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-xPos5595 = t5607;
+xPos9299 = t9311;
                         
 //#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                             
 //#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5608 =
-                              xPos5595;
+final int t9312 =
+                              xPos9299;
                             
 //#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5609 =
-                              ((t5608) >= (((int)(0))));
+boolean t9313 =
+                              ((t9312) >= (((int)(0))));
                             
 //#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5609) {
+if (t9313) {
                                 
 //#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5610 =
+final x10.array.Array_2 this9314 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5611 =
-                                  xPos5595;
+final int t9315 =
+                                  xPos9299;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9316 =
+                                  ((long)(((int)(t9315))));
                                 
 //#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5612 =
-                                  ((long)(((int)(t5611))));
-                                
-//#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5613 =
-                                  queen5620.
+final int t9317 =
+                                  queen9324.
                                     y;
                                 
-//#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5614 =
-                                  ((long)(((int)(t5613))));
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9318 =
+                                  ((long)(((int)(t9317))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9319 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9260 =
+                                  ((i9316) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9260)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9261 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9314).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9260 = ((i9316) >= (((long)(t9261))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9262 =
+                                  t9260;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9262)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9262 = ((j9318) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9263 =
+                                  t9262;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9263)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9264 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9314).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9263 = ((j9318) >= (((long)(t9264))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9265 =
+                                  t9263;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9265) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9316),
+                                                                                                                                                       (long)(j9318));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9266 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9314).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9267 =
+                                  i9316;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9268 =
+                                  j9318;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9269 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9314).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9270 =
+                                  ((i9267) * (((long)(t9269))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9271 =
+                                  ((j9268) + (((long)(t9270))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9272 =
+                                  ((int[])r9266.value)[(int)i9271];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9319 = t9272;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9320 =
+                                  ret9319;
                                 
 //#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5615 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5610).$apply$G((long)(t5612),
-                                                                                                        (long)(t5614)));
-                                
-//#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5616 =
-                                  PAWN;
-                                
-//#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5609 = ((int) t5615) !=
-                                ((int) t5616);
+t9313 = ((int) t9320) !=
+                                ((int) 3);
                             }
                             
 //#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5617 =
-                              t5609;
+final boolean t9321 =
+                              t9313;
                             
 //#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5617)) {
+if (!(t9321)) {
                                 
 //#line 43 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                             }
                             
 //#line 44 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5582 =
-                              xPos5595;
+final int t9286 =
+                              xPos9299;
                             
 //#line 44 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5583 =
-                              queen5620.
+final int t9287 =
+                              queen9324.
                                 x;
                             
 //#line 44 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5584 =
-                              ((int) t5582) !=
-                            ((int) t5583);
+boolean t9288 =
+                              ((int) t9286) !=
+                            ((int) t9287);
                             
 //#line 44 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5584) {
+if (t9288) {
                                 
 //#line 44 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5585 =
+final x10.array.Array_2 this9289 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 44 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5586 =
-                                  xPos5595;
+final int t9290 =
+                                  xPos9299;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9291 =
+                                  ((long)(((int)(t9290))));
                                 
 //#line 44 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5587 =
-                                  ((long)(((int)(t5586))));
-                                
-//#line 44 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5588 =
-                                  queen5620.
+final int t9292 =
+                                  queen9324.
                                     y;
                                 
-//#line 44 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5589 =
-                                  ((long)(((int)(t5588))));
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9293 =
+                                  ((long)(((int)(t9292))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9294 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9273 =
+                                  ((i9291) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9273)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9274 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9289).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9273 = ((i9291) >= (((long)(t9274))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9275 =
+                                  t9273;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9275)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9275 = ((j9293) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9276 =
+                                  t9275;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9276)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9277 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9289).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9276 = ((j9293) >= (((long)(t9277))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9278 =
+                                  t9276;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9278) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9291),
+                                                                                                                                                       (long)(j9293));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9279 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9289).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9280 =
+                                  i9291;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9281 =
+                                  j9293;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9282 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9289).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9283 =
+                                  ((i9280) * (((long)(t9282))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9284 =
+                                  ((j9281) + (((long)(t9283))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9285 =
+                                  ((int[])r9279.value)[(int)i9284];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9294 = t9285;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9295 =
+                                  ret9294;
                                 
 //#line 44 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5590 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5585).$apply$G((long)(t5587),
-                                                                                                        (long)(t5589)));
-                                
-//#line 44 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5591 =
-                                  QUEEN;
-                                
-//#line 44 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5584 = ((int) t5590) ==
-                                ((int) t5591);
+t9288 = ((int) t9295) ==
+                                ((int) 2);
                             }
                             
 //#line 44 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5592 =
-                              t5584;
+final boolean t9296 =
+                              t9288;
                             
 //#line 44 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5592) {
+if (t9296) {
                                 
 //#line 45 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                             }
                             
 //#line 47 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5593 =
-                              xPos5595;
+final int t9297 =
+                              xPos9299;
                             
 //#line 47 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5594 =
-                              ((t5593) - (((int)(1))));
+final int t9298 =
+                              ((t9297) - (((int)(1))));
                             
 //#line 47 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-xPos5595 = t5594;
+xPos9299 = t9298;
                         }
-                    }}catch (final java.lang.NullPointerException id$5618) {
+                    }}catch (final java.lang.NullPointerException id$9322) {
                         
 //#line 51 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                     }
                     
 //#line 33 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5621 =
-                      idx5623;
+final long t9325 =
+                      idx9327;
                     
 //#line 33 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5622 =
-                      ((t5621) + (((long)(1L))));
+final long t9326 =
+                      ((t9325) + (((long)(1L))));
                     
 //#line 33 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-idx5623 = t5622;
+idx9327 = t9326;
                 }
             }
             
@@ -644,22 +1000,22 @@ private boolean
                                                                                                               ){
             
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.core.Rail rail5685 =
+final x10.core.Rail rail9441 =
               ((x10.core.Rail)(queens));
             
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long size5686 =
-              ((x10.core.Rail<Tile>)rail5685).
+final long size9442 =
+              ((x10.core.Rail<Tile>)rail9441).
                 size;
             
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-long idx5682 =
+long idx9438 =
               0L;
             {
                 
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final Tile[] rail5685$value5854 =
-                  ((Tile[])rail5685.value);
+final Tile[] rail9441$value9765 =
+                  ((Tile[])rail9441.value);
                 
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 for (;
@@ -667,333 +1023,681 @@ for (;
                                                                                                                          ) {
                     
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5683 =
-                      idx5682;
+final long t9439 =
+                      idx9438;
                     
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5684 =
-                      ((t5683) < (((long)(size5686))));
+final boolean t9440 =
+                      ((t9439) < (((long)(size9442))));
                     
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5684)) {
+if (!(t9440)) {
                         
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                     }
                     
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5678 =
-                      idx5682;
+final long t9434 =
+                      idx9438;
                     
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final Tile queen5679 =
-                      ((Tile)(((Tile)rail5685$value5854[(int)t5678])));
+final Tile queen9435 =
+                      ((Tile)(((Tile)rail9441$value9765[(int)t9434])));
                     
 //#line 59 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 try {{
                         
 //#line 60 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-int yPos5654 =
-                          queen5679.
+int yPos9410 =
+                          queen9435.
                             y;
                         
 //#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                             
 //#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5655 =
-                              yPos5654;
+final int t9411 =
+                              yPos9410;
                             
 //#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5656 =
+final int t9412 =
                               size;
                             
 //#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5657 =
-                              ((t5655) < (((int)(t5656))));
+boolean t9413 =
+                              ((t9411) < (((int)(t9412))));
                             
 //#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5657) {
+if (t9413) {
                                 
 //#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5658 =
+final x10.array.Array_2 this9414 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5659 =
-                                  queen5679.
+final int t9415 =
+                                  queen9435.
                                     x;
                                 
-//#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5660 =
-                                  ((long)(((int)(t5659))));
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9416 =
+                                  ((long)(((int)(t9415))));
                                 
 //#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5661 =
-                                  yPos5654;
+final int t9417 =
+                                  yPos9410;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9418 =
+                                  ((long)(((int)(t9417))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9419 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9332 =
+                                  ((i9416) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9332)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9333 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9414).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9332 = ((i9416) >= (((long)(t9333))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9334 =
+                                  t9332;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9334)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9334 = ((j9418) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9335 =
+                                  t9334;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9335)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9336 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9414).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9335 = ((j9418) >= (((long)(t9336))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9337 =
+                                  t9335;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9337) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9416),
+                                                                                                                                                       (long)(j9418));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9338 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9414).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9339 =
+                                  i9416;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9340 =
+                                  j9418;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9341 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9414).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9342 =
+                                  ((i9339) * (((long)(t9341))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9343 =
+                                  ((j9340) + (((long)(t9342))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9344 =
+                                  ((int[])r9338.value)[(int)i9343];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9419 = t9344;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9420 =
+                                  ret9419;
                                 
 //#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5662 =
-                                  ((long)(((int)(t5661))));
-                                
-//#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5663 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5658).$apply$G((long)(t5660),
-                                                                                                        (long)(t5662)));
-                                
-//#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5664 =
-                                  PAWN;
-                                
-//#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5657 = ((int) t5663) !=
-                                ((int) t5664);
+t9413 = ((int) t9420) !=
+                                ((int) 3);
                             }
                             
 //#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5665 =
-                              t5657;
+final boolean t9421 =
+                              t9413;
                             
 //#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5665)) {
+if (!(t9421)) {
                                 
 //#line 61 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                             }
                             
 //#line 62 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5628 =
-                              yPos5654;
+final int t9358 =
+                              yPos9410;
                             
 //#line 62 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5629 =
-                              queen5679.
+final int t9359 =
+                              queen9435.
                                 y;
                             
 //#line 62 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5630 =
-                              ((int) t5628) !=
-                            ((int) t5629);
+boolean t9360 =
+                              ((int) t9358) !=
+                            ((int) t9359);
                             
 //#line 62 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5630) {
+if (t9360) {
                                 
 //#line 62 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5631 =
+final x10.array.Array_2 this9361 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 62 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5632 =
-                                  queen5679.
+final int t9362 =
+                                  queen9435.
                                     x;
                                 
-//#line 62 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5633 =
-                                  ((long)(((int)(t5632))));
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9363 =
+                                  ((long)(((int)(t9362))));
                                 
 //#line 62 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5634 =
-                                  yPos5654;
+final int t9364 =
+                                  yPos9410;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9365 =
+                                  ((long)(((int)(t9364))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9366 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9345 =
+                                  ((i9363) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9345)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9346 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9361).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9345 = ((i9363) >= (((long)(t9346))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9347 =
+                                  t9345;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9347)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9347 = ((j9365) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9348 =
+                                  t9347;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9348)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9349 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9361).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9348 = ((j9365) >= (((long)(t9349))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9350 =
+                                  t9348;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9350) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9363),
+                                                                                                                                                       (long)(j9365));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9351 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9361).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9352 =
+                                  i9363;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9353 =
+                                  j9365;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9354 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9361).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9355 =
+                                  ((i9352) * (((long)(t9354))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9356 =
+                                  ((j9353) + (((long)(t9355))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9357 =
+                                  ((int[])r9351.value)[(int)i9356];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9366 = t9357;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9367 =
+                                  ret9366;
                                 
 //#line 62 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5635 =
-                                  ((long)(((int)(t5634))));
-                                
-//#line 62 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5636 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5631).$apply$G((long)(t5633),
-                                                                                                        (long)(t5635)));
-                                
-//#line 62 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5637 =
-                                  QUEEN;
-                                
-//#line 62 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5630 = ((int) t5636) ==
-                                ((int) t5637);
+t9360 = ((int) t9367) ==
+                                ((int) 2);
                             }
                             
 //#line 62 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5638 =
-                              t5630;
+final boolean t9368 =
+                              t9360;
                             
 //#line 62 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5638) {
+if (t9368) {
                                 
 //#line 63 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                             }
                             
 //#line 65 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5639 =
-                              yPos5654;
+final int t9369 =
+                              yPos9410;
                             
 //#line 65 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5640 =
-                              ((t5639) + (((int)(1))));
+final int t9370 =
+                              ((t9369) + (((int)(1))));
                             
 //#line 65 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-yPos5654 = t5640;
+yPos9410 = t9370;
                         }
                         
 //#line 67 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5666 =
-                          queen5679.
+final int t9422 =
+                          queen9435.
                             y;
                         
 //#line 67 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-yPos5654 = t5666;
+yPos9410 = t9422;
                         
 //#line 68 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                             
 //#line 68 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5667 =
-                              yPos5654;
+final int t9423 =
+                              yPos9410;
                             
 //#line 68 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5668 =
-                              ((t5667) >= (((int)(0))));
+boolean t9424 =
+                              ((t9423) >= (((int)(0))));
                             
 //#line 68 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5668) {
+if (t9424) {
                                 
 //#line 68 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5669 =
+final x10.array.Array_2 this9425 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 68 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5670 =
-                                  queen5679.
+final int t9426 =
+                                  queen9435.
                                     x;
                                 
-//#line 68 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5671 =
-                                  ((long)(((int)(t5670))));
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9427 =
+                                  ((long)(((int)(t9426))));
                                 
 //#line 68 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5672 =
-                                  yPos5654;
+final int t9428 =
+                                  yPos9410;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9429 =
+                                  ((long)(((int)(t9428))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9430 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9371 =
+                                  ((i9427) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9371)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9372 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9425).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9371 = ((i9427) >= (((long)(t9372))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9373 =
+                                  t9371;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9373)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9373 = ((j9429) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9374 =
+                                  t9373;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9374)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9375 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9425).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9374 = ((j9429) >= (((long)(t9375))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9376 =
+                                  t9374;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9376) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9427),
+                                                                                                                                                       (long)(j9429));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9377 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9425).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9378 =
+                                  i9427;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9379 =
+                                  j9429;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9380 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9425).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9381 =
+                                  ((i9378) * (((long)(t9380))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9382 =
+                                  ((j9379) + (((long)(t9381))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9383 =
+                                  ((int[])r9377.value)[(int)i9382];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9430 = t9383;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9431 =
+                                  ret9430;
                                 
 //#line 68 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5673 =
-                                  ((long)(((int)(t5672))));
-                                
-//#line 68 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5674 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5669).$apply$G((long)(t5671),
-                                                                                                        (long)(t5673)));
-                                
-//#line 68 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5675 =
-                                  PAWN;
-                                
-//#line 68 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5668 = ((int) t5674) !=
-                                ((int) t5675);
+t9424 = ((int) t9431) !=
+                                ((int) 3);
                             }
                             
 //#line 68 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5676 =
-                              t5668;
+final boolean t9432 =
+                              t9424;
                             
 //#line 68 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5676)) {
+if (!(t9432)) {
                                 
 //#line 68 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                             }
                             
 //#line 69 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5641 =
-                              yPos5654;
+final int t9397 =
+                              yPos9410;
                             
 //#line 69 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5642 =
-                              queen5679.
+final int t9398 =
+                              queen9435.
                                 y;
                             
 //#line 69 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5643 =
-                              ((int) t5641) !=
-                            ((int) t5642);
+boolean t9399 =
+                              ((int) t9397) !=
+                            ((int) t9398);
                             
 //#line 69 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5643) {
+if (t9399) {
                                 
 //#line 69 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5644 =
+final x10.array.Array_2 this9400 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 69 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5645 =
-                                  queen5679.
+final int t9401 =
+                                  queen9435.
                                     x;
                                 
-//#line 69 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5646 =
-                                  ((long)(((int)(t5645))));
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9402 =
+                                  ((long)(((int)(t9401))));
                                 
 //#line 69 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5647 =
-                                  yPos5654;
+final int t9403 =
+                                  yPos9410;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9404 =
+                                  ((long)(((int)(t9403))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9405 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9384 =
+                                  ((i9402) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9384)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9385 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9400).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9384 = ((i9402) >= (((long)(t9385))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9386 =
+                                  t9384;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9386)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9386 = ((j9404) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9387 =
+                                  t9386;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9387)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9388 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9400).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9387 = ((j9404) >= (((long)(t9388))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9389 =
+                                  t9387;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9389) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9402),
+                                                                                                                                                       (long)(j9404));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9390 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9400).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9391 =
+                                  i9402;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9392 =
+                                  j9404;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9393 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9400).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9394 =
+                                  ((i9391) * (((long)(t9393))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9395 =
+                                  ((j9392) + (((long)(t9394))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9396 =
+                                  ((int[])r9390.value)[(int)i9395];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9405 = t9396;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9406 =
+                                  ret9405;
                                 
 //#line 69 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5648 =
-                                  ((long)(((int)(t5647))));
-                                
-//#line 69 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5649 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5644).$apply$G((long)(t5646),
-                                                                                                        (long)(t5648)));
-                                
-//#line 69 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5650 =
-                                  QUEEN;
-                                
-//#line 69 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5643 = ((int) t5649) ==
-                                ((int) t5650);
+t9399 = ((int) t9406) ==
+                                ((int) 2);
                             }
                             
 //#line 69 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5651 =
-                              t5643;
+final boolean t9407 =
+                              t9399;
                             
 //#line 69 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5651) {
+if (t9407) {
                                 
 //#line 70 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                             }
                             
 //#line 72 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5652 =
-                              yPos5654;
+final int t9408 =
+                              yPos9410;
                             
 //#line 72 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5653 =
-                              ((t5652) - (((int)(1))));
+final int t9409 =
+                              ((t9408) - (((int)(1))));
                             
 //#line 72 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-yPos5654 = t5653;
+yPos9410 = t9409;
                         }
-                    }}catch (final java.lang.NullPointerException id$5677) {
+                    }}catch (final java.lang.NullPointerException id$9433) {
                         
 //#line 76 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                     }
                     
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5680 =
-                      idx5682;
+final long t9436 =
+                      idx9438;
                     
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5681 =
-                      ((t5680) + (((long)(1L))));
+final long t9437 =
+                      ((t9436) + (((long)(1L))));
                     
 //#line 58 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-idx5682 = t5681;
+idx9438 = t9437;
                 }
             }
             
@@ -1014,22 +1718,22 @@ private boolean
                                                                                                               ){
             
 //#line 83 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.core.Rail rail5827 =
+final x10.core.Rail rail9687 =
               ((x10.core.Rail)(queens));
             
 //#line 83 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long size5828 =
-              ((x10.core.Rail<Tile>)rail5827).
+final long size9688 =
+              ((x10.core.Rail<Tile>)rail9687).
                 size;
             
 //#line 83 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-long idx5824 =
+long idx9684 =
               0L;
             {
                 
 //#line 83 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final Tile[] rail5827$value5855 =
-                  ((Tile[])rail5827.value);
+final Tile[] rail9687$value9766 =
+                  ((Tile[])rail9687.value);
                 
 //#line 83 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 for (;
@@ -1037,840 +1741,1536 @@ for (;
                                                                                                                          ) {
                     
 //#line 83 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5825 =
-                      idx5824;
+final long t9685 =
+                      idx9684;
                     
 //#line 83 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5826 =
-                      ((t5825) < (((long)(size5828))));
+final boolean t9686 =
+                      ((t9685) < (((long)(size9688))));
                     
 //#line 83 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5826)) {
+if (!(t9686)) {
                         
 //#line 83 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                     }
                     
 //#line 83 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5820 =
-                      idx5824;
+final long t9680 =
+                      idx9684;
                     
 //#line 83 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final Tile queen5821 =
-                      ((Tile)(((Tile)rail5827$value5855[(int)t5820])));
+final Tile queen9681 =
+                      ((Tile)(((Tile)rail9687$value9766[(int)t9680])));
                     
 //#line 84 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 try {{
                         
 //#line 85 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-int yPos5759 =
-                          queen5821.
+int yPos9619 =
+                          queen9681.
                             y;
                         
 //#line 86 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-int xPos5760 =
-                          queen5821.
+int xPos9620 =
+                          queen9681.
                             x;
                         
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                             
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5761 =
-                              xPos5760;
+final int t9621 =
+                              xPos9620;
                             
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5762 =
+final int t9622 =
                               size;
                             
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5763 =
-                              ((t5761) < (((int)(t5762))));
+boolean t9623 =
+                              ((t9621) < (((int)(t9622))));
                             
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5763) {
+if (t9623) {
                                 
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5764 =
-                                  yPos5759;
+final int t9624 =
+                                  yPos9619;
                                 
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5765 =
+final int t9625 =
                                   size;
                                 
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5763 = ((t5764) < (((int)(t5765))));
+t9623 = ((t9624) < (((int)(t9625))));
                             }
                             
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5766 =
-                              t5763;
+boolean t9626 =
+                              t9623;
                             
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5766) {
+if (t9626) {
                                 
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5767 =
+final x10.array.Array_2 this9627 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5768 =
-                                  xPos5760;
+final int t9628 =
+                                  xPos9620;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9629 =
+                                  ((long)(((int)(t9628))));
                                 
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5769 =
-                                  ((long)(((int)(t5768))));
+final int t9630 =
+                                  yPos9619;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9631 =
+                                  ((long)(((int)(t9630))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9632 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9443 =
+                                  ((i9629) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9443)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9444 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9627).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9443 = ((i9629) >= (((long)(t9444))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9445 =
+                                  t9443;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9445)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9445 = ((j9631) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9446 =
+                                  t9445;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9446)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9447 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9627).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9446 = ((j9631) >= (((long)(t9447))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9448 =
+                                  t9446;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9448) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9629),
+                                                                                                                                                       (long)(j9631));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9449 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9627).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9450 =
+                                  i9629;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9451 =
+                                  j9631;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9452 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9627).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9453 =
+                                  ((i9450) * (((long)(t9452))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9454 =
+                                  ((j9451) + (((long)(t9453))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9455 =
+                                  ((int[])r9449.value)[(int)i9454];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9632 = t9455;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9633 =
+                                  ret9632;
                                 
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5770 =
-                                  yPos5759;
-                                
-//#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5771 =
-                                  ((long)(((int)(t5770))));
-                                
-//#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5772 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5767).$apply$G((long)(t5769),
-                                                                                                        (long)(t5771)));
-                                
-//#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5773 =
-                                  PAWN;
-                                
-//#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5766 = ((int) t5772) !=
-                                ((int) t5773);
+t9626 = ((int) t9633) !=
+                                ((int) 3);
                             }
                             
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5774 =
-                              t5766;
+final boolean t9634 =
+                              t9626;
                             
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5774)) {
+if (!(t9634)) {
                                 
 //#line 87 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                             }
                             
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5687 =
-                              xPos5760;
+final int t9469 =
+                              xPos9620;
                             
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5688 =
-                              queen5821.
+final int t9470 =
+                              queen9681.
                                 x;
                             
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5689 =
-                              ((int) t5687) !=
-                            ((int) t5688);
+boolean t9471 =
+                              ((int) t9469) !=
+                            ((int) t9470);
                             
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5689) {
+if (t9471) {
                                 
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5690 =
-                                  yPos5759;
+final int t9472 =
+                                  yPos9619;
                                 
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5691 =
-                                  queen5821.
+final int t9473 =
+                                  queen9681.
                                     y;
                                 
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5689 = ((int) t5690) !=
-                                ((int) t5691);
+t9471 = ((int) t9472) !=
+                                ((int) t9473);
                             }
                             
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5692 =
-                              t5689;
+boolean t9474 =
+                              t9471;
                             
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5692) {
+if (t9474) {
                                 
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5693 =
+final x10.array.Array_2 this9475 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5694 =
-                                  xPos5760;
+final int t9476 =
+                                  xPos9620;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9477 =
+                                  ((long)(((int)(t9476))));
                                 
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5695 =
-                                  ((long)(((int)(t5694))));
+final int t9478 =
+                                  yPos9619;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9479 =
+                                  ((long)(((int)(t9478))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9480 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9456 =
+                                  ((i9477) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9456)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9457 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9475).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9456 = ((i9477) >= (((long)(t9457))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9458 =
+                                  t9456;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9458)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9458 = ((j9479) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9459 =
+                                  t9458;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9459)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9460 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9475).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9459 = ((j9479) >= (((long)(t9460))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9461 =
+                                  t9459;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9461) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9477),
+                                                                                                                                                       (long)(j9479));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9462 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9475).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9463 =
+                                  i9477;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9464 =
+                                  j9479;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9465 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9475).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9466 =
+                                  ((i9463) * (((long)(t9465))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9467 =
+                                  ((j9464) + (((long)(t9466))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9468 =
+                                  ((int[])r9462.value)[(int)i9467];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9480 = t9468;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9481 =
+                                  ret9480;
                                 
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5696 =
-                                  yPos5759;
-                                
-//#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5697 =
-                                  ((long)(((int)(t5696))));
-                                
-//#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5698 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5693).$apply$G((long)(t5695),
-                                                                                                        (long)(t5697)));
-                                
-//#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5699 =
-                                  QUEEN;
-                                
-//#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5692 = ((int) t5698) ==
-                                ((int) t5699);
+t9474 = ((int) t9481) ==
+                                ((int) 2);
                             }
                             
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5700 =
-                              t5692;
+final boolean t9482 =
+                              t9474;
                             
 //#line 88 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5700) {
+if (t9482) {
                                 
 //#line 89 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                             }
                             
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5701 =
-                              xPos5760;
+final int t9483 =
+                              xPos9620;
                             
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5702 =
-                              ((t5701) + (((int)(1))));
+final int t9484 =
+                              ((t9483) + (((int)(1))));
                             
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-xPos5760 = t5702;
+xPos9620 = t9484;
                             
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5703 =
-                              yPos5759;
+final int t9485 =
+                              yPos9619;
                             
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5704 =
-                              ((t5703) + (((int)(1))));
+final int t9486 =
+                              ((t9485) + (((int)(1))));
                             
 //#line 91 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-yPos5759 = t5704;
+yPos9619 = t9486;
                         }
                         
 //#line 93 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5775 =
-                          queen5821.
+final int t9635 =
+                          queen9681.
                             y;
                         
 //#line 93 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-yPos5759 = t5775;
+yPos9619 = t9635;
                         
 //#line 94 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5776 =
-                          queen5821.
+final int t9636 =
+                          queen9681.
                             x;
                         
 //#line 94 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-xPos5760 = t5776;
+xPos9620 = t9636;
                         
 //#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                             
 //#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5777 =
-                              xPos5760;
+final int t9637 =
+                              xPos9620;
                             
 //#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5778 =
-                              ((t5777) >= (((int)(0))));
+boolean t9638 =
+                              ((t9637) >= (((int)(0))));
                             
 //#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5778) {
+if (t9638) {
                                 
 //#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5779 =
-                                  yPos5759;
+final int t9639 =
+                                  yPos9619;
                                 
 //#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5778 = ((t5779) >= (((int)(0))));
+t9638 = ((t9639) >= (((int)(0))));
                             }
                             
 //#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5780 =
-                              t5778;
+boolean t9640 =
+                              t9638;
                             
 //#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5780) {
+if (t9640) {
                                 
 //#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5781 =
+final x10.array.Array_2 this9641 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5782 =
-                                  xPos5760;
+final int t9642 =
+                                  xPos9620;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9643 =
+                                  ((long)(((int)(t9642))));
                                 
 //#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5783 =
-                                  ((long)(((int)(t5782))));
+final int t9644 =
+                                  yPos9619;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9645 =
+                                  ((long)(((int)(t9644))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9646 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9487 =
+                                  ((i9643) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9487)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9488 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9641).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9487 = ((i9643) >= (((long)(t9488))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9489 =
+                                  t9487;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9489)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9489 = ((j9645) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9490 =
+                                  t9489;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9490)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9491 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9641).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9490 = ((j9645) >= (((long)(t9491))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9492 =
+                                  t9490;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9492) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9643),
+                                                                                                                                                       (long)(j9645));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9493 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9641).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9494 =
+                                  i9643;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9495 =
+                                  j9645;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9496 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9641).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9497 =
+                                  ((i9494) * (((long)(t9496))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9498 =
+                                  ((j9495) + (((long)(t9497))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9499 =
+                                  ((int[])r9493.value)[(int)i9498];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9646 = t9499;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9647 =
+                                  ret9646;
                                 
 //#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5784 =
-                                  yPos5759;
-                                
-//#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5785 =
-                                  ((long)(((int)(t5784))));
-                                
-//#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5786 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5781).$apply$G((long)(t5783),
-                                                                                                        (long)(t5785)));
-                                
-//#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5787 =
-                                  PAWN;
-                                
-//#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5780 = ((int) t5786) !=
-                                ((int) t5787);
+t9640 = ((int) t9647) !=
+                                ((int) 3);
                             }
                             
 //#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5788 =
-                              t5780;
+final boolean t9648 =
+                              t9640;
                             
 //#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5788)) {
+if (!(t9648)) {
                                 
 //#line 95 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                             }
                             
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5705 =
-                              xPos5760;
+final int t9513 =
+                              xPos9620;
                             
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5706 =
-                              queen5821.
+final int t9514 =
+                              queen9681.
                                 x;
                             
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5707 =
-                              ((int) t5705) !=
-                            ((int) t5706);
+boolean t9515 =
+                              ((int) t9513) !=
+                            ((int) t9514);
                             
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5707) {
+if (t9515) {
                                 
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5708 =
-                                  yPos5759;
+final int t9516 =
+                                  yPos9619;
                                 
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5709 =
-                                  queen5821.
+final int t9517 =
+                                  queen9681.
                                     y;
                                 
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5707 = ((int) t5708) !=
-                                ((int) t5709);
+t9515 = ((int) t9516) !=
+                                ((int) t9517);
                             }
                             
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5710 =
-                              t5707;
+boolean t9518 =
+                              t9515;
                             
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5710) {
+if (t9518) {
                                 
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5711 =
+final x10.array.Array_2 this9519 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5712 =
-                                  xPos5760;
+final int t9520 =
+                                  xPos9620;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9521 =
+                                  ((long)(((int)(t9520))));
                                 
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5713 =
-                                  ((long)(((int)(t5712))));
+final int t9522 =
+                                  yPos9619;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9523 =
+                                  ((long)(((int)(t9522))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9524 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9500 =
+                                  ((i9521) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9500)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9501 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9519).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9500 = ((i9521) >= (((long)(t9501))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9502 =
+                                  t9500;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9502)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9502 = ((j9523) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9503 =
+                                  t9502;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9503)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9504 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9519).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9503 = ((j9523) >= (((long)(t9504))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9505 =
+                                  t9503;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9505) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9521),
+                                                                                                                                                       (long)(j9523));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9506 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9519).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9507 =
+                                  i9521;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9508 =
+                                  j9523;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9509 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9519).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9510 =
+                                  ((i9507) * (((long)(t9509))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9511 =
+                                  ((j9508) + (((long)(t9510))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9512 =
+                                  ((int[])r9506.value)[(int)i9511];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9524 = t9512;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9525 =
+                                  ret9524;
                                 
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5714 =
-                                  yPos5759;
-                                
-//#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5715 =
-                                  ((long)(((int)(t5714))));
-                                
-//#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5716 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5711).$apply$G((long)(t5713),
-                                                                                                        (long)(t5715)));
-                                
-//#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5717 =
-                                  QUEEN;
-                                
-//#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5710 = ((int) t5716) ==
-                                ((int) t5717);
+t9518 = ((int) t9525) ==
+                                ((int) 2);
                             }
                             
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5718 =
-                              t5710;
+final boolean t9526 =
+                              t9518;
                             
 //#line 96 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5718) {
+if (t9526) {
                                 
 //#line 97 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                             }
                             
 //#line 99 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5719 =
-                              xPos5760;
+final int t9527 =
+                              xPos9620;
                             
 //#line 99 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5720 =
-                              ((t5719) - (((int)(1))));
+final int t9528 =
+                              ((t9527) - (((int)(1))));
                             
 //#line 99 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-xPos5760 = t5720;
+xPos9620 = t9528;
                             
 //#line 99 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5721 =
-                              yPos5759;
+final int t9529 =
+                              yPos9619;
                             
 //#line 99 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5722 =
-                              ((t5721) - (((int)(1))));
+final int t9530 =
+                              ((t9529) - (((int)(1))));
                             
 //#line 99 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-yPos5759 = t5722;
+yPos9619 = t9530;
                         }
                         
 //#line 101 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5789 =
-                          queen5821.
+final int t9649 =
+                          queen9681.
                             y;
                         
 //#line 101 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-yPos5759 = t5789;
+yPos9619 = t9649;
                         
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5790 =
-                          queen5821.
+final int t9650 =
+                          queen9681.
                             x;
                         
 //#line 102 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-xPos5760 = t5790;
+xPos9620 = t9650;
                         
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                             
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5791 =
-                              xPos5760;
+final int t9651 =
+                              xPos9620;
                             
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5792 =
+final int t9652 =
                               size;
                             
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5793 =
-                              ((t5791) < (((int)(t5792))));
+boolean t9653 =
+                              ((t9651) < (((int)(t9652))));
                             
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5793) {
+if (t9653) {
                                 
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5794 =
-                                  yPos5759;
+final int t9654 =
+                                  yPos9619;
                                 
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5793 = ((t5794) >= (((int)(0))));
+t9653 = ((t9654) >= (((int)(0))));
                             }
                             
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5795 =
-                              t5793;
+boolean t9655 =
+                              t9653;
                             
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5795) {
+if (t9655) {
                                 
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5796 =
+final x10.array.Array_2 this9656 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5797 =
-                                  xPos5760;
+final int t9657 =
+                                  xPos9620;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9658 =
+                                  ((long)(((int)(t9657))));
                                 
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5798 =
-                                  ((long)(((int)(t5797))));
+final int t9659 =
+                                  yPos9619;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9660 =
+                                  ((long)(((int)(t9659))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9661 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9531 =
+                                  ((i9658) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9531)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9532 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9656).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9531 = ((i9658) >= (((long)(t9532))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9533 =
+                                  t9531;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9533)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9533 = ((j9660) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9534 =
+                                  t9533;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9534)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9535 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9656).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9534 = ((j9660) >= (((long)(t9535))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9536 =
+                                  t9534;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9536) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9658),
+                                                                                                                                                       (long)(j9660));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9537 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9656).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9538 =
+                                  i9658;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9539 =
+                                  j9660;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9540 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9656).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9541 =
+                                  ((i9538) * (((long)(t9540))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9542 =
+                                  ((j9539) + (((long)(t9541))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9543 =
+                                  ((int[])r9537.value)[(int)i9542];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9661 = t9543;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9662 =
+                                  ret9661;
                                 
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5799 =
-                                  yPos5759;
-                                
-//#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5800 =
-                                  ((long)(((int)(t5799))));
-                                
-//#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5801 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5796).$apply$G((long)(t5798),
-                                                                                                        (long)(t5800)));
-                                
-//#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5802 =
-                                  PAWN;
-                                
-//#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5795 = ((int) t5801) !=
-                                ((int) t5802);
+t9655 = ((int) t9662) !=
+                                ((int) 3);
                             }
                             
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5803 =
-                              t5795;
+final boolean t9663 =
+                              t9655;
                             
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5803)) {
+if (!(t9663)) {
                                 
 //#line 103 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                             }
                             
 //#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5723 =
-                              xPos5760;
+final int t9557 =
+                              xPos9620;
                             
 //#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5724 =
-                              queen5821.
+final int t9558 =
+                              queen9681.
                                 x;
                             
 //#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5725 =
-                              ((int) t5723) !=
-                            ((int) t5724);
+boolean t9559 =
+                              ((int) t9557) !=
+                            ((int) t9558);
                             
 //#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5725) {
+if (t9559) {
                                 
 //#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5726 =
-                                  yPos5759;
+final int t9560 =
+                                  yPos9619;
                                 
 //#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5727 =
-                                  queen5821.
+final int t9561 =
+                                  queen9681.
                                     y;
                                 
 //#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5725 = ((int) t5726) !=
-                                ((int) t5727);
+t9559 = ((int) t9560) !=
+                                ((int) t9561);
                             }
                             
 //#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5728 =
-                              t5725;
+boolean t9562 =
+                              t9559;
                             
 //#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5728) {
+if (t9562) {
                                 
 //#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5729 =
+final x10.array.Array_2 this9563 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5730 =
-                                  xPos5760;
+final int t9564 =
+                                  xPos9620;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9565 =
+                                  ((long)(((int)(t9564))));
                                 
 //#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5731 =
-                                  ((long)(((int)(t5730))));
+final int t9566 =
+                                  yPos9619;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9567 =
+                                  ((long)(((int)(t9566))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9568 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9544 =
+                                  ((i9565) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9544)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9545 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9563).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9544 = ((i9565) >= (((long)(t9545))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9546 =
+                                  t9544;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9546)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9546 = ((j9567) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9547 =
+                                  t9546;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9547)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9548 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9563).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9547 = ((j9567) >= (((long)(t9548))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9549 =
+                                  t9547;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9549) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9565),
+                                                                                                                                                       (long)(j9567));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9550 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9563).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9551 =
+                                  i9565;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9552 =
+                                  j9567;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9553 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9563).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9554 =
+                                  ((i9551) * (((long)(t9553))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9555 =
+                                  ((j9552) + (((long)(t9554))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9556 =
+                                  ((int[])r9550.value)[(int)i9555];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9568 = t9556;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9569 =
+                                  ret9568;
                                 
 //#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5732 =
-                                  yPos5759;
-                                
-//#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5733 =
-                                  ((long)(((int)(t5732))));
-                                
-//#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5734 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5729).$apply$G((long)(t5731),
-                                                                                                        (long)(t5733)));
-                                
-//#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5735 =
-                                  QUEEN;
-                                
-//#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5728 = ((int) t5734) ==
-                                ((int) t5735);
+t9562 = ((int) t9569) ==
+                                ((int) 2);
                             }
                             
 //#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5736 =
-                              t5728;
+final boolean t9570 =
+                              t9562;
                             
 //#line 104 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5736) {
+if (t9570) {
                                 
 //#line 105 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                             }
                             
 //#line 107 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5737 =
-                              xPos5760;
+final int t9571 =
+                              xPos9620;
                             
 //#line 107 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5738 =
-                              ((t5737) + (((int)(1))));
+final int t9572 =
+                              ((t9571) + (((int)(1))));
                             
 //#line 107 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-xPos5760 = t5738;
+xPos9620 = t9572;
                             
 //#line 107 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5739 =
-                              yPos5759;
+final int t9573 =
+                              yPos9619;
                             
 //#line 107 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5740 =
-                              ((t5739) - (((int)(1))));
+final int t9574 =
+                              ((t9573) - (((int)(1))));
                             
 //#line 107 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-yPos5759 = t5740;
+yPos9619 = t9574;
                         }
                         
 //#line 109 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5804 =
-                          queen5821.
+final int t9664 =
+                          queen9681.
                             y;
                         
 //#line 109 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-yPos5759 = t5804;
+yPos9619 = t9664;
                         
 //#line 110 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5805 =
-                          queen5821.
+final int t9665 =
+                          queen9681.
                             x;
                         
 //#line 110 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-xPos5760 = t5805;
+xPos9620 = t9665;
                         
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 while (true) {
                             
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5806 =
-                              xPos5760;
+final int t9666 =
+                              xPos9620;
                             
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5807 =
-                              ((t5806) >= (((int)(0))));
+boolean t9667 =
+                              ((t9666) >= (((int)(0))));
                             
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5807) {
+if (t9667) {
                                 
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5808 =
-                                  yPos5759;
+final int t9668 =
+                                  yPos9619;
                                 
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5809 =
+final int t9669 =
                                   size;
                                 
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5807 = ((t5808) < (((int)(t5809))));
+t9667 = ((t9668) < (((int)(t9669))));
                             }
                             
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5810 =
-                              t5807;
+boolean t9670 =
+                              t9667;
                             
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5810) {
+if (t9670) {
                                 
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5811 =
+final x10.array.Array_2 this9671 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5812 =
-                                  xPos5760;
+final int t9672 =
+                                  xPos9620;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9673 =
+                                  ((long)(((int)(t9672))));
                                 
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5813 =
-                                  ((long)(((int)(t5812))));
+final int t9674 =
+                                  yPos9619;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9675 =
+                                  ((long)(((int)(t9674))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9676 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9575 =
+                                  ((i9673) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9575)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9576 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9671).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9575 = ((i9673) >= (((long)(t9576))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9577 =
+                                  t9575;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9577)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9577 = ((j9675) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9578 =
+                                  t9577;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9578)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9579 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9671).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9578 = ((j9675) >= (((long)(t9579))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9580 =
+                                  t9578;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9580) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9673),
+                                                                                                                                                       (long)(j9675));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9581 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9671).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9582 =
+                                  i9673;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9583 =
+                                  j9675;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9584 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9671).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9585 =
+                                  ((i9582) * (((long)(t9584))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9586 =
+                                  ((j9583) + (((long)(t9585))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9587 =
+                                  ((int[])r9581.value)[(int)i9586];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9676 = t9587;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9677 =
+                                  ret9676;
                                 
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5814 =
-                                  yPos5759;
-                                
-//#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5815 =
-                                  ((long)(((int)(t5814))));
-                                
-//#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5816 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5811).$apply$G((long)(t5813),
-                                                                                                        (long)(t5815)));
-                                
-//#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5817 =
-                                  PAWN;
-                                
-//#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5810 = ((int) t5816) !=
-                                ((int) t5817);
+t9670 = ((int) t9677) !=
+                                ((int) 3);
                             }
                             
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5818 =
-                              t5810;
+final boolean t9678 =
+                              t9670;
                             
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5818)) {
+if (!(t9678)) {
                                 
 //#line 111 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                             }
                             
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5741 =
-                              xPos5760;
+final int t9601 =
+                              xPos9620;
                             
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5742 =
-                              queen5821.
+final int t9602 =
+                              queen9681.
                                 x;
                             
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5743 =
-                              ((int) t5741) !=
-                            ((int) t5742);
+boolean t9603 =
+                              ((int) t9601) !=
+                            ((int) t9602);
                             
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5743) {
+if (t9603) {
                                 
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5744 =
-                                  yPos5759;
+final int t9604 =
+                                  yPos9619;
                                 
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5745 =
-                                  queen5821.
+final int t9605 =
+                                  queen9681.
                                     y;
                                 
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5743 = ((int) t5744) !=
-                                ((int) t5745);
+t9603 = ((int) t9604) !=
+                                ((int) t9605);
                             }
                             
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5746 =
-                              t5743;
+boolean t9606 =
+                              t9603;
                             
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5746) {
+if (t9606) {
                                 
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5747 =
+final x10.array.Array_2 this9607 =
                                   ((x10.array.Array_2)(board));
                                 
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5748 =
-                                  xPos5760;
+final int t9608 =
+                                  xPos9620;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9609 =
+                                  ((long)(((int)(t9608))));
                                 
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5749 =
-                                  ((long)(((int)(t5748))));
+final int t9610 =
+                                  yPos9619;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9611 =
+                                  ((long)(((int)(t9610))));
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9612 =
+                                   0;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9588 =
+                                  ((i9609) < (((long)(0L))));
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9588)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9589 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9607).
+                                        numElems_1;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9588 = ((i9609) >= (((long)(t9589))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9590 =
+                                  t9588;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9590)) {
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9590 = ((j9611) < (((long)(0L))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9591 =
+                                  t9590;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9591)) {
+                                    
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9592 =
+                                      ((x10.array.Array_2<x10.core.Int>)this9607).
+                                        numElems_2;
+                                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9591 = ((j9611) >= (((long)(t9592))));
+                                }
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9593 =
+                                  t9591;
+                                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9593) {
+                                    
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9609),
+                                                                                                                                                       (long)(j9611));
+                                }
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9594 =
+                                  ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9607).
+                                                     raw));
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9595 =
+                                  i9609;
+                                
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9596 =
+                                  j9611;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9597 =
+                                  ((x10.array.Array_2<x10.core.Int>)this9607).
+                                    numElems_2;
+                                
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9598 =
+                                  ((i9595) * (((long)(t9597))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9599 =
+                                  ((j9596) + (((long)(t9598))));
+                                
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9600 =
+                                  ((int[])r9594.value)[(int)i9599];
+                                
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9612 = t9600;
+                                
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9613 =
+                                  ret9612;
                                 
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5750 =
-                                  yPos5759;
-                                
-//#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5751 =
-                                  ((long)(((int)(t5750))));
-                                
-//#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5752 =
-                                  x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5747).$apply$G((long)(t5749),
-                                                                                                        (long)(t5751)));
-                                
-//#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5753 =
-                                  QUEEN;
-                                
-//#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5746 = ((int) t5752) ==
-                                ((int) t5753);
+t9606 = ((int) t9613) ==
+                                ((int) 2);
                             }
                             
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5754 =
-                              t5746;
+final boolean t9614 =
+                              t9606;
                             
 //#line 112 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5754) {
+if (t9614) {
                                 
 //#line 113 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 return false;
                             }
                             
 //#line 115 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5755 =
-                              xPos5760;
+final int t9615 =
+                              xPos9620;
                             
 //#line 115 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5756 =
-                              ((t5755) - (((int)(1))));
+final int t9616 =
+                              ((t9615) - (((int)(1))));
                             
 //#line 115 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-xPos5760 = t5756;
+xPos9620 = t9616;
                             
 //#line 115 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5757 =
-                              yPos5759;
+final int t9617 =
+                              yPos9619;
                             
 //#line 115 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5758 =
-                              ((t5757) + (((int)(1))));
+final int t9618 =
+                              ((t9617) + (((int)(1))));
                             
 //#line 115 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-yPos5759 = t5758;
+yPos9619 = t9618;
                         }
-                    }}catch (final java.lang.NullPointerException id$5819) {
+                    }}catch (final java.lang.NullPointerException id$9679) {
                         
 //#line 119 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                     }
                     
 //#line 83 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5822 =
-                      idx5824;
+final long t9682 =
+                      idx9684;
                     
 //#line 83 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5823 =
-                      ((t5822) + (((long)(1L))));
+final long t9683 =
+                      ((t9682) + (((long)(1L))));
                     
 //#line 83 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-idx5824 = t5823;
+idx9684 = t9683;
                 }
             }
             
@@ -1891,273 +3291,626 @@ public boolean
                                                                                                                ){
             
 //#line 126 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5514 =
-              this.validDiag$O();
+boolean valid_1 =
+              true;
             
-//#line 126 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5514) {
+//#line 127 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+boolean valid_2 =
+              true;
+            
+//#line 128 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+boolean valid_3 =
+              true;
+            {
                 
-//#line 126 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5514 = this.validVert$O();
-            }
-            
-//#line 126 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5515 =
-              t5514;
-            
-//#line 126 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5515) {
-                
-//#line 126 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5515 = this.validHoriz$O();
-            }
-            
-//#line 126 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5516 =
-              t5515;
-            
-//#line 126 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-return t5516;
-        }
-        
-        
 //#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+x10.lang.Runtime.ensureNotInAtomic();
+                
+//#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final x10.lang.FinishState x10$__var1 =
+                  x10.lang.Runtime.startFinish();
+                {
+                    
+//#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final boolean[] $valid_19759 =
+                      new boolean[1];
+                    
+//#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+$valid_19759[(int)0]=valid_1;
+                    
+//#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final boolean[] $valid_29760 =
+                      new boolean[1];
+                    
+//#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+$valid_29760[(int)0]=valid_2;
+                    
+//#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final boolean[] $valid_39761 =
+                      new boolean[1];
+                    
+//#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+$valid_39761[(int)0]=valid_3;
+                    
+//#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+try {{
+                        {
+                            
+//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+x10.lang.Runtime.runAsync(((x10.core.fun.VoidFun_0_0)(new Board.$Closure$1(this,
+                                                                                                                                                                                                            $valid_19759))));
+                            
+//#line 133 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+x10.lang.Runtime.runAsync(((x10.core.fun.VoidFun_0_0)(new Board.$Closure$2(this,
+                                                                                                                                                                                                            $valid_29760))));
+                            
+//#line 136 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+x10.lang.Runtime.runAsync(((x10.core.fun.VoidFun_0_0)(new Board.$Closure$3(this,
+                                                                                                                                                                                                            $valid_39761))));
+                        }
+                    }}catch (java.lang.Throwable __lowerer__var__0__) {
+                        
+//#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+x10.lang.Runtime.pushException(((java.lang.Throwable)(__lowerer__var__0__)));
+                        
+//#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+throw new java.lang.RuntimeException();
+                    }finally {{
+                         
+//#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+x10.lang.Runtime.stopFinish(((x10.lang.FinishState)(x10$__var1)));
+                     }}
+                    
+//#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+valid_1 = ((boolean)$valid_19759[(int)0]);
+                    
+//#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+valid_2 = ((boolean)$valid_29760[(int)0]);
+                    
+//#line 129 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+valid_3 = ((boolean)$valid_39761[(int)0]);
+                    }
+                }
+            
+//#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+boolean t9147 =
+              valid_1;
+            
+//#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+if (t9147) {
+                
+//#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+t9147 = valid_2;
+            }
+            
+//#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+boolean t9148 =
+              t9147;
+            
+//#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+if (t9148) {
+                
+//#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+t9148 = valid_3;
+            }
+            
+//#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t9149 =
+              t9148;
+            
+//#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+return t9149;
+            }
+        
+        
+//#line 143 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 public void
                                                                                                                print(
                                                                                                                ){
             
-//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int i5240min5241 =
-              0;
-            
-//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5517 =
+//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int t9150 =
               size;
             
-//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int i5240max5242 =
-              ((t5517) - (((int)(1))));
+//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int i6574max6576 =
+              ((t9150) - (((int)(1))));
             
-//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-int i5848 =
-              i5240min5241;
+//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+int i9721 =
+              0;
             
-//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 for (;
                                                                                                                       true;
                                                                                                                       ) {
                 
-//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5849 =
-                  i5848;
+//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int t9722 =
+                  i9721;
                 
-//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5850 =
-                  ((t5849) <= (((int)(i5240max5242))));
+//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t9723 =
+                  ((t9722) <= (((int)(i6574max6576))));
                 
-//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5850)) {
+//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+if (!(t9723)) {
                     
-//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                 }
                 
-//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int y5845 =
-                  i5848;
+//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int y9718 =
+                  i9721;
                 
-//#line 131 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int i5224min5841 =
-                  0;
-                
-//#line 131 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5842 =
+//#line 145 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int t9715 =
                   size;
                 
-//#line 131 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int i5224max5843 =
-                  ((t5842) - (((int)(1))));
+//#line 145 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int i6558max9716 =
+                  ((t9715) - (((int)(1))));
                 
-//#line 131 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-int i5838 =
-                  i5224min5841;
+//#line 145 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+int i9712 =
+                  0;
                 
-//#line 131 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+//#line 145 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 for (;
                                                                                                                           true;
                                                                                                                           ) {
                     
-//#line 131 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5839 =
-                      i5838;
+//#line 145 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int t9713 =
+                      i9712;
                     
-//#line 131 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5840 =
-                      ((t5839) <= (((int)(i5224max5843))));
+//#line 145 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t9714 =
+                      ((t9713) <= (((int)(i6558max9716))));
                     
-//#line 131 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5840)) {
+//#line 145 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+if (!(t9714)) {
                         
-//#line 131 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+//#line 145 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 break;
                     }
                     
-//#line 131 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int x5835 =
-                      i5838;
+//#line 145 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int x9709 =
+                      i9712;
                     
-//#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.io.Printer t5829 =
+//#line 146 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final x10.io.Printer t9702 =
                       ((x10.io.Printer)(x10.io.Console.get$OUT()));
                     
-//#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5830 =
+//#line 146 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final x10.array.Array_2 this9703 =
                       ((x10.array.Array_2)(board));
                     
-//#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5831 =
-                      ((long)(((int)(x5835))));
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9704 =
+                      ((long)(((int)(x9709))));
                     
-//#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5832 =
-                      ((long)(((int)(y5845))));
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9705 =
+                      ((long)(((int)(y9718))));
                     
-//#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5833 =
-                      x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5830).$apply$G((long)(t5831),
-                                                                                            (long)(t5832)));
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret9706 =
+                       0;
                     
-//#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final java.lang.String t5834 =
-                      (("-") + ((x10.core.Int.$box(t5833))));
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9689 =
+                      ((i9704) < (((long)(0L))));
                     
-//#line 132 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5829.print(((java.lang.String)(t5834)));
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9689)) {
+                        
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9690 =
+                          ((x10.array.Array_2<x10.core.Int>)this9703).
+                            numElems_1;
+                        
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9689 = ((i9704) >= (((long)(t9690))));
+                    }
                     
-//#line 131 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5836 =
-                      i5838;
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9691 =
+                      t9689;
                     
-//#line 131 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5837 =
-                      ((t5836) + (((int)(1))));
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9691)) {
+                        
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9691 = ((j9705) < (((long)(0L))));
+                    }
                     
-//#line 131 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-i5838 = t5837;
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9692 =
+                      t9691;
+                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9692)) {
+                        
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9693 =
+                          ((x10.array.Array_2<x10.core.Int>)this9703).
+                            numElems_2;
+                        
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9692 = ((j9705) >= (((long)(t9693))));
+                    }
+                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9694 =
+                      t9692;
+                    
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9694) {
+                        
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i9704),
+                                                                                                                                           (long)(j9705));
+                    }
+                    
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9695 =
+                      ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this9703).
+                                         raw));
+                    
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9696 =
+                      i9704;
+                    
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9697 =
+                      j9705;
+                    
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9698 =
+                      ((x10.array.Array_2<x10.core.Int>)this9703).
+                        numElems_2;
+                    
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9699 =
+                      ((i9696) * (((long)(t9698))));
+                    
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9700 =
+                      ((j9697) + (((long)(t9699))));
+                    
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9701 =
+                      ((int[])r9695.value)[(int)i9700];
+                    
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret9706 = t9701;
+                    
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int t9707 =
+                      ret9706;
+                    
+//#line 146 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final java.lang.String t9708 =
+                      (("-") + ((x10.core.Int.$box(t9707))));
+                    
+//#line 146 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+t9702.print(((java.lang.String)(t9708)));
+                    
+//#line 145 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int t9710 =
+                      i9712;
+                    
+//#line 145 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int t9711 =
+                      ((t9710) + (((int)(1))));
+                    
+//#line 145 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+i9712 = t9711;
                 }
                 
-//#line 134 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.io.Printer t5844 =
+//#line 148 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final x10.io.Printer t9717 =
                   ((x10.io.Printer)(x10.io.Console.get$OUT()));
                 
-//#line 134 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5844.println(((java.lang.Object)("-")));
+//#line 148 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+t9717.println(((java.lang.Object)("-")));
                 
-//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5846 =
-                  i5848;
+//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int t9719 =
+                  i9721;
                 
-//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5847 =
-                  ((t5846) + (((int)(1))));
+//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int t9720 =
+                  ((t9719) + (((int)(1))));
                 
-//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-i5848 = t5847;
+//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+i9721 = t9720;
             }
         }
         
         
-//#line 139 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+//#line 153 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 private void
                                                                                                                place(
                                                                                                                final Tile someTile){
             
-//#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5538 =
+//#line 154 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final x10.array.Array_2 this8786 =
               ((x10.array.Array_2)(board));
             
-//#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5536 =
+//#line 154 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int t9175 =
               someTile.
                 x;
             
-//#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5539 =
-              ((long)(((int)(t5536))));
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i8784 =
+              ((long)(((int)(t9175))));
             
-//#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5537 =
+//#line 154 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int t9176 =
               someTile.
                 y;
             
-//#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5540 =
-              ((long)(((int)(t5537))));
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j8785 =
+              ((long)(((int)(t9176))));
             
-//#line 140 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+//#line 142 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret8787 =
+               0;
+            
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9724 =
+              ((i8784) < (((long)(0L))));
+            
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9724)) {
+                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9725 =
+                  ((x10.array.Array_2<x10.core.Int>)this8786).
+                    numElems_1;
+                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9724 = ((i8784) >= (((long)(t9725))));
+            }
+            
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9726 =
+              t9724;
+            
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9726)) {
+                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9726 = ((j8785) < (((long)(0L))));
+            }
+            
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9727 =
+              t9726;
+            
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9727)) {
+                
+//#line 144 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9728 =
+                  ((x10.array.Array_2<x10.core.Int>)this8786).
+                    numElems_2;
+                
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9727 = ((j8785) >= (((long)(t9728))));
+            }
+            
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9729 =
+              t9727;
+            
+//#line 143 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9729) {
+                
+//#line 145 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i8784),
+                                                                                                                                   (long)(j8785));
+            }
+            
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9730 =
+              ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this8786).
+                                 raw));
+            
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9731 =
+              i8784;
+            
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9732 =
+              j8785;
+            
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9733 =
+              ((x10.array.Array_2<x10.core.Int>)this8786).
+                numElems_2;
+            
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9734 =
+              ((i9731) * (((long)(t9733))));
+            
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9735 =
+              ((j9732) + (((long)(t9734))));
+            
+//#line 38 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int t9736 =
+              ((int[])r9730.value)[(int)i9735];
+            
+//#line 147 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret8787 = t9736;
+            
+//#line 154 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 final int occupation =
-              x10.core.Int.$unbox(((x10.array.Array_2<x10.core.Int>)t5538).$apply$G((long)(t5539),
-                                                                                    (long)(t5540)));
+              ret8787;
             
-//#line 141 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-boolean t5541 =
+//#line 155 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+boolean t9186 =
               ((int) occupation) ==
             ((int) 2);
             
-//#line 141 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (!(t5541)) {
+//#line 155 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+if (!(t9186)) {
                 
-//#line 141 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-t5541 = ((int) occupation) ==
+//#line 155 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+t9186 = ((int) occupation) ==
                 ((int) 3);
             }
             
-//#line 141 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final boolean t5543 =
-              t5541;
+//#line 155 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t9188 =
+              t9186;
             
-//#line 141 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-if (t5543) {
+//#line 155 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+if (t9188) {
                 
-//#line 142 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final java.lang.RuntimeException t5542 =
+//#line 156 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final java.lang.RuntimeException t9187 =
                   ((java.lang.RuntimeException)(new java.lang.RuntimeException("Placing on a wrong place!")));
                 
-//#line 142 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-throw t5542;
+//#line 156 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+throw t9187;
             }
             
-//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final x10.array.Array_2 t5546 =
+//#line 158 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final x10.array.Array_2 this8796 =
               ((x10.array.Array_2)(board));
             
-//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5544 =
+//#line 158 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int t9189 =
               someTile.
                 x;
             
-//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5547 =
-              ((long)(((int)(t5544))));
+//#line 169 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i8793 =
+              ((long)(((int)(t9189))));
             
-//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5545 =
+//#line 158 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final int t9190 =
               someTile.
                 y;
             
-//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final long t5548 =
-              ((long)(((int)(t5545))));
+//#line 169 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j8794 =
+              ((long)(((int)(t9190))));
             
-//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-final int t5549 =
+//#line 169 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final int v8795 =
               someTile.
                 tileType;
             
-//#line 144 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
-((x10.array.Array_2<x10.core.Int>)t5546).$set__2x10$array$Array_2$$T$G((long)(t5547),
-                                                                                                                                                                                        (long)(t5548),
-                                                                                                                                                                                        x10.core.Int.$box(t5549));
+//#line 169 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+int ret8797 =
+               0;
+            
+//#line 170 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9737 =
+              ((i8793) < (((long)(0L))));
+            
+//#line 170 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9737)) {
+                
+//#line 170 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9738 =
+                  ((x10.array.Array_2<x10.core.Int>)this8796).
+                    numElems_1;
+                
+//#line 170 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9737 = ((i8793) >= (((long)(t9738))));
+            }
+            
+//#line 170 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9739 =
+              t9737;
+            
+//#line 170 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9739)) {
+                
+//#line 170 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9739 = ((j8794) < (((long)(0L))));
+            }
+            
+//#line 170 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+boolean t9740 =
+              t9739;
+            
+//#line 170 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (!(t9740)) {
+                
+//#line 171 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9741 =
+                  ((x10.array.Array_2<x10.core.Int>)this8796).
+                    numElems_2;
+                
+//#line 170 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+t9740 = ((j8794) >= (((long)(t9741))));
+            }
+            
+//#line 170 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final boolean t9742 =
+              t9740;
+            
+//#line 170 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+if (t9742) {
+                
+//#line 172 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+x10.array.Array.raiseBoundsError((long)(i8793),
+                                                                                                                                   (long)(j8794));
+            }
+            
+//#line 41 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final x10.core.Rail r9743 =
+              ((x10.core.Rail)(((x10.array.Array<x10.core.Int>)this8796).
+                                 raw));
+            
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long i9744 =
+              i8793;
+            
+//#line 130 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long j9745 =
+              j8794;
+            
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9746 =
+              ((x10.array.Array_2<x10.core.Int>)this8796).
+                numElems_2;
+            
+//#line 131 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+final long t9747 =
+              ((i9744) * (((long)(t9746))));
+            
+//#line 41 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final long i9748 =
+              ((j9745) + (((long)(t9747))));
+            
+//#line 41 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+final int v9749 =
+              v8795;
+            
+//#line 40 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+int ret9750 =
+               0;
+            
+//#line 42 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+((int[])r9743.value)[(int)i9748] = v9749;
+            
+//#line 43 .. "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/lang/Unsafe.x10"
+ret9750 = v9749;
+            
+//#line 175 . "/Users/dobridobrev/bin/x102/stdlib/x10.jar:x10/array/Array_2.x10"
+ret8797 = v8795;
         }
         
         public static void
@@ -2192,8 +3945,241 @@ this.QUEEN = 2;
 //#line 8 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
 this.PAWN = 3;
         }
-    // synthetic type for parameter mangling
-    public static final class __1$1Tile$2__2$1Tile$2 {}
-    
-}
-
+        
+        @x10.runtime.impl.java.X10Generated final public static class $Closure$1 extends x10.core.Ref implements x10.core.fun.VoidFun_0_0, x10.serialization.X10JavaSerializable
+        {
+            private static final long serialVersionUID = 1L;
+            public static final x10.rtt.RuntimeType<$Closure$1> $RTT = x10.rtt.StaticVoidFunType.<$Closure$1> make(
+            $Closure$1.class, new x10.rtt.Type[] {x10.core.fun.VoidFun_0_0.$RTT}
+            );
+            public x10.rtt.RuntimeType<?> $getRTT() {return $RTT;}
+            
+            public x10.rtt.Type<?> $getParam(int i) {return null;}
+            public static x10.serialization.X10JavaSerializable $_deserialize_body(Board.$Closure$1 $_obj , x10.serialization.X10JavaDeserializer $deserializer) throws java.io.IOException {
+            
+                $_obj.out$$ = $deserializer.readRef();
+                $_obj.$valid_19759 = $deserializer.readRef();
+                return $_obj;
+            }
+            
+            public static x10.serialization.X10JavaSerializable $_deserializer(x10.serialization.X10JavaDeserializer $deserializer) throws java.io.IOException {
+            
+                Board.$Closure$1 $_obj = new Board.$Closure$1((java.lang.System[]) null);
+                $deserializer.record_reference($_obj);
+                return $_deserialize_body($_obj, $deserializer);
+                
+            }
+            
+            public void $_serialize(x10.serialization.X10JavaSerializer $serializer) throws java.io.IOException {
+            
+                if (out$$ instanceof x10.serialization.X10JavaSerializable) {
+                $serializer.write((x10.serialization.X10JavaSerializable) this.out$$);
+                } else {
+                $serializer.write(this.out$$);
+                }
+                $serializer.write(this.$valid_19759);
+                
+            }
+            
+            // constructor just for allocation
+            public $Closure$1(final java.lang.System[] $dummy) { 
+            }
+            
+                
+                public void
+                  $apply(
+                  ){
+                    
+//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+try {{
+                        
+//#line 131 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t9144 =
+                          this.
+                            out$$.validDiag$O();
+                        
+//#line 131 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+this.
+                                                                                                                               $valid_19759[(int)0]=t9144;
+                    }}catch (java.lang.Error __lowerer__var__0__) {
+                        
+//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+throw __lowerer__var__0__;
+                    }catch (java.lang.Throwable __lowerer__var__1__) {
+                        
+//#line 130 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+throw x10.rtt.Types.EXCEPTION.isInstance(__lowerer__var__1__) ? (java.lang.RuntimeException)(__lowerer__var__1__) : new x10.lang.WrappedThrowable(__lowerer__var__1__);
+                    }
+                }
+                
+                public Board out$$;
+                public boolean[] $valid_19759;
+                
+                public $Closure$1(final Board out$$,
+                                  final boolean[] $valid_19759) { {
+                                                                         this.out$$ = out$$;
+                                                                         this.$valid_19759 = $valid_19759;
+                                                                     }}
+                
+            }
+            
+        @x10.runtime.impl.java.X10Generated final public static class $Closure$2 extends x10.core.Ref implements x10.core.fun.VoidFun_0_0, x10.serialization.X10JavaSerializable
+        {
+            private static final long serialVersionUID = 1L;
+            public static final x10.rtt.RuntimeType<$Closure$2> $RTT = x10.rtt.StaticVoidFunType.<$Closure$2> make(
+            $Closure$2.class, new x10.rtt.Type[] {x10.core.fun.VoidFun_0_0.$RTT}
+            );
+            public x10.rtt.RuntimeType<?> $getRTT() {return $RTT;}
+            
+            public x10.rtt.Type<?> $getParam(int i) {return null;}
+            public static x10.serialization.X10JavaSerializable $_deserialize_body(Board.$Closure$2 $_obj , x10.serialization.X10JavaDeserializer $deserializer) throws java.io.IOException {
+            
+                $_obj.out$$ = $deserializer.readRef();
+                $_obj.$valid_29760 = $deserializer.readRef();
+                return $_obj;
+            }
+            
+            public static x10.serialization.X10JavaSerializable $_deserializer(x10.serialization.X10JavaDeserializer $deserializer) throws java.io.IOException {
+            
+                Board.$Closure$2 $_obj = new Board.$Closure$2((java.lang.System[]) null);
+                $deserializer.record_reference($_obj);
+                return $_deserialize_body($_obj, $deserializer);
+                
+            }
+            
+            public void $_serialize(x10.serialization.X10JavaSerializer $serializer) throws java.io.IOException {
+            
+                if (out$$ instanceof x10.serialization.X10JavaSerializable) {
+                $serializer.write((x10.serialization.X10JavaSerializable) this.out$$);
+                } else {
+                $serializer.write(this.out$$);
+                }
+                $serializer.write(this.$valid_29760);
+                
+            }
+            
+            // constructor just for allocation
+            public $Closure$2(final java.lang.System[] $dummy) { 
+            }
+            
+                
+                public void
+                  $apply(
+                  ){
+                    
+//#line 133 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+try {{
+                        
+//#line 134 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t9145 =
+                          this.
+                            out$$.validVert$O();
+                        
+//#line 134 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+this.
+                                                                                                                               $valid_29760[(int)0]=t9145;
+                    }}catch (java.lang.Error __lowerer__var__2__) {
+                        
+//#line 133 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+throw __lowerer__var__2__;
+                    }catch (java.lang.Throwable __lowerer__var__3__) {
+                        
+//#line 133 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+throw x10.rtt.Types.EXCEPTION.isInstance(__lowerer__var__3__) ? (java.lang.RuntimeException)(__lowerer__var__3__) : new x10.lang.WrappedThrowable(__lowerer__var__3__);
+                    }
+                }
+                
+                public Board out$$;
+                public boolean[] $valid_29760;
+                
+                public $Closure$2(final Board out$$,
+                                  final boolean[] $valid_29760) { {
+                                                                         this.out$$ = out$$;
+                                                                         this.$valid_29760 = $valid_29760;
+                                                                     }}
+                
+            }
+            
+        @x10.runtime.impl.java.X10Generated final public static class $Closure$3 extends x10.core.Ref implements x10.core.fun.VoidFun_0_0, x10.serialization.X10JavaSerializable
+        {
+            private static final long serialVersionUID = 1L;
+            public static final x10.rtt.RuntimeType<$Closure$3> $RTT = x10.rtt.StaticVoidFunType.<$Closure$3> make(
+            $Closure$3.class, new x10.rtt.Type[] {x10.core.fun.VoidFun_0_0.$RTT}
+            );
+            public x10.rtt.RuntimeType<?> $getRTT() {return $RTT;}
+            
+            public x10.rtt.Type<?> $getParam(int i) {return null;}
+            public static x10.serialization.X10JavaSerializable $_deserialize_body(Board.$Closure$3 $_obj , x10.serialization.X10JavaDeserializer $deserializer) throws java.io.IOException {
+            
+                $_obj.out$$ = $deserializer.readRef();
+                $_obj.$valid_39761 = $deserializer.readRef();
+                return $_obj;
+            }
+            
+            public static x10.serialization.X10JavaSerializable $_deserializer(x10.serialization.X10JavaDeserializer $deserializer) throws java.io.IOException {
+            
+                Board.$Closure$3 $_obj = new Board.$Closure$3((java.lang.System[]) null);
+                $deserializer.record_reference($_obj);
+                return $_deserialize_body($_obj, $deserializer);
+                
+            }
+            
+            public void $_serialize(x10.serialization.X10JavaSerializer $serializer) throws java.io.IOException {
+            
+                if (out$$ instanceof x10.serialization.X10JavaSerializable) {
+                $serializer.write((x10.serialization.X10JavaSerializable) this.out$$);
+                } else {
+                $serializer.write(this.out$$);
+                }
+                $serializer.write(this.$valid_39761);
+                
+            }
+            
+            // constructor just for allocation
+            public $Closure$3(final java.lang.System[] $dummy) { 
+            }
+            
+                
+                public void
+                  $apply(
+                  ){
+                    
+//#line 136 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+try {{
+                        
+//#line 137 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+final boolean t9146 =
+                          this.
+                            out$$.validHoriz$O();
+                        
+//#line 137 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+this.
+                                                                                                                               $valid_39761[(int)0]=t9146;
+                    }}catch (java.lang.Error __lowerer__var__4__) {
+                        
+//#line 136 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+throw __lowerer__var__4__;
+                    }catch (java.lang.Throwable __lowerer__var__5__) {
+                        
+//#line 136 "/Applications/x10dt/x10dt.app/Contents/MacOS/workspace/NQueensWithPawns/src/Board.x10"
+throw x10.rtt.Types.EXCEPTION.isInstance(__lowerer__var__5__) ? (java.lang.RuntimeException)(__lowerer__var__5__) : new x10.lang.WrappedThrowable(__lowerer__var__5__);
+                    }
+                }
+                
+                public Board out$$;
+                public boolean[] $valid_39761;
+                
+                public $Closure$3(final Board out$$,
+                                  final boolean[] $valid_39761) { {
+                                                                         this.out$$ = out$$;
+                                                                         this.$valid_39761 = $valid_39761;
+                                                                     }}
+                
+            }
+            
+        // synthetic type for parameter mangling
+        public static final class __1$1Tile$2__2$1Tile$2 {}
+        
+        }
+        
+        
