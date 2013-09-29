@@ -58,10 +58,10 @@ public class Main
         }
         for (line in F.lines()){
 
-        	if(line.length() == 0) {
+        	if(line.length() == 0n) {
         		continue;
         	}
-        	if( line.charAt(0) == '/') {
+        	if( line.charAt(0n) == '/') {
         		Console.OUT.println(line);
         		continue;
         	}
@@ -73,7 +73,7 @@ public class Main
             val pawns = new ArrayList[Tile]();
             for ( i in CONF_PAWN_OFFSET..(v.size-1) ){     //parse pawns which are every element after the first three
                 val coords = v(i).split(",");
-                val point = Tile( Int.parse(coords(0).trim()) , Int.parse(coords(1).trim()), 3 ); 
+                val point = Tile( Int.parse(coords(0).trim()) , Int.parse(coords(1).trim()), 3n ); 
                 pawns.add(point);
             }
             val input = Input(size, pawns, solutions);  //construct the input object

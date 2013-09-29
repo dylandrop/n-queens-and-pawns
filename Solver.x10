@@ -1,10 +1,11 @@
 import x10.util.Timer;
 import x10.io.File;
-import x10.util.ArrayList;
 import x10.lang.Exception;
 import x10.io.FileNotFoundException;
 import x10.array.Array;
+import x10.util.ArrayList;
 /**
+import x10.util.ArrayList;
  * This is the class that provides the solve() method.
  *
  * The assignment is to replace the contents of the solve() method
@@ -12,7 +13,7 @@ import x10.array.Array;
  */
 public class Solver
 {
-	public var solutions: Int = 0;
+	public var solutions: Int = 0n;
 	public var arr:Rail[Tile];
     /**
      * Solve a single 'N'-Queens with pawns problem.
@@ -27,18 +28,18 @@ public class Solver
         
         //Console.OUT.println("testcase done");
     	arr = queensForBoard(size);
-    	for(var i:Int= 0;i<arr.size; i++){
+    	for(var i:Int= 0n;i<arr.size; i++){
     		// Console.OUT.println("Queen at "+arr(i).x +" "+arr(i).y);
     	}
     	//Console.OUT.println("size is "+ (size)+ "arr length is "+arr.size);
     	
-    	boardCombos(size, 0, size, pawns, new ArrayList[Tile](), 0);
+    	boardCombos((size as Long), 0n, size, pawns, new ArrayList[Tile](), 0n);
         return solutions;
     }
     // occupied should start off at 1
     public def boardCombos( len: long, startPos: Int, size: int, pawns: ArrayList[Tile], queens: ArrayList[Tile], occupied: Int){
     	// Console.OUT.println("calls boardCombos with len "+len+ " start pos " +startPos);
-    	if(size==0)
+    	if(size==0n)
     		return;
     	if(len ==0L){
     		solutions++;
@@ -57,8 +58,8 @@ public class Solver
     				if(n.board.valid()){
     					//Console.OUT.println("isvalid");
     					// n.board.print();
-    					var oTemp:Int = occupied+1;
-    					boardCombos(len-1, i+1, size, pawns, qTemp, oTemp);
+    					var oTemp:Int = occupied+1n;
+    					boardCombos(len-1, i+1n, size, pawns, qTemp, oTemp);
     				}
     			
     		}
@@ -66,109 +67,57 @@ public class Solver
     		
     	}
     }
-    public def generateBoards(size: int, pawns: ArrayList[Tile]){
-    	
-    	for(var x:Int = 0; x<size; x++){
-    		for(var y:Int = 0; y<size; y++){
-    			if(safe(pawns, new ArrayList[Tile](), x, y))
-    				genSubLayer(size, pawns, x, y);
-    		}
-    	}
-    	Console.OUT.println("finishes generating");
-    	
-    }
     
-    public def genSubLayer(size: int, pawns: ArrayList[Tile], xInit: int, yInit: int){
-    	val out = new ArrayList[Node]();
-    	val qRail = new ArrayList[Tile]();
-    	qRail(0) = new Tile(xInit, yInit, 2);
-    	//Console.OUT.println("recGen");
-    	recGen(pawns, size, qRail, 1);
-    	//Console.OUT.println("fucksup");
-    	
-    	
-    }
-    
-    public def recGen( pawns: ArrayList[Tile], size: int, qRail: ArrayList[Tile], occupied: Int){
-    	///Console.OUT.println("size is "+size+" and occupied is "+occupied); 
-    	
-    	if(size==occupied){
-    		val n = new Node(pawns.toRail(), qRail.toRail(), size);
-    		//Console.OUT.println("generates node...");
-    		//Console.OUT.println("is valid returns "+n.board.valid());
-    		if(n.board.valid()){
-    			//Console.OUT.println("is valid ");
-    			solutions++;
-    		}
-    			
-    		return;
-    	}
-    	var qTemp: ArrayList[Tile] = qRail.clone();
-    	
-    	//Console.OUT.println("copies array");
-    	for(var x:Int = 0; x<size; x++){
-    		for(var y:Int = 0; y<size; y++){
-    			if(safe(pawns, qRail, x, y)){
-    				qTemp(occupied) = new Tile(x, y, 2);
-    				val n:Node = new Node(pawns.toRail(), qTemp.toRail(), size);
-    				if(n.board.valid())
-    					recGen(pawns, size, qTemp, (occupied+1));
-    			}
-    		}
-    	}
-    	
-    	
-    }
     
     public def safe(pawns: ArrayList[Tile], qRail: ArrayList[Tile], x:Int, y:Int): boolean{
     	var out: boolean = true;
-    	for(var i:Int = 0; i<pawns.size(); i++){
+    	for(var i:Int = 0n; i<pawns.size(); i++){
     		if(pawns(i).x==x && pawns(i).y==y){
-    			out= false;
+    			return false;
     		}
     	}
-    	for(var i:Int = 0; i<qRail.size(); i++){
+    	for(var i:Int = 0n; i<qRail.size(); i++){
     		if(qRail(i).x==x && qRail(i).y==y){
     			return false;
     		}
     		//dont bother if it is right next to a queen
-    		if(qRail(i).x==x && qRail(i).y==y-1){
+    		if(qRail(i).x==x && qRail(i).y==y-1n){
     			return false;
     		}
-    		if(qRail(i).x==x && qRail(i).y==y+1){
+    		if(qRail(i).x==x && qRail(i).y==y+1n){
     			return false;
     		}
-    		if(qRail(i).x==x-1 && qRail(i).y==y){
+    		if(qRail(i).x==x-1n && qRail(i).y==y){
     			return false;
     		}
-    		if(qRail(i).x==x+1 && qRail(i).y==y){
+    		if(qRail(i).x==x+1n && qRail(i).y==y){
     			return false;
     		}
-    		if(qRail(i).x==x+1 && qRail(i).y==y+1){
+    		if(qRail(i).x==x+1n && qRail(i).y==y+1n){
     			return false;
     		}
-    		if(qRail(i).x==x-1 && qRail(i).y==y+1){
+    		if(qRail(i).x==x-1n && qRail(i).y==y+1n){
     			return false;
     		}
-    		if(qRail(i).x==x+1 && qRail(i).y==y-1){
+    		if(qRail(i).x==x+1n && qRail(i).y==y-1n){
     			return false;
     		}
-    		if(qRail(i).x==x-1 && qRail(i).y==y-1){
-    			return false;
-    		}
+    		if(qRail(i).x==x-1n && qRail(i).y==y-1n){
     		
+    			return false;
+    		}
     	}
     	return out;
     }
     public def queensForBoard(ofSize:Int) {
-    	if(ofSize == 0) {
-    		return new Rail[Tile](0);
+    	if(ofSize == 0n) {
+    		return new Rail[Tile](0n);
     	}
     	queens:Rail[Tile] = new Rail[Tile](ofSize*ofSize);
-    	for(var i:Int = 1; i <= ofSize*ofSize; i++) {
-    		var x:Int = (i-1)%ofSize;
-    		var y:Int = (i-1)/ofSize;
-    		queens(i-1) = new Tile(x,y,2);
+    	for(var i:Int = 1n; i <= ofSize*ofSize; i++) {
+    		var x:Int = (i-1n)%ofSize;
+    		var y:Int = (i-1n)/ofSize;
+    		queens(i-1) = new Tile(x,y,2n);
     	}
     	return queens;
     }
