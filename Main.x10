@@ -14,6 +14,7 @@ import x10.array.Array;
  * If the result is correct, the solve() method will be called three
  * times for each benchmark input and the median time will be stored
  */
+ //add some more comments to test out git hub logging
 public class Main
 {
     /**
