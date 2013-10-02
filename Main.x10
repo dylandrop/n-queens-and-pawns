@@ -15,6 +15,7 @@ import x10.array.Array;
  * times for each benchmark input and the median time will be stored
  */
  //add some more comments to test out git hub logging
+ //add some more
 public class Main
 {
     /**
